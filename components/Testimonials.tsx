@@ -3,7 +3,6 @@
 export default function Testimonials() {
   const testimonials = [
     {
-          {
       name: 'Jeanette Kulkarni',
       location: 'Spring Lake, MI',
       role: 'Homeowner and Business Owner',

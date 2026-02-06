@@ -13,14 +13,14 @@ export default function Testimonials() {
       name: 'Tom Vandenberg',
       location: 'Muskegon, MI',
       role: 'Property Manager',
-      text: "We hired Earth Stewards to reduce maintenance costs at our commercial properties. The native landscapes they installed look amazing and require minimal upkeep. It's been a game-changer for our budget.",
+      text: 'We hired Earth Stewards to reduce maintenance costs at our commercial properties. The native landscapes they installed look amazing and require minimal upkeep. It's been a game-changer for our budget.',
       rating: 5,
     },
     {
       name: 'Jennifer Liu',
       location: 'Holland, MI',
       role: 'Homeowner',
-      text: "The team was professional, knowledgeable, and clearly passionate about native plants. They educated us throughout the process and our garden is thriving. We couldn't be happier!",
+      text: 'The team was professional, knowledgeable, and clearly passionate about native plants. They educated us throughout the process and our garden is thriving. We couldn't be happier!',
       rating: 5,
     },
     {

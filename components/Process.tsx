@@ -17,7 +17,7 @@ export default function Process() {
       number: '02',
       title: 'Custom Design',
       description:
-        "Our team creates a detailed landscape plan featuring native plants selected for your specific conditions. You'll receive a planting plan, plant list, and maintenance guide.",
+        'Our team creates a detailed landscape plan featuring native plants selected for your specific conditions. You'll receive a planting plan, plant list, and maintenance guide.',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M19.5,3.09L15,5.59L10.5,3.09L6,5.59V21.09L10.5,18.59L15,21.09L19.5,18.59V3.09M18,17.41L15,19.09L12,17.41L9,19.09L7.5,18.09V6.91L9,5.91L12,7.59L15,5.91L18,7.59V17.41Z" />

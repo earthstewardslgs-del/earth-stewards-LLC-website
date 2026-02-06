@@ -28,15 +28,11 @@ export default function Footer() {
           {/* Company info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-moss-600 rounded-full flex items-center justify-center">
-                <svg
-                  className="w-7 h-7 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2C10.9 2 10 2.9 10 4V6C8.9 6 8 6.9 8 8V10C6.9 10 6 10.9 6 12V20C6 21.1 6.9 22 8 22H16C17.1 22 18 21.1 18 20V12C18 10.9 17.1 10 16 10V8C16 6.9 15.1 6 14 6V4C14 2.9 13.1 2 12 2M12 4L14 6H10L12 4M8 8H16V10H14V12H16V20H8V12H10V10H8V8Z" />
-                </svg>
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="Earth Stewards LLC Logo"
+                className="w-16 h-16"
+              />
               <div>
                 <div className="font-display font-bold text-xl text-white">
                   Earth Stewards

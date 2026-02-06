@@ -42,7 +42,7 @@ export default function Contact() {
           {/* Left column - Contact info */}
           <div>
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-earth-900 mb-6">
-              Let's Grow Something Beautiful Together
+              Let&apos;s Grow Something Beautiful Together
             </h2>
             <p className="text-xl text-earth-700 mb-8">
               Ready to transform your property with native landscaping? Get in
@@ -264,7 +264,7 @@ export default function Contact() {
               </button>
 
               <p className="text-sm text-earth-600 text-center">
-                We'll respond within 1-2 business days
+                We&apos;ll respond within 1-2 business days
               </p>
             </form>
           </div>

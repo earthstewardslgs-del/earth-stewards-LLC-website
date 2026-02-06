@@ -77,7 +77,7 @@ export default function WhyNative() {
             Why Choose Native Landscaping?
           </h2>
           <p className="text-xl text-earth-700">
-            Native plants aren't just beautiful—they're the smartest choice for
+            Native plants aren&apos;t just beautiful—they&apos;re the smartest choice for
             your property and the environment
           </p>
         </div>

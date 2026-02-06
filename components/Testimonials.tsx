@@ -13,7 +13,7 @@ export default function Testimonials() {
       name: 'Tom Vandenberg',
       location: 'Muskegon, MI',
       role: 'Property Manager',
-      text: 'We hired Earth Stewards to reduce maintenance costs at our commercial properties. The native landscapes they installed look amazing and require minimal upkeep. It's been a game-changer for our budget.',
+      text: "We hired Earth Stewards to reduce maintenance costs at our commercial properties. The native landscapes they installed look amazing and require minimal upkeep. It's been a game-changer for our budget.",
       rating: 5,
     },
     {

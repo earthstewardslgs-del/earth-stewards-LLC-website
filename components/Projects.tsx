@@ -4,13 +4,13 @@ import { useState } from 'react'
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
-  const [sliderPositions, setSliderPositions] = useState<{[key: number]: number}>({})
+  const [sliderPositions, setSliderPositions] = useState<{ [key: string]: number }>({})
   const [galleryOpen, setGalleryOpen] = useState(false)
   const [galleryProject, setGalleryProject] = useState<any>(null)
   const [galleryPhotoIndex, setGalleryPhotoIndex] = useState(0)
 
-  const handleSliderChange = (projectIndex: number, position: number) => {
-    setSliderPositions(prev => ({ ...prev, [projectIndex]: position }))
+  const handleSliderChange = (projectKey: string | number, position: number) => {
+    setSliderPositions(prev => ({ ...prev, [String(projectKey)]: position }))
   }
 
   const openGallery = (project: any) => {
@@ -378,7 +378,7 @@ export default function Projects() {
                   {/* Before Image (clipped) */}
                   <div 
                     className="absolute inset-0 overflow-hidden"
-                    style={{ clipPath: `inset(0 ${100 - (sliderPositions.gallery || 50)}% 0 0)` }}
+                    style={{ clipPath: `inset(0 ${100 - (sliderPositions['gallery'] ?? 50)}% 0 0)` }}
                   >
                     <img
                       src={`/images/${galleryProject.image}-before-${galleryPhotoIndex + 1}.jpg`}
@@ -390,7 +390,7 @@ export default function Projects() {
                   {/* Slider Line and Handle */}
                   <div 
                     className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10 pointer-events-none"
-                    style={{ left: `${sliderPositions.gallery || 50}%` }}
+                    style={{ left: `${sliderPositions['gallery'] ?? 50}%` }}
                   >
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-moss-600">
                       <div className="flex gap-1">
@@ -405,7 +405,7 @@ export default function Projects() {
                     type="range"
                     min="0"
                     max="100"
-                    value={sliderPositions.gallery || 50}
+                    value={sliderPositions['gallery'] ?? 50}
                     onChange={(e) => handleSliderChange('gallery', parseInt(e.target.value))}
                     className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
                   />

@@ -75,6 +75,28 @@ export default function Projects() {
       stats: { planters: '2 custom', height: '4 ft tall', season: 'Winter 2024' },
     },
     {
+      title: 'Condo Porch Garden Revival',
+      category: 'residential',
+      location: 'Spring Lake, MI',
+      description:
+        'Restored a neglected back porch garden space that had become overgrown and unusable. Cleared debris and dying plants, reset cracked pavers, cleaned garden beds, and replanted with fresh perennials and grasses—transforming a messy eyesore into a tidy, inviting outdoor retreat.',
+      image: 'windy-drift',
+      beforeAfter: true,
+      photoCount: 1,
+      stats: { area: '200 sq ft', pavers: 'Reset', season: 'Fall 2024' },
+    },
+    {
+      title: 'Condo Patio Garden Refresh',
+      category: 'residential',
+      location: 'Spring Lake, MI',
+      description:
+        'Revitalized a neglected back porch garden at a condo. Cleared overgrown weeds, removed debris and dead plant material, cleaned hardscape surfaces, and gave the space a fresh start—ready for the homeowner to enjoy again.',
+      image: 'windy-drift',
+      beforeAfter: true,
+      photoCount: 1,
+      stats: { area: '200 sq ft', cleanup: 'Full weeding', season: 'Fall 2024' },
+    },
+    {
       title: 'Commercial Pollinator Meadow',
       category: 'commercial',
       location: 'Muskegon, MI',
@@ -264,6 +286,9 @@ export default function Projects() {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                ) : project.image === 'windy-drift' ? (
+                  // Before/After preview for windy-drift (handled above with beforeAfter slider)
+                  null
                 ) : (
                   // Placeholder for projects without images yet
                   <div className="aspect-[4/3] bg-gradient-to-br from-moss-300 to-sage-400 flex items-center justify-center">

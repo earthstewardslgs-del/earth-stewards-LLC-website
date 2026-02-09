@@ -42,6 +42,16 @@ export default function WhyNative() {
       description:
         'A landscape that looks intentional, healthy, and cared for year-round.',
     },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+        </svg>
+      ),
+      title: 'Natural & Sincere',
+      description:
+        'We care deeply about the landscapes we work in and the people who live with them. Guided by respect for natural systems and craftsmanship, we aim to leave every space healthier than we found it.',
+    },
   ]
 
   return (
@@ -62,7 +72,7 @@ export default function WhyNative() {
         </div>
 
         {/* Benefits grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-16">
           {benefits.map((benefit, index) => (
             <div
               key={benefit.title}

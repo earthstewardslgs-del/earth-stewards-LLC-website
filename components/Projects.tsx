@@ -66,7 +66,6 @@ export default function Projects() {
     { id: 'all', label: 'All Projects' },
     { id: 'residential', label: 'Residential' },
     { id: 'commercial', label: 'Commercial' },
-    { id: 'municipal', label: 'Municipal' },
   ]
 
   const filteredProjects =

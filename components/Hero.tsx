@@ -20,44 +20,47 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-earth-900 leading-tight text-balance animate-fade-in-up">
-                Beautiful Landscapes.{' '}
-                <span className="text-moss-700">Healthy Ecosystems.</span>{' '}
-                <span className="text-sage-700">Lasting Value.</span>
+                Stop Fighting Your Yard
               </h1>
               <p className="text-lg sm:text-xl text-earth-700 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                Professional native landscape design and installation serving
-                Muskegon and Ottawa Counties. We create sustainable,
-                low-maintenance gardens that support local ecosystems and
-                enhance your property.
+                Get a Landscape That Looks Better — and Gets Easier Every Year
+              </p>
+              <p className="text-base text-earth-600 leading-relaxed max-w-xl animate-fade-in-up delay-200">
+                We design, improve, and care for landscapes across Muskegon and Ottawa Counties — from traditional gardens to ecological plantings — creating spaces that stay healthy, manageable, and naturally resilient in West Michigan conditions.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
-              <a
-                href="#schedule"
-                className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-xl hover:-translate-y-1"
-              >
-                Schedule Consultation
-                <svg
-                  className="ml-2 w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+            <div className="animate-fade-in-up delay-300">
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#schedule"
+                  className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-xl hover:-translate-y-1"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#projects"
-                className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all hover:shadow-lg"
-              >
-                View Our Work
-              </a>
+                  Start With a Site Visit
+                  <svg
+                    className="ml-2 w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#projects"
+                  className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all hover:shadow-lg"
+                >
+                  View Our Work
+                </a>
+              </div>
+              <p className="text-sm text-earth-600 mt-3 ml-1">
+                A short visit to understand your property and options — no pressure, just clarity.
+              </p>
             </div>
           </div>
 

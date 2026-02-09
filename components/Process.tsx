@@ -4,9 +4,9 @@ export default function Process() {
   const steps = [
     {
       number: '01',
-      title: 'Consultation & Assessment',
+      title: 'Walk the Property',
       description:
-        'We visit your property to understand your vision, assess soil conditions, sunlight patterns, and existing vegetation. This helps us create a design perfectly suited to your site.',
+        'We meet on site, look at how the yard behaves, and talk through what&apos;s frustrating you and what you want it to become. You&apos;ll leave knowing what&apos;s realistic and what your options are.',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
@@ -15,9 +15,9 @@ export default function Process() {
     },
     {
       number: '02',
-      title: 'Custom Design',
+      title: 'Make a Plan',
       description:
-        'Our team creates a detailed landscape plan featuring native plants selected for your specific conditions. You&apos;ll receive a planting plan, plant list, and maintenance guide.',
+        'We create a design tailored to your goals, budget, and maintenance comfort level — whether that&apos;s simple improvements or a full transformation.',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M19.5,3.09L15,5.59L10.5,3.09L6,5.59V21.09L10.5,18.59L15,21.09L19.5,18.59V3.09M18,17.41L15,19.09L12,17.41L9,19.09L7.5,18.09V6.91L9,5.91L12,7.59L15,5.91L18,7.59V17.41Z" />
@@ -26,9 +26,9 @@ export default function Process() {
     },
     {
       number: '03',
-      title: 'Professional Installation',
+      title: 'Build It Right',
       description:
-        'Our experienced crew prepares the site, amends soil as needed, and installs your plants at the optimal time of year. We ensure proper spacing, depth, and mulching for long-term success.',
+        'We prepare the space properly and install plants and materials in a way that sets the landscape up for long-term success.',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,7L7,12L12,17L17,12L12,7Z" />
@@ -37,9 +37,9 @@ export default function Process() {
     },
     {
       number: '04',
-      title: 'Ongoing Support',
+      title: 'Support Over Time',
       description:
-        'We provide care instructions and are available for questions. Optional maintenance services keep your landscape thriving through the seasons with expert seasonal care.',
+        'We&apos;re available for follow-up care, adjustments, and questions as your landscape grows in and stabilizes.',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L6.04,7.5L12,10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V9.21L13,12.58V19.29L19,15.91Z" />
@@ -58,10 +58,10 @@ export default function Process() {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-earth-900 mb-6">
-            Our Approach
+            What It&apos;s Like to Work With Us
           </h2>
           <p className="text-xl text-earth-700">
-            A proven process that ensures beautiful, sustainable results
+            A simple, clear process so you know what to expect at every step.
           </p>
         </div>
 

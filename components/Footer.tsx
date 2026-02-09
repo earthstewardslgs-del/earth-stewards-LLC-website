@@ -10,13 +10,6 @@ export default function Footer() {
     { name: 'Testimonials', href: '#testimonials' },
   ]
 
-  const resources = [
-    { name: 'Plant Guides', href: '#resources' },
-    { name: 'How-To Articles', href: '#resources' },
-    { name: 'Video Tutorials', href: '#resources' },
-    { name: 'Newsletter', href: '#resources' },
-  ]
-
   return (
     <footer className="bg-earth-800 text-earth-100 relative overflow-hidden">
       {/* Background decoration */}
@@ -106,22 +99,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Service Areas */}
           <div>
             <h3 className="font-display text-lg font-bold text-white mb-4">
-              Resources
+              Service Areas
             </h3>
-            <ul className="space-y-3">
-              {resources.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-earth-300 hover:text-moss-400 transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+            <ul className="space-y-3 text-earth-300">
+              <li>Muskegon County</li>
+              <li>Ottawa County</li>
+              <li>Grand Haven</li>
+              <li>Holland</li>
+              <li>Norton Shores</li>
+              <li>Spring Lake</li>
             </ul>
           </div>
 

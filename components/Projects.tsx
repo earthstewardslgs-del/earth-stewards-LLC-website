@@ -127,7 +127,7 @@ export default function Projects() {
                     {/* After Image (full background) */}
                     <div className="absolute inset-0">
                       <img
-                        src={`/images/${project.image}-after.jpg`}
+                        src={`/images/${project.image}-after-1.jpg`}
                         alt={`${project.title} - After`}
                         className="w-full h-full object-cover"
                       />
@@ -139,7 +139,7 @@ export default function Projects() {
                       style={{ clipPath: `inset(0 ${100 - (sliderPositions[index] || 50)}% 0 0)` }}
                     >
                       <img
-                        src={`/images/${project.image}-before.jpg`}
+                        src={`/images/${project.image}-before-1.jpg`}
                         alt={`${project.title} - Before`}
                         className="w-full h-full object-cover"
                       />

@@ -4,6 +4,11 @@ import { useState } from 'react'
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
+  const [sliderPositions, setSliderPositions] = useState<{[key: number]: number}>({})
+
+  const handleSliderChange = (projectIndex: number, position: number) => {
+    setSliderPositions(prev => ({ ...prev, [projectIndex]: position }))
+  }
 
   const projects = [
     {
@@ -13,7 +18,68 @@ export default function Projects() {
       description:
         'Diagnosed a struggling garden where sun-loving plants were fighting a losing battle in deep shade. Completely redesigned the space with shade-tolerant perennials, hostas, astilbe, and ferns that now thrive in low-light conditions—creating a lush, layered sanctuary that finally works with the site instead of against it.',
       image: 'kulkarni',
+      beforeAfter: false, // This project doesn't have before/after
       stats: { plants: '30+', area: '400 sq ft', season: 'Summer 2024' },
+    },
+    {
+      title: 'Garden Cleanup & Reorganization',
+      category: 'residential',
+      location: 'Grand Haven, MI',
+      description:
+        'Transformed a chaotic, overgrown backyard garden buried under pallets, weeds, and years of neglect. Cleared debris, reorganized raised bed placement, mulched pathways, and created clean, functional growing spaces the homeowner can actually use and maintain.',
+      image: 'garden-cleanup',
+      beforeAfter: true, // Has before/after slider
+      stats: { beds: '6 raised beds', area: '600 sq ft', season: 'Fall 2024' },
+    },
+    {
+      title: 'Commercial Pollinator Meadow',
+      category: 'commercial',
+      location: 'Muskegon, MI',
+      description:
+        'Created a low-maintenance native meadow for an office complex, reducing mowing costs by 75%.',
+      image: 'meadow',
+      beforeAfter: false,
+      stats: { plants: '200+', area: '2 acres', season: 'Fall 2023' },
+    },
+    {
+      title: 'Backyard Wildlife Habitat',
+      category: 'residential',
+      location: 'Holland, MI',
+      description:
+        'Designed a layered ecosystem with native trees, shrubs, and perennials supporting local wildlife.',
+      image: 'wildlife',
+      beforeAfter: false,
+      stats: { plants: '60+', area: '1,200 sq ft', season: 'Spring 2024' },
+    },
+    {
+      title: 'Municipal Park Restoration',
+      category: 'municipal',
+      location: 'Norton Shores, MI',
+      description:
+        'Restored a degraded park area with native grasses and wildflowers, creating a community gathering space.',
+      image: 'park',
+      beforeAfter: false,
+      stats: { plants: '500+', area: '3 acres', season: 'Fall 2023' },
+    },
+    {
+      title: 'Lakefront Native Garden',
+      category: 'residential',
+      location: 'Spring Lake, MI',
+      description:
+        'Stabilized eroding shoreline with native plants while enhancing views and water quality.',
+      image: 'lakefront',
+      beforeAfter: false,
+      stats: { plants: '75+', area: '1,500 sq ft', season: 'Summer 2024' },
+    },
+    {
+      title: 'Church Grounds Transformation',
+      category: 'commercial',
+      location: 'Zeeland, MI',
+      description:
+        'Replaced high-maintenance lawn with native prairie, reducing water use and maintenance costs.',
+      image: 'church',
+      beforeAfter: false,
+      stats: { plants: '150+', area: '1.5 acres', season: 'Spring 2023' },
     },
   ]
 
@@ -71,15 +137,70 @@ export default function Projects() {
               className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-2"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Image placeholder */}
+              {/* Image with optional before/after slider */}
               <div className="aspect-[4/3] relative overflow-hidden group">
-                {project.image === 'kulkarni' ? (
+                {project.beforeAfter ? (
+                  // Before/After Slider
+                  <div className="relative w-full h-full">
+                    {/* After Image (full) */}
+                    <img
+                      src={`/images/${project.image}-after.jpg`}
+                      alt={`${project.title} - After`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    
+                    {/* Before Image (clipped by slider) */}
+                    <div 
+                      className="absolute inset-0 overflow-hidden"
+                      style={{ width: `${sliderPositions[index] || 50}%` }}
+                    >
+                      <img
+                        src={`/images/${project.image}-before.jpg`}
+                        alt={`${project.title} - Before`}
+                        className="absolute inset-0 w-full h-full object-cover"
+                        style={{ width: '100vw', maxWidth: 'none' }}
+                      />
+                    </div>
+
+                    {/* Slider Handle */}
+                    <div 
+                      className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10"
+                      style={{ left: `${sliderPositions[index] || 50}%` }}
+                    >
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
+                        <svg className="w-6 h-6 text-moss-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Slider Input */}
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      value={sliderPositions[index] || 50}
+                      onChange={(e) => handleSliderChange(index, parseInt(e.target.value))}
+                      className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
+                    />
+
+                    {/* Labels */}
+                    <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-semibold z-10">
+                      Before
+                    </div>
+                    <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-semibold z-10">
+                      After
+                    </div>
+                  </div>
+                ) : project.image === 'kulkarni' ? (
+                  // Regular Image (for kulkarni project)
                   <img
                     src="/images/kulkarni-01.jpg"
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
+                  // Placeholder for projects without images yet
                   <div className="aspect-[4/3] bg-gradient-to-br from-moss-300 to-sage-400 flex items-center justify-center">
                     <div className="text-center text-white p-6">
                       <svg
@@ -93,7 +214,11 @@ export default function Projects() {
                     </div>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+                
+                {/* Overlay and category badge */}
+                {!project.beforeAfter && (
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+                )}
                 <div className="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-semibold text-moss-700 capitalize z-10">
                   {project.category}
                 </div>

@@ -68,22 +68,11 @@ export default function Projects() {
       category: 'commercial',
       location: 'Muskegon, MI',
       description:
-        'Created welcoming seasonal planters for Superior Monument Co's front entrance. Designed elegant, professional winter arrangements with evergreens, birch branches, and festive touches that greet visitors and clients throughout the holiday season.',
+        'Created welcoming seasonal planters for Superior Monument Co\'s front entrance. Designed elegant, professional winter arrangements with evergreens, birch branches, and festive touches that greet visitors and clients throughout the holiday season.',
       image: 'superior-monument',
       beforeAfter: false,
       photoCount: 3,
       stats: { planters: '2 custom', height: '4 ft tall', season: 'Winter 2024' },
-    },
-    {
-      title: 'Condo Porch Garden Revival',
-      category: 'residential',
-      location: 'Spring Lake, MI',
-      description:
-        'Restored a neglected back porch garden space that had become overgrown and unusable. Cleared debris and dying plants, reset cracked pavers, cleaned garden beds, and replanted with fresh perennials and grasses—transforming a messy eyesore into a tidy, inviting outdoor retreat.',
-      image: 'windy-drift',
-      beforeAfter: true,
-      photoCount: 1,
-      stats: { area: '200 sq ft', pavers: 'Reset', season: 'Fall 2024' },
     },
     {
       title: 'Condo Patio Garden Refresh',
@@ -95,56 +84,6 @@ export default function Projects() {
       beforeAfter: true,
       photoCount: 1,
       stats: { area: '200 sq ft', cleanup: 'Full weeding', season: 'Fall 2024' },
-    },
-    {
-      title: 'Commercial Pollinator Meadow',
-      category: 'commercial',
-      location: 'Muskegon, MI',
-      description:
-        'Created a low-maintenance native meadow for an office complex, reducing mowing costs by 75%.',
-      image: 'meadow',
-      beforeAfter: false,
-      stats: { plants: '200+', area: '2 acres', season: 'Fall 2023' },
-    },
-    {
-      title: 'Backyard Wildlife Habitat',
-      category: 'residential',
-      location: 'Holland, MI',
-      description:
-        'Designed a layered ecosystem with native trees, shrubs, and perennials supporting local wildlife.',
-      image: 'wildlife',
-      beforeAfter: false,
-      stats: { plants: '60+', area: '1,200 sq ft', season: 'Spring 2024' },
-    },
-    {
-      title: 'Municipal Park Restoration',
-      category: 'municipal',
-      location: 'Norton Shores, MI',
-      description:
-        'Restored a degraded park area with native grasses and wildflowers, creating a community gathering space.',
-      image: 'park',
-      beforeAfter: false,
-      stats: { plants: '500+', area: '3 acres', season: 'Fall 2023' },
-    },
-    {
-      title: 'Lakefront Native Garden',
-      category: 'residential',
-      location: 'Spring Lake, MI',
-      description:
-        'Stabilized eroding shoreline with native plants while enhancing views and water quality.',
-      image: 'lakefront',
-      beforeAfter: false,
-      stats: { plants: '75+', area: '1,500 sq ft', season: 'Summer 2024' },
-    },
-    {
-      title: 'Church Grounds Transformation',
-      category: 'commercial',
-      location: 'Zeeland, MI',
-      description:
-        'Replaced high-maintenance lawn with native prairie, reducing water use and maintenance costs.',
-      image: 'church',
-      beforeAfter: false,
-      stats: { plants: '150+', area: '1.5 acres', season: 'Spring 2023' },
     },
   ]
 

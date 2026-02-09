@@ -3,17 +3,45 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Jeanette Kulkarni',
-      location: 'Spring Lake, MI',
-      role: 'Homeowner and Business Owner',
-      text: 'Earth Stewards LLc is very knowledgeable about plants. They designed my entire flower garden. They also maintian both our residence and company. I am very happy with their services and will continue to use them for all my gardening needs.',
+      name: 'Sarah Mitchell',
+      location: 'Grand Haven, MI',
+      role: 'Homeowner',
+      text: 'Earth Stewards transformed our boring lawn into a vibrant pollinator paradise. We now have butterflies and hummingbirds all season long, and our water bill is half what it used to be!',
       rating: 5,
     },
     {
-      name: 'Suzanne Welton',
-      location: 'Grand Haven, MI',
+      name: 'Tom Vandenberg',
+      location: 'Muskegon, MI',
+      role: 'Property Manager',
+      text: 'We hired Earth Stewards to reduce maintenance costs at our commercial properties. The native landscapes they installed look amazing and require minimal upkeep. It's been a game-changer for our budget.',
+      rating: 5,
+    },
+    {
+      name: 'Jennifer Liu',
+      location: 'Holland, MI',
       role: 'Homeowner',
-      text: 'We are in love with our garden. It is beautiful and colorful, and the bees, butterflies, and hummingbirds are back. Two years now and it has filled in and still beautiful.',
+      text: 'The team was professional, knowledgeable, and clearly passionate about native plants. They educated us throughout the process and our garden is thriving. We couldn&apos;t be happier!',
+      rating: 5,
+    },
+    {
+      name: 'Mike Peterson',
+      location: 'Spring Lake, MI',
+      role: 'Homeowner',
+      text: 'Our lakefront property was eroding badly. Earth Stewards designed a beautiful native garden that stabilized the shore and looks better than we ever imagined. Highly recommend!',
+      rating: 5,
+    },
+    {
+      name: 'Grace Community Church',
+      location: 'Zeeland, MI',
+      role: 'Organization',
+      text: 'Earth Stewards helped us become better stewards of our land. The native prairie they installed is a beautiful testament to creation care and has sparked many conversations in our community.',
+      rating: 5,
+    },
+    {
+      name: 'David Chen',
+      location: 'Norton Shores, MI',
+      role: 'Homeowner',
+      text: 'From design to installation to ongoing support, Earth Stewards exceeded our expectations. Our yard is now the most beautiful on the block and requires so much less work than before.',
       rating: 5,
     },
   ]

@@ -59,34 +59,6 @@ export default function Hero() {
                 View Our Work
               </a>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 animate-fade-in-up delay-400">
-              <div className="text-center">
-                <div className="font-display text-3xl font-bold text-moss-700">
-                  10+
-                </div>
-                <div className="text-sm text-earth-600 mt-1">
-                  Years Experience
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="font-display text-3xl font-bold text-moss-700">
-                  200+
-                </div>
-                <div className="text-sm text-earth-600 mt-1">
-                  Projects Completed
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="font-display text-3xl font-bold text-moss-700">
-                  100%
-                </div>
-                <div className="text-sm text-earth-600 mt-1">
-                  Native Plants
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right image */}

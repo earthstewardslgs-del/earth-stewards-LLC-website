@@ -63,6 +63,17 @@ export default function Projects() {
       photoCount: 5, // Number of before/after photo pairs
       stats: { beds: '6 raised beds', area: '600 sq ft', season: 'Fall 2024' },
     },
+    {
+      title: 'Holiday Entrance Planters',
+      category: 'commercial',
+      location: 'Muskegon, MI',
+      description:
+        'Created welcoming seasonal planters for Superior Monument Co's front entrance. Designed elegant, professional winter arrangements with evergreens, birch branches, and festive touches that greet visitors and clients throughout the holiday season.',
+      image: 'superior-monument',
+      beforeAfter: false,
+      photoCount: 3,
+      stats: { planters: '2 custom', height: '4 ft tall', season: 'Winter 2024' },
+    },
   ]
 
   const filters = [
@@ -196,6 +207,13 @@ export default function Projects() {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                ) : project.image === 'superior-monument' ? (
+                  // Regular Image (for superior monument project)
+                  <img
+                    src="/images/superior-monument-1.jpg"
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 ) : (
                   // Placeholder for projects without images yet
                   <div className="aspect-[4/3] bg-gradient-to-br from-moss-300 to-sage-400 flex items-center justify-center">
@@ -219,6 +237,19 @@ export default function Projects() {
                 <div className="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-semibold text-moss-700 capitalize z-10">
                   {project.category}
                 </div>
+                
+                {/* View Photos button for multi-photo projects without before/after */}
+                {!project.beforeAfter && project.photoCount && project.photoCount > 1 && (
+                  <button
+                    onClick={() => openGallery(project)}
+                    className="absolute top-4 left-4 bg-moss-700 hover:bg-moss-800 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg transition-all z-30 flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    View Photos ({project.photoCount})
+                  </button>
+                )}
               </div>
 
               {/* Content */}
@@ -315,60 +346,72 @@ export default function Projects() {
             {galleryPhotoIndex + 1} / {galleryProject.photoCount}
           </div>
 
-          {/* Main Before/After Slider */}
+          {/* Main Image Display */}
           <div className="max-w-6xl w-full mx-auto">
             <div className="aspect-[16/10] relative rounded-lg overflow-hidden shadow-2xl">
-              {/* After Image */}
-              <div className="absolute inset-0">
-                <img
-                  src={`/images/${galleryProject.image}-after-${galleryPhotoIndex + 1}.jpg`}
-                  alt={`${galleryProject.title} - After ${galleryPhotoIndex + 1}`}
-                  className="w-full h-full object-contain bg-black"
-                />
-              </div>
-
-              {/* Before Image (clipped) */}
-              <div 
-                className="absolute inset-0 overflow-hidden"
-                style={{ clipPath: `inset(0 ${100 - (sliderPositions.gallery || 50)}% 0 0)` }}
-              >
-                <img
-                  src={`/images/${galleryProject.image}-before-${galleryPhotoIndex + 1}.jpg`}
-                  alt={`${galleryProject.title} - Before ${galleryPhotoIndex + 1}`}
-                  className="w-full h-full object-contain bg-black"
-                />
-              </div>
-
-              {/* Slider Line and Handle */}
-              <div 
-                className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10 pointer-events-none"
-                style={{ left: `${sliderPositions.gallery || 50}%` }}
-              >
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-moss-600">
-                  <div className="flex gap-1">
-                    <div className="w-1 h-6 bg-moss-700"></div>
-                    <div className="w-1 h-6 bg-moss-700"></div>
+              {galleryProject.beforeAfter ? (
+                /* Before/After Slider */
+                <>
+                  {/* After Image */}
+                  <div className="absolute inset-0">
+                    <img
+                      src={`/images/${galleryProject.image}-after-${galleryPhotoIndex + 1}.jpg`}
+                      alt={`${galleryProject.title} - After ${galleryPhotoIndex + 1}`}
+                      className="w-full h-full object-contain bg-black"
+                    />
                   </div>
-                </div>
-              </div>
 
-              {/* Slider Input */}
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value={sliderPositions.gallery || 50}
-                onChange={(e) => handleSliderChange('gallery', parseInt(e.target.value))}
-                className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
-              />
+                  {/* Before Image (clipped) */}
+                  <div 
+                    className="absolute inset-0 overflow-hidden"
+                    style={{ clipPath: `inset(0 ${100 - (sliderPositions.gallery || 50)}% 0 0)` }}
+                  >
+                    <img
+                      src={`/images/${galleryProject.image}-before-${galleryPhotoIndex + 1}.jpg`}
+                      alt={`${galleryProject.title} - Before ${galleryPhotoIndex + 1}`}
+                      className="w-full h-full object-contain bg-black"
+                    />
+                  </div>
 
-              {/* Before/After Labels */}
-              <div className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold z-10 pointer-events-none">
-                BEFORE
-              </div>
-              <div className="absolute bottom-6 right-6 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold z-10 pointer-events-none">
-                AFTER
-              </div>
+                  {/* Slider Line and Handle */}
+                  <div 
+                    className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10 pointer-events-none"
+                    style={{ left: `${sliderPositions.gallery || 50}%` }}
+                  >
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-moss-600">
+                      <div className="flex gap-1">
+                        <div className="w-1 h-6 bg-moss-700"></div>
+                        <div className="w-1 h-6 bg-moss-700"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Slider Input */}
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={sliderPositions.gallery || 50}
+                    onChange={(e) => handleSliderChange('gallery', parseInt(e.target.value))}
+                    className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
+                  />
+
+                  {/* Before/After Labels */}
+                  <div className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold z-10 pointer-events-none">
+                    BEFORE
+                  </div>
+                  <div className="absolute bottom-6 right-6 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold z-10 pointer-events-none">
+                    AFTER
+                  </div>
+                </>
+              ) : (
+                /* Regular Photo Gallery */
+                <img
+                  src={`/images/${galleryProject.image}-${galleryPhotoIndex + 1}.jpg`}
+                  alt={`${galleryProject.title} ${galleryPhotoIndex + 1}`}
+                  className="w-full h-full object-contain bg-black"
+                />
+              )}
             </div>
 
             {/* Navigation Arrows */}

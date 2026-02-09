@@ -91,36 +91,38 @@ export default function Projects() {
               <div className="aspect-[4/3] relative overflow-hidden group">
                 {project.beforeAfter ? (
                   // Before/After Slider
-                  <div className="relative w-full h-full">
-                    {/* After Image (full) */}
-                    <img
-                      src={`/images/${project.image}-after.jpg`}
-                      alt={`${project.title} - After`}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+                  <div className="relative w-full h-full select-none">
+                    {/* After Image (full background) */}
+                    <div className="absolute inset-0">
+                      <img
+                        src={`/images/${project.image}-after.jpg`}
+                        alt={`${project.title} - After`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     
-                    {/* Before Image (clipped by slider) */}
+                    {/* Before Image Container (clipped by slider) */}
                     <div 
                       className="absolute inset-0 overflow-hidden"
-                      style={{ width: `${sliderPositions[index] || 50}%` }}
+                      style={{ clipPath: `inset(0 ${100 - (sliderPositions[index] || 50)}% 0 0)` }}
                     >
                       <img
                         src={`/images/${project.image}-before.jpg`}
                         alt={`${project.title} - Before`}
-                        className="absolute inset-0 w-full h-full object-cover"
-                        style={{ width: '100vw', maxWidth: 'none' }}
+                        className="w-full h-full object-cover"
                       />
                     </div>
 
-                    {/* Slider Handle */}
+                    {/* Slider Line and Handle */}
                     <div 
-                      className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10"
+                      className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10 pointer-events-none"
                       style={{ left: `${sliderPositions[index] || 50}%` }}
                     >
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
-                        <svg className="w-6 h-6 text-moss-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
-                        </svg>
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-moss-600">
+                        <div className="flex gap-0.5">
+                          <div className="w-0.5 h-4 bg-moss-700"></div>
+                          <div className="w-0.5 h-4 bg-moss-700"></div>
+                        </div>
                       </div>
                     </div>
 
@@ -135,11 +137,11 @@ export default function Projects() {
                     />
 
                     {/* Labels */}
-                    <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-semibold z-10">
-                      Before
+                    <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-bold z-10 pointer-events-none">
+                      BEFORE
                     </div>
-                    <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-semibold z-10">
-                      After
+                    <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-bold z-10 pointer-events-none">
+                      AFTER
                     </div>
                   </div>
                 ) : project.image === 'kulkarni' ? (

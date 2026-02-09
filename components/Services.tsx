@@ -11,7 +11,7 @@ export default function Services() {
       title: 'Landscape Design & Installation',
       heading: 'Beautiful Landscapes That Actually Work Long-Term',
       description:
-        'We design landscapes that look good now and stay manageable later. Whether you want a traditional curb appeal, a habitat-friendly space, or a mix, we match the design to your goals, time commitment, and property conditions — so you don&apos;t set up fighting your yard every season.',
+        'We design landscapes that look good now and stay manageable later. Whether you want a traditional curb appeal, a habitat-friendly space, or a mix, we match the design to your goals, time commitment, and property conditions — so you don\'t set up fighting your yard every season.',
       features: [
         'Site assessment and soil analysis (no plants survive)',
         'Custom design plans aligned with your maintenance comfort level',
@@ -31,7 +31,7 @@ export default function Services() {
       title: 'Landscape Maintenance & Plant Care',
       heading: 'Maintenance That Makes Your Yard Easier Over Time',
       description:
-        'We don&apos;t just maintain landscapes — we stabilize them. Our care approach reduces recurring problems, keeps plants healthy (not just appearing healthy), and gradually lowers the amount of work your yard needs each year.',
+        'We don\'t just maintain landscapes — we stabilize them. Our care approach reduces recurring problems, keeps plants healthy (not just appearing healthy), and gradually lowers the amount of work your yard needs each year.',
       features: [
         'Seasonal cleanup without harming beneficial growth',
         'Deadheading for plant health, not just appearance',
@@ -50,7 +50,7 @@ export default function Services() {
       title: 'Consultation & Guidance',
       heading: 'Practical Advice Before You Spend Money',
       description:
-        'Not sure what your yard needs? We help you understand what&apos;s really failing, what will actually work on your site, and what will realistically fit in your schedule — whether you plan to DIY or hire.',
+        'Not sure what your yard needs? We help you understand what\'s really failing, what will actually work on your site, and what will realistically fit in your schedule — whether you plan to DIY or hire.',
       features: [
         'On-site consultations',
         'Garden problem diagnosis',

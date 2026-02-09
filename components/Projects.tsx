@@ -61,7 +61,7 @@ export default function Projects() {
       image: 'garden-cleanup',
       beforeAfter: true, // Has before/after slider
       photoCount: 5, // Number of before/after photo pairs
-      stats: { beds: '6 raised beds', area: '600 sq ft', season: 'Fall 2024' },
+      stats: { beds: '6 raised beds', area: '600 sq ft', season: 'Summer 2025' },
     },
     {
       title: 'Holiday Entrance Planters',
@@ -72,7 +72,7 @@ export default function Projects() {
       image: 'superior-monument',
       beforeAfter: false,
       photoCount: 3,
-      stats: { planters: '2 custom', height: '4 ft tall', season: 'Winter 2024' },
+      stats: { planters: '2 custom', height: '4 ft tall', season: 'Winter 2025' },
     },
     {
       title: 'Condo Patio Garden Refresh',
@@ -83,7 +83,7 @@ export default function Projects() {
       image: 'windy-drift',
       beforeAfter: true,
       photoCount: 1,
-      stats: { area: '200 sq ft', cleanup: 'Full weeding', season: 'Fall 2024' },
+      stats: { area: '200 sq ft', cleanup: 'Full weeding', season: 'Summer 2025' },
     },
   ]
 

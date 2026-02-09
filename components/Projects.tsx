@@ -7,58 +7,13 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Residential Rain Garden',
-      category: 'residential',
-      location: 'Grand Haven, MI',
-      description:
-        'Transformed a wet, unusable yard into a thriving rain garden that manages stormwater and attracts pollinators.',
-      image: 'rain-garden',
-      stats: { plants: '45+', area: '800 sq ft', season: 'Spring 2024' },
-    },
-    {
-      title: 'Commercial Pollinator Meadow',
-      category: 'commercial',
-      location: 'Muskegon, MI',
-      description:
-        'Created a low-maintenance native meadow for an office complex, reducing mowing costs by 75%.',
-      image: 'meadow',
-      stats: { plants: '200+', area: '2 acres', season: 'Fall 2023' },
-    },
-    {
-      title: 'Backyard Wildlife Habitat',
-      category: 'residential',
-      location: 'Holland, MI',
-      description:
-        'Designed a layered ecosystem with native trees, shrubs, and perennials supporting local wildlife.',
-      image: 'wildlife',
-      stats: { plants: '60+', area: '1,200 sq ft', season: 'Spring 2024' },
-    },
-    {
-      title: 'Municipal Park Restoration',
-      category: 'municipal',
-      location: 'Norton Shores, MI',
-      description:
-        'Restored a degraded park area with native grasses and wildflowers, creating a community gathering space.',
-      image: 'park',
-      stats: { plants: '500+', area: '3 acres', season: 'Fall 2023' },
-    },
-    {
-      title: 'Lakefront Native Garden',
+      title: 'Shaded Garden Rescue',
       category: 'residential',
       location: 'Spring Lake, MI',
       description:
-        'Stabilized eroding shoreline with native plants while enhancing views and water quality.',
-      image: 'lakefront',
-      stats: { plants: '75+', area: '1,500 sq ft', season: 'Summer 2024' },
-    },
-    {
-      title: 'Church Grounds Transformation',
-      category: 'commercial',
-      location: 'Zeeland, MI',
-      description:
-        'Replaced high-maintenance lawn with native prairie, reducing water use and maintenance costs.',
-      image: 'church',
-      stats: { plants: '150+', area: '1.5 acres', season: 'Spring 2023' },
+        'Diagnosed a struggling garden where sun-loving plants were fighting a losing battle in deep shade. Completely redesigned the space with shade-tolerant perennials, hostas, astilbe, and ferns that now thrive in low-light conditions—creating a lush, layered sanctuary that finally works with the site instead of against it.',
+      image: 'kulkarni',
+      stats: { plants: '30+', area: '400 sq ft', season: 'Summer 2024' },
     },
   ]
 
@@ -117,19 +72,29 @@ export default function Projects() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image placeholder */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-moss-300 to-sage-400 flex items-center justify-center relative overflow-hidden group">
+              <div className="aspect-[4/3] relative overflow-hidden group">
+                {project.image === 'kulkarni' ? (
+                  <img
+                    src="/images/kulkarni-01.jpg"
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="aspect-[4/3] bg-gradient-to-br from-moss-300 to-sage-400 flex items-center justify-center">
+                    <div className="text-center text-white p-6">
+                      <svg
+                        className="w-16 h-16 mx-auto mb-2 opacity-75"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M6,3A1,1 0 0,1 7,4V4.88C8.06,4.44 9.5,4 11,4C14,4 14,6 16,6C19,6 20,4 20,4V12C20,12 19,14 16,14C13,14 13,12 11,12C8,12 7,14 7,14V21H5V4A1,1 0 0,1 6,3M7,7.25V11.5C7,11.5 9,10 11,10C13,10 13,12 16,12C18,12 18,11 18,11V6.87C17.5,7.21 16.6,7.5 16,7.5C14,7.5 14,6.25 11,6.25C9.4,6.25 8.07,6.75 7,7.25Z" />
+                      </svg>
+                      <p className="text-sm font-semibold">Project Photo</p>
+                    </div>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-                <div className="relative z-10 text-center text-white p-6">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-2 opacity-75"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M6,3A1,1 0 0,1 7,4V4.88C8.06,4.44 9.5,4 11,4C14,4 14,6 16,6C19,6 20,4 20,4V12C20,12 19,14 16,14C13,14 13,12 11,12C8,12 7,14 7,14V21H5V4A1,1 0 0,1 6,3M7,7.25V11.5C7,11.5 9,10 11,10C13,10 13,12 16,12C18,12 18,11 18,11V6.87C17.5,7.21 16.6,7.5 16,7.5C14,7.5 14,6.25 11,6.25C9.4,6.25 8.07,6.75 7,7.25Z" />
-                  </svg>
-                  <p className="text-sm font-semibold">Project Photo</p>
-                </div>
-                <div className="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-semibold text-moss-700 capitalize">
+                <div className="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-semibold text-moss-700 capitalize z-10">
                   {project.category}
                 </div>
               </div>

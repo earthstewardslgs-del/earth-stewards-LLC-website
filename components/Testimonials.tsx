@@ -6,7 +6,7 @@ export default function Testimonials() {
       name: 'Jeanette Kulkarni',
       location: 'Spring Lake, MI',
       role: 'Homeowner and Business Owner',
-      text: 'Earth Stewards LLc is very knowledgeable about plants. They designed my entire flower garden. They also maintian both our residence and company. I am very happy with their services and will continue to use them for all my gardening needs.',
+      text: 'Earth Stewards LLC is very knowledgeable about plants. They designed my entire flower garden. They also maintian both our residence and company. I am very happy with their services and will continue to use them for all my gardening needs.',
       rating: 5,
     },
     {

@@ -70,10 +70,10 @@ export default function Contact() {
                 <div className="ml-4">
                   <div className="font-semibold text-earth-900">Phone</div>
                   <a
-                    href="tel:+16165551234"
+                    href="tel:+12317690769"
                     className="text-moss-700 hover:text-moss-800"
                   >
-                    (616) 555-1234
+                    (231) 769-0769
                   </a>
                 </div>
               </div>
@@ -97,10 +97,10 @@ export default function Contact() {
                 <div className="ml-4">
                   <div className="font-semibold text-earth-900">Email</div>
                   <a
-                    href="mailto:info@earthstewardsllc.com"
+                    href="mailto:earthstewardslgs@gmail.com"
                     className="text-moss-700 hover:text-moss-800"
                   >
-                    info@earthstewardsllc.com
+                    earthstewardslgs@gmail.com
                   </a>
                 </div>
               </div>

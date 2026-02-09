@@ -8,8 +8,8 @@ export default function StructuredData() {
     url: 'https://earthstewardsllc.org',
     logo: 'https://earthstewardsllc.org/images/logo.png',
     image: 'https://earthstewardsllc.org/images/logo.png',
-    telephone: '+1-616-555-1234',
-    email: 'info@earthstewardsllc.com',
+    telephone: '+1-231-769-0769',
+    email: 'earthstewardslgs@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Muskegon',
@@ -69,30 +69,30 @@ export default function StructuredData() {
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Native Landscaping Services',
+      name: 'Landscape Services',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Native Landscape Design & Installation',
-            description: 'Custom native landscape design tailored to your property with professional installation.',
+            name: 'Landscape Design & Installation',
+            description: 'Custom landscape design and professional installation that works long-term with proper site assessment and plant selection.',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Landscape Maintenance & Care',
-            description: 'Expert maintenance services for native landscapes through every season.',
+            name: 'Landscape Maintenance & Plant Care',
+            description: 'Expert maintenance services that reduce recurring problems and gradually lower the amount of work your yard needs.',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Consultation & Education',
-            description: 'Expert guidance for DIY enthusiasts and property managers on native landscaping.',
+            name: 'Consultation & Guidance',
+            description: 'Professional consultation to help you understand what your yard needs and what will realistically work for your situation.',
           },
         },
       ],

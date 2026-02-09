@@ -64,24 +64,11 @@ export default function Hero() {
           {/* Right image */}
           <div className="relative animate-scale-in delay-200">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
-              {/* Placeholder for hero image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-moss-400 to-sage-500 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <svg
-                    className="w-24 h-24 mx-auto mb-4 opacity-50"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M6,3A1,1 0 0,1 7,4V4.88C8.06,4.44 9.5,4 11,4C14,4 14,6 16,6C19,6 20,4 20,4V12C20,12 19,14 16,14C13,14 13,12 11,12C8,12 7,14 7,14V21H5V4A1,1 0 0,1 6,3M7,7.25V11.5C7,11.5 9,10 11,10C13,10 13,12 16,12C18,12 18,11 18,11V6.87C17.5,7.21 16.6,7.5 16,7.5C14,7.5 14,6.25 11,6.25C9.4,6.25 8.07,6.75 7,7.25Z" />
-                  </svg>
-                  <p className="text-lg font-semibold">
-                    Your Featured Project Photo
-                  </p>
-                  <p className="text-sm opacity-75 mt-2">
-                    Replace with professional landscape installation image
-                  </p>
-                </div>
-              </div>
+              <img
+                src="/images/hero-project.jpg"
+                alt="Native landscape installation project"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Decorative elements */}

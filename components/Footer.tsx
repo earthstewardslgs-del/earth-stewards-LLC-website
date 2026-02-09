@@ -145,8 +145,8 @@ export default function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <a href="tel:+16165551234" className="hover:text-moss-400">
-                  (616) 555-1234
+                <a href="tel:+12317690769" className="hover:text-moss-400">
+                  (231) 769-0769
                 </a>
               </li>
               <li className="flex items-start">
@@ -164,10 +164,10 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="mailto:info@earthstewardsllc.com"
+                  href="mailto:earthstewardslgs@gmail.com"
                   className="hover:text-moss-400 break-all"
                 >
-                  info@earthstewardsllc.com
+                  earthstewardslgs@gmail.com
                 </a>
               </li>
               <li className="flex items-start">

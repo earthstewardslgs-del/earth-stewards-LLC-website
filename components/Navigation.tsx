@@ -35,16 +35,18 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <img
-              src="/images/logo.png"
-              alt="Earth Stewards LLC Logo"
-              className="w-16 h-16 transition-transform group-hover:scale-110"
-            />
-            <div className="hidden sm:block">
-              <div className="font-display font-semibold text-xl text-earth-900">
-                Earth Stewards
+            <div className="flex flex-col items-center">
+              <img
+                src="/images/logo.png"
+                alt="Earth Stewards LLC Logo"
+                className="w-16 h-16 transition-transform group-hover:scale-110"
+              />
+              <div className="text-center mt-1">
+                <div className="font-display font-semibold text-sm text-earth-900 leading-tight">
+                  Earth Stewards
+                </div>
+                <div className="text-xs text-moss-700 -mt-0.5">LLC</div>
               </div>
-              <div className="text-xs text-moss-700 -mt-1">LLC</div>
             </div>
           </Link>
 
@@ -60,10 +62,25 @@ export default function Navigation() {
               </a>
             ))}
             <a
+              href="https://www.facebook.com/earthstewardsllc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 p-2 text-earth-800 hover:text-moss-700 transition-colors rounded-lg hover:bg-moss-50"
+              aria-label="Facebook"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a
               href="#schedule"
               className="ml-4 px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-lg"
             >
-              Schedule Consultation
+              Discuss Your Project
             </a>
           </div>
 
@@ -117,7 +134,7 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all text-center"
             >
-              Schedule Consultation
+              Discuss Your Project
             </a>
           </div>
         </div>

@@ -1,33 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    projectType: '',
-    message: '',
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-  }
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
-
   return (
     <section
       id="contact"
@@ -141,11 +114,7 @@ export default function Contact() {
                   <span className="font-semibold">8:00 AM - 5:00 PM</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="font-semibold">Closed</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
+                  <span>Sat & Sun</span>
                   <span className="font-semibold">Closed</span>
                 </div>
               </div>
@@ -157,7 +126,14 @@ export default function Contact() {
             <h3 className="font-display text-2xl font-bold text-earth-900 mb-6">
               Request a Free Consultation
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              action="https://formspree.io/f/xovqqywk" 
+              method="POST"
+              className="space-y-6"
+            >
+              <input type="hidden" name="_subject" value="New Earth Stewards LLC Contact Form Submission" />
+              <input type="hidden" name="_cc" value="earthstewardslgs@gmail.com" />
+              
               <div>
                 <label
                   htmlFor="name"
@@ -170,8 +146,6 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
                   placeholder="John Smith"
                 />
@@ -189,8 +163,6 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
                   placeholder="john@example.com"
                 />
@@ -207,10 +179,8 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                   className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
-                  placeholder="(616) 555-1234"
+                  placeholder="(231) 769-0769"
                 />
               </div>
 
@@ -225,8 +195,6 @@ export default function Contact() {
                   id="projectType"
                   name="projectType"
                   required
-                  value={formData.projectType}
-                  onChange={handleChange}
                   className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
                 >
                   <option value="">Select a project type</option>
@@ -248,8 +216,6 @@ export default function Contact() {
                   id="message"
                   name="message"
                   required
-                  value={formData.message}
-                  onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors resize-none"
                   placeholder="Describe your property, goals, and any specific requirements..."

@@ -5,9 +5,40 @@ import { useState } from 'react'
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
   const [sliderPositions, setSliderPositions] = useState<{[key: number]: number}>({})
+  const [galleryOpen, setGalleryOpen] = useState(false)
+  const [galleryProject, setGalleryProject] = useState<any>(null)
+  const [galleryPhotoIndex, setGalleryPhotoIndex] = useState(0)
 
   const handleSliderChange = (projectIndex: number, position: number) => {
     setSliderPositions(prev => ({ ...prev, [projectIndex]: position }))
+  }
+
+  const openGallery = (project: any) => {
+    setGalleryProject(project)
+    setGalleryPhotoIndex(0)
+    setGalleryOpen(true)
+    document.body.style.overflow = 'hidden'
+  }
+
+  const closeGallery = () => {
+    setGalleryOpen(false)
+    setGalleryProject(null)
+    setGalleryPhotoIndex(0)
+    document.body.style.overflow = 'auto'
+  }
+
+  const nextPhoto = () => {
+    if (galleryProject && galleryPhotoIndex < (galleryProject.photoCount - 1)) {
+      setGalleryPhotoIndex(prev => prev + 1)
+      setSliderPositions(prev => ({ ...prev, gallery: 50 }))
+    }
+  }
+
+  const prevPhoto = () => {
+    if (galleryPhotoIndex > 0) {
+      setGalleryPhotoIndex(prev => prev - 1)
+      setSliderPositions(prev => ({ ...prev, gallery: 50 }))
+    }
   }
 
   const projects = [
@@ -29,6 +60,7 @@ export default function Projects() {
         'Transformed a chaotic, overgrown backyard garden buried under pallets, weeds, and years of neglect. Cleared debris, reorganized raised bed placement, mulched pathways, and created clean, functional growing spaces the homeowner can actually use and maintain.',
       image: 'garden-cleanup',
       beforeAfter: true, // Has before/after slider
+      photoCount: 5, // Number of before/after photo pairs
       stats: { beds: '6 raised beds', area: '600 sq ft', season: 'Fall 2024' },
     },
   ]
@@ -143,6 +175,19 @@ export default function Projects() {
                     <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-bold z-10 pointer-events-none">
                       AFTER
                     </div>
+                    
+                    {/* View Gallery Button for multi-photo projects */}
+                    {project.photoCount && project.photoCount > 1 && (
+                      <button
+                        onClick={() => openGallery(project)}
+                        className="absolute top-4 left-4 bg-moss-700 hover:bg-moss-800 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg transition-all z-30 flex items-center gap-2"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        View Gallery ({project.photoCount} photos)
+                      </button>
+                    )}
                   </div>
                 ) : project.image === 'kulkarni' ? (
                   // Regular Image (for kulkarni project)
@@ -251,6 +296,134 @@ export default function Projects() {
           </a>
         </div>
       </div>
+
+      {/* Gallery Modal */}
+      {galleryOpen && galleryProject && (
+        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
+          {/* Close Button */}
+          <button
+            onClick={closeGallery}
+            className="absolute top-4 right-4 z-50 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-earth-100 transition-colors"
+          >
+            <svg className="w-6 h-6 text-earth-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          {/* Photo Counter */}
+          <div className="absolute top-4 left-1/2 -translate-x-1/2 z-50 bg-black/70 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold">
+            {galleryPhotoIndex + 1} / {galleryProject.photoCount}
+          </div>
+
+          {/* Main Before/After Slider */}
+          <div className="max-w-6xl w-full mx-auto">
+            <div className="aspect-[16/10] relative rounded-lg overflow-hidden shadow-2xl">
+              {/* After Image */}
+              <div className="absolute inset-0">
+                <img
+                  src={`/images/${galleryProject.image}-after-${galleryPhotoIndex + 1}.jpg`}
+                  alt={`${galleryProject.title} - After ${galleryPhotoIndex + 1}`}
+                  className="w-full h-full object-contain bg-black"
+                />
+              </div>
+
+              {/* Before Image (clipped) */}
+              <div 
+                className="absolute inset-0 overflow-hidden"
+                style={{ clipPath: `inset(0 ${100 - (sliderPositions.gallery || 50)}% 0 0)` }}
+              >
+                <img
+                  src={`/images/${galleryProject.image}-before-${galleryPhotoIndex + 1}.jpg`}
+                  alt={`${galleryProject.title} - Before ${galleryPhotoIndex + 1}`}
+                  className="w-full h-full object-contain bg-black"
+                />
+              </div>
+
+              {/* Slider Line and Handle */}
+              <div 
+                className="absolute top-0 bottom-0 w-1 bg-white shadow-lg z-10 pointer-events-none"
+                style={{ left: `${sliderPositions.gallery || 50}%` }}
+              >
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-moss-600">
+                  <div className="flex gap-1">
+                    <div className="w-1 h-6 bg-moss-700"></div>
+                    <div className="w-1 h-6 bg-moss-700"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Slider Input */}
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value={sliderPositions.gallery || 50}
+                onChange={(e) => handleSliderChange('gallery', parseInt(e.target.value))}
+                className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
+              />
+
+              {/* Before/After Labels */}
+              <div className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold z-10 pointer-events-none">
+                BEFORE
+              </div>
+              <div className="absolute bottom-6 right-6 bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold z-10 pointer-events-none">
+                AFTER
+              </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            <div className="flex justify-between items-center mt-6">
+              <button
+                onClick={prevPhoto}
+                disabled={galleryPhotoIndex === 0}
+                className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all ${
+                  galleryPhotoIndex === 0
+                    ? 'bg-earth-300 text-earth-500 cursor-not-allowed'
+                    : 'bg-white text-earth-900 hover:bg-earth-100'
+                }`}
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Previous
+              </button>
+
+              <button
+                onClick={nextPhoto}
+                disabled={galleryPhotoIndex >= galleryProject.photoCount - 1}
+                className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all ${
+                  galleryPhotoIndex >= galleryProject.photoCount - 1
+                    ? 'bg-earth-300 text-earth-500 cursor-not-allowed'
+                    : 'bg-white text-earth-900 hover:bg-earth-100'
+                }`}
+              >
+                Next
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Thumbnail Navigation */}
+            <div className="flex justify-center gap-2 mt-6">
+              {Array.from({ length: galleryProject.photoCount }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    setGalleryPhotoIndex(i)
+                    setSliderPositions(prev => ({ ...prev, gallery: 50 }))
+                  }}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    i === galleryPhotoIndex
+                      ? 'bg-white w-8'
+                      : 'bg-white/50 hover:bg-white/75'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

@@ -31,7 +31,7 @@ export default function Navigation() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
@@ -39,7 +39,7 @@ export default function Navigation() {
               <img
                 src="/images/logo.png"
                 alt="Earth Stewards LLC Logo"
-                className="w-16 h-16 transition-transform group-hover:scale-110"
+                className="w-16 h-16 transition-transform group-hover:scale-110 rounded-2xl"
               />
               <div className="text-center mt-1">
                 <div className="font-display font-semibold text-sm text-earth-900 leading-tight">

@@ -127,12 +127,11 @@ export default function Contact() {
               Request a Free Consultation
             </h3>
             <form 
-              action="https://formspree.io/f/xovqqywk" 
+              action="https://formspree.io/f/mreabyzp" 
               method="POST"
               className="space-y-6"
             >
               <input type="hidden" name="_subject" value="New Earth Stewards LLC Contact Form Submission" />
-              <input type="hidden" name="_cc" value="earthstewardslgs@gmail.com" />
               
               <div>
                 <label

@@ -3,17 +3,17 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Jeanette Kulkarni',
+      name: 'Spring Lake Client',
       location: 'Spring Lake, MI',
-      role: 'Homeowner and Business Owner',
-      text: 'Earth Stewards LLC is very knowledgeable about plants. They designed my entire flower garden. They also maintian both our residence and company. I am very happy with their services and will continue to use them for all my gardening needs.',
+      role: 'Homeowner',
+      text: 'Generous and Sincere Owner. Took the time to talk about our landscape and our goals. They designed by asking those garden. They also lecture with our landscape and company. I am very happy with their services and will continue to use them for all my gardening needs.',
       rating: 5,
     },
     {
-      name: 'Suzanne Welton',
+      name: 'Norton Shores',
       location: 'Grand Haven, MI',
       role: 'Homeowner',
-      text: 'We are in love with our garden. It is beautiful and colorful, and the bees, butterflies, and hummingbirds are back. Two years now and it has filled in and still beautiful.',
+      text: 'They really took time with our garden. It is beautiful and colorful, and the bees, butterflies, and hummingbirds are here. The yard&apos;s now at its best fitted in and still beautiful.',
       rating: 5,
     },
   ]
@@ -41,7 +41,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.name}

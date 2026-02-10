@@ -78,7 +78,7 @@ export default function LandscapeConsultationPage() {
               </p>
 
               <p className="text-earth-600">
-                Serving Muskegon, Spring Lake, Grand Haven, and surrounding West Michigan communities.
+                Serving Muskegon, Norton Shores, Spring Lake, Grand Haven, and surrounding West Michigan communities.
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">

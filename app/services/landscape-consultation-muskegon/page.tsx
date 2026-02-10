@@ -11,54 +11,43 @@ export const metadata: Metadata = {
     'landscape consultation Muskegon, garden consultation Muskegon MI, landscape planning, site assessment West Michigan, garden advice Muskegon',
 }
 
-export default function LandscapeConsultationPage() {
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What happens during a landscape consultation?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'We walk the property with you and evaluate sun, soil, drainage, existing plants, and problem areas. We’ll talk through your goals and maintenance comfort level, then outline clear next steps—whether you DIY or hire us for the work.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Can a consultation help if I’m not doing a full redesign?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes. Many yards improve with targeted changes—fixing drainage, adjusting plant placement, simplifying high-effort areas, or improving soil. A consultation helps you avoid spending money on changes that won’t hold up long-term.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Will you recommend native plants only?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. We can recommend native, pollinator-friendly, and traditional options depending on your goals, site conditions, and the look you want. The goal is a landscape that thrives and stays manageable.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Do I get a plan after the visit?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'You’ll leave with a clear direction and prioritized recommendations. If you want a more detailed design plan or phased implementation roadmap, we can outline options based on your property and goals.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How do I know if I need a consultation or a soil & drainage assessment?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'If you’re unsure what to do overall—layout, plants, maintenance, or general direction—start with a consultation. If the main issue is persistent plant failure, standing water, or drainage/soil problems, a dedicated soil & drainage assessment may be the better starting point.',
-        },
-      },
-    ],
-  }
+const faqItems = [
+  {
+    q: 'What happens during a landscape consultation?',
+    a: 'We walk the property with you and evaluate sun, soil, drainage, existing plants, and problem areas. We’ll talk through your goals and maintenance comfort level, then outline clear next steps—whether you DIY or hire us for the work.',
+  },
+  {
+    q: 'Can a consultation help if I’m not doing a full redesign?',
+    a: 'Yes. Many yards improve with targeted changes—fixing drainage, adjusting plant placement, simplifying high-effort areas, or improving soil. A consultation helps you avoid spending money on changes that won’t hold up long-term.',
+  },
+  {
+    q: 'Will you recommend native plants only?',
+    a: 'No. We can recommend native, pollinator-friendly, and traditional options depending on your goals, site conditions, and the look you want. The goal is a landscape that thrives and stays manageable.',
+  },
+  {
+    q: 'Do I get a plan after the visit?',
+    a: 'You’ll leave with a clear direction and prioritized recommendations. If you want a more detailed design plan or phased implementation roadmap, we can outline options based on your property and goals.',
+  },
+  {
+    q: 'How do I know if I need a consultation or a soil & drainage assessment?',
+    a: 'If you’re unsure what to do overall—layout, plants, maintenance, or general direction—start with a consultation. If the main issue is persistent plant failure, standing water, or drainage/soil problems, a dedicated soil & drainage assessment may be the better starting point.',
+  },
+]
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a,
+    },
+  })),
+}
+
+export default function LandscapeConsultationPage() {
   return (
     <>
       <Navigation />
@@ -78,7 +67,7 @@ export default function LandscapeConsultationPage() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Landscape Consultation & Planning Guidance
+                Landscape Consultation &amp; Planning Guidance
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
@@ -157,9 +146,7 @@ export default function LandscapeConsultationPage() {
             {/* RIGHT: WHAT YOU GET */}
             <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
               <h3 className="text-2xl font-bold text-earth-900">What you’ll leave with</h3>
-              <p className="text-earth-700 mt-2">
-                A clear direction you can act on—without guessing.
-              </p>
+              <p className="text-earth-700 mt-2">A clear direction you can act on—without guessing.</p>
 
               <div className="mt-6 space-y-4">
                 <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
@@ -248,6 +235,50 @@ export default function LandscapeConsultationPage() {
             </div>
           </div>
 
+          {/* WHEN TO START WITH A CONSULTATION */}
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="prose prose-lg prose-earth max-w-none">
+              <h2>When a consultation is the right first step</h2>
+              <p>
+                Many homeowners aren’t sure what service they need yet—only that something isn’t working. Starting
+                with a consultation prevents expensive trial-and-error and gives you a clear plan.
+              </p>
+              <ul>
+                <li>You’ve tried fixes that didn’t last</li>
+                <li>You’re weighing multiple ideas and want a smart path forward</li>
+                <li>You want a plan before hiring major work</li>
+                <li>You want to phase improvements over time</li>
+                <li>You want honest guidance that fits your maintenance comfort level</li>
+              </ul>
+            </div>
+
+            <div className="bg-earth-50 border border-earth-200 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-earth-900">Not a sales visit</h3>
+              <p className="text-earth-700 mt-3">
+                The goal is clarity. Some clients hire us afterward, others implement the plan themselves. Either
+                way, you leave knowing what will work on your property.
+              </p>
+            </div>
+          </div>
+
+          {/* AFTER THE VISIT */}
+          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-10">
+            <h2 className="text-2xl font-bold text-earth-900">What happens after the visit</h2>
+            <p className="text-earth-700 mt-4 max-w-3xl">
+              After the walkthrough, you’ll have a clear path forward. From there you can:
+            </p>
+
+            <ul className="mt-6 space-y-2 text-earth-800">
+              <li>Implement changes yourself at your own pace</li>
+              <li>Hire us for specific phases of work</li>
+              <li>Request a more detailed design or phased implementation plan</li>
+            </ul>
+
+            <p className="mt-6 text-earth-700">
+              The consultation stands on its own—you’re not locked into anything.
+            </p>
+          </div>
+
           {/* CTA */}
           <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
             <h3 className="text-2xl font-bold text-earth-900 mb-4">Get Clear on What Your Yard Needs</h3>
@@ -270,6 +301,31 @@ export default function LandscapeConsultationPage() {
               </a>
             </div>
           </div>
+
+          {/* FAQ (visible) */}
+          <section className="mt-16">
+            <div className="text-center mb-8">
+              <h2 className="font-display font-bold text-3xl text-earth-900">FAQ</h2>
+              <p className="text-earth-700 mt-2">
+                Quick answers to common questions about landscape consultations.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {faqItems.map((item) => (
+                <details
+                  key={item.q}
+                  className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm"
+                >
+                  <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                    <span>{item.q}</span>
+                    <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+                  </summary>
+                  <p className="mt-4 text-earth-700 leading-relaxed">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
         </section>
       </main>
 

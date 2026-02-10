@@ -6,9 +6,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Native & Low-Maintenance Landscaping in Muskegon, MI | Earth Stewards LLC',
   description:
-    'Native and low-maintenance landscaping in Muskegon, MI. Intentional, clean designs that thrive in West Michigan conditions—less watering, fewer recurring problems, and better seasonal interest.',
+    'Native-forward and low-maintenance landscaping in Muskegon, MI. Clean, intentional designs using native and climate-adapted plants—less watering, fewer recurring problems, and better seasonal structure in West Michigan conditions.',
   keywords:
-    'native landscaping Muskegon, low maintenance landscaping Muskegon MI, native plants Michigan, ecological landscaping West Michigan, lawn alternatives Muskegon',
+    'native landscaping Muskegon, low maintenance landscaping Muskegon MI, ecological landscaping Muskegon, climate adapted plants Michigan, native plants Michigan, lawn alternatives Muskegon, pollinator garden Muskegon, West Michigan landscaping',
 }
 
 export default function Page() {
@@ -22,7 +22,7 @@ export default function Page() {
         acceptedAnswer: {
           '@type': 'Answer',
           text:
-            'No. We design native-forward landscapes to look intentional with clean edges, structured plant groupings, and a maintenance approach that fits your comfort level for neatness.',
+            'No. We design native-forward landscapes to look intentional—clean edges, structured plant groupings, and a maintenance plan that fits your comfort level for neatness.',
         },
       },
       {
@@ -31,7 +31,7 @@ export default function Page() {
         acceptedAnswer: {
           '@type': 'Answer',
           text:
-            'No. We can design with native, pollinator-friendly, and traditional plants depending on your goals and site conditions. The priority is a landscape that thrives and stays manageable.',
+            'No. We prioritize native plants where they make sense, and we also use climate-adapted and pollinator-friendly plants when they provide better structure, durability, or seasonal balance. The goal is a landscape that thrives and stays manageable.',
         },
       },
       {
@@ -82,7 +82,7 @@ export default function Page() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Native Landscaping in Muskegon That Looks Intentional — Not Wild
+                Native-Forward Landscaping in Muskegon That Looks Intentional — Not Wild
               </h1>
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
                 We design landscapes that thrive in West Michigan conditions and
@@ -92,6 +92,16 @@ export default function Page() {
               <p className="text-earth-600">
                 Serving Muskegon, Spring Lake, Grand Haven, and surrounding West
                 Michigan communities.
+              </p>
+
+              <p className="text-sm text-earth-600">
+                Curious what we mean by “ecological landscaping”?{' '}
+                <a
+                  href="/services/ecological-landscaping"
+                  className="text-moss-700 font-semibold hover:text-moss-800 underline underline-offset-4"
+                >
+                  Read our approach →
+                </a>
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">
@@ -118,7 +128,7 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Looks clean & intentional</p>
+                  <p className="font-semibold text-earth-900">Looks clean &amp; intentional</p>
                   <p className="text-earth-700 text-sm mt-1">
                     Structure, edges, and planting patterns that feel “finished.”
                   </p>
@@ -163,10 +173,12 @@ export default function Page() {
             <div className="grid gap-6 lg:grid-cols-2">
               <div className="prose prose-lg prose-earth max-w-none">
                 <p>
-                  Instead of forcing plants to survive here, we match plants to
-                  soil, moisture, and sunlight so the yard stabilizes naturally.
-                  That usually means fewer recurring problems and a landscape
-                  that looks better as it matures.
+                  Instead of forcing plants to survive here, we match plants to soil,
+                  moisture, and sunlight so the yard stabilizes naturally. We often
+                  use native plants, and we also incorporate climate-adapted plants
+                  when they perform better for structure, durability, or seasonal
+                  balance. That usually means fewer recurring problems—and a
+                  landscape that looks better as it matures.
                 </p>
               </div>
 
@@ -260,6 +272,12 @@ export default function Page() {
             </h2>
             <div className="flex flex-wrap gap-3">
               <a
+                href="/services/ecological-landscaping"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+              >
+                Ecological Landscaping Approach →
+              </a>
+              <a
                 href="/services/lawn-conversion-muskegon"
                 className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
               >
@@ -323,9 +341,9 @@ export default function Page() {
                 Does native landscaping have to look wild?
               </p>
               <p className="text-earth-700 mt-2">
-                No. We design native-forward landscapes to look intentional with
-                clean edges, structured plant groupings, and a maintenance
-                approach that fits your comfort level for neatness.
+                No. We design native-forward landscapes to look intentional—clean
+                edges, structured plant groupings, and a maintenance plan that fits
+                your comfort level for neatness.
               </p>
             </div>
 
@@ -334,9 +352,10 @@ export default function Page() {
                 Do you only install native plants?
               </p>
               <p className="text-earth-700 mt-2">
-                No. We can design with native, pollinator-friendly, and
-                traditional plants depending on your goals and site conditions.
-                The priority is a landscape that thrives and stays manageable.
+                No. We prioritize native plants where they make sense, and we also
+                use climate-adapted and pollinator-friendly plants when they provide
+                better structure, durability, or seasonal balance. The goal is a
+                landscape that thrives and stays manageable.
               </p>
             </div>
 

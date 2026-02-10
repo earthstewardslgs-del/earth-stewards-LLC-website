@@ -16,11 +16,11 @@ export default function Navigation() {
   }, [])
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   return (
@@ -31,7 +31,7 @@ export default function Navigation() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
@@ -77,7 +77,7 @@ export default function Navigation() {
               </svg>
             </a>
             <a
-              href="#schedule"
+              href="/#schedule"
               className="ml-4 px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-lg"
             >
               Discuss Your Project
@@ -130,7 +130,7 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#schedule"
+              href="/#schedule"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all text-center"
             >

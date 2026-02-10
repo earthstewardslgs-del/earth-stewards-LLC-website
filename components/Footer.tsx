@@ -34,8 +34,13 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-earth-300 mb-6">
-              Professional native landscape design and installation serving
-              Muskegon and Ottawa Counties.
+              Landscape design, garden restoration, and ecological landscaping serving
+              Muskegon, Ottawa County, and West Michigan.
+            </p>
+            <p className="text-earth-400 text-sm mb-4">
+              <strong className="text-white">Earth Stewards LLC</strong><br />
+              Muskegon, Michigan<br />
+              Serving Muskegon & Ottawa County
             </p>
             <div className="flex space-x-4">
               <a

@@ -3,17 +3,17 @@ import StructuredData from '@/components/StructuredData'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Earth Stewards LLC | Professional Native Landscape Design & Installation',
-  description: 'Expert native landscaping services in Muskegon and Ottawa Counties. Custom design, professional installation, and ongoing maintenance for beautiful, sustainable landscapes.',
-  keywords: 'native landscaping, landscape design, Muskegon, Ottawa County, sustainable landscaping, native plants, pollinator gardens, Michigan landscaping, ecological landscaping',
+  title: 'Landscape Design & Native Landscaping in Muskegon, MI | Earth Stewards LLC',
+  description: 'Landscape design, garden restoration, and ecological landscaping in Muskegon and Ottawa County. Lower-maintenance landscapes that look better and work with nature. Serving West Michigan.',
+  keywords: 'native landscaping Muskegon, landscaping services Muskegon MI, low maintenance landscaping, pollinator garden installation, garden restoration service, invasive species removal, landscape consultation Muskegon, eco friendly landscaping West Michigan, native plants Michigan, landscape design Ottawa County',
   authors: [{ name: 'Earth Stewards LLC' }],
   metadataBase: new URL('https://earthstewardsllc.org'),
   alternates: {
     canonical: 'https://earthstewardsllc.org',
   },
   openGraph: {
-    title: 'Earth Stewards LLC | Professional Native Landscape Design & Installation',
-    description: 'Expert native landscaping services in Muskegon and Ottawa Counties.',
+    title: 'Landscape Design & Native Landscaping in Muskegon, MI | Earth Stewards LLC',
+    description: 'Landscape design, garden restoration, and ecological landscaping in Muskegon and Ottawa County. Lower-maintenance landscapes that look better and work with nature.',
     url: 'https://earthstewardsllc.org',
     siteName: 'Earth Stewards LLC',
     images: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: '/images/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Earth Stewards LLC Logo',
+        alt: 'Earth Stewards LLC - Native Landscaping Muskegon MI',
       },
     ],
     locale: 'en_US',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Earth Stewards LLC | Professional Native Landscape Design',
-    description: 'Expert native landscaping services in Muskegon and Ottawa Counties.',
+    title: 'Landscape Design & Native Landscaping in Muskegon, MI',
+    description: 'Landscape design, garden restoration, and ecological landscaping in Muskegon and Ottawa County.',
     images: ['/images/logo.png'],
   },
   robots: {

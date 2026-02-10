@@ -31,6 +31,9 @@ export default function Services() {
       links: [
         { text: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
         { text: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
+        { text: 'Garden Restoration', href: '/services/garden-restoration-muskegon' },
+        { text: 'Overgrown Yard Cleanup', href: '/services/overgrown-yard-cleanup' },
+        { text: 'Invasive Plant Removal', href: '/services/invasive-species-removal-muskegon' },
       ],
     },
     {

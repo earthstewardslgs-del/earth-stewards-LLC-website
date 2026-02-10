@@ -14,6 +14,7 @@ export default function Services() {
       description:
         'Custom landscape design and professional installation that works long-term. We assess your site, select appropriate plants, and install correctly — so the landscape can establish properly instead of requiring constant intervention.',
       links: [
+        { text: 'Ecological Landscaping Approach', href: '/services/ecological-landscaping' },
         { text: 'Native Landscaping', href: '/services/native-landscaping-muskegon' },
         { text: 'Pollinator Gardens', href: '/services/pollinator-garden-installation' },
         { text: 'Lawn Conversion', href: '/services/lawn-conversion-muskegon' },

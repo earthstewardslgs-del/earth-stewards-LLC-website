@@ -9,17 +9,12 @@ export default function Services() {
         </svg>
       ),
       title: 'Landscape Design & Installation',
-      heading: 'Beautiful Landscapes That Actually Work Long-Term',
       description:
-        'We design landscapes that look good now and stay manageable later. Whether you want a traditional curb appeal, a habitat-friendly space, or a mix, we match the design to your goals, time commitment, and property conditions — so you don\'t set up fighting your yard every season.',
-      features: [
-        'Site assessment and soil analysis (no plants survive)',
-        'Custom design plans aligned with your maintenance comfort level',
-        'Plant selection that fits your site, soil, and drainage',
-        'Practical spacing and layout for long-term growth',
-        'Habitat-supportive planting options (optional)',
-        'Professional installation done correctly the first time',
-        'Clean edging, mulching, and finishing details',
+        'Custom landscape design and professional installation that works long-term. We assess your site, select appropriate plants, and install correctly — so the landscape can establish properly instead of requiring constant intervention.',
+      links: [
+        { text: 'Native Landscaping', href: '/services/native-landscaping-muskegon' },
+        { text: 'Pollinator Gardens', href: '/services/pollinator-garden-installation' },
+        { text: 'Lawn Conversion', href: '/services/lawn-conversion-muskegon' },
       ],
     },
     {
@@ -29,16 +24,11 @@ export default function Services() {
         </svg>
       ),
       title: 'Landscape Maintenance & Plant Care',
-      heading: 'Maintenance That Makes Your Yard Easier Over Time',
       description:
-        'We don\'t just maintain landscapes — we stabilize them. Our care approach reduces recurring problems, keeps plants healthy (not just appearing healthy), and gradually lowers the amount of work your yard needs each year.',
-      features: [
-        'Seasonal cleanup without harming beneficial growth',
-        'Deadheading for plant health, not just appearance',
-        'Invasive species removal and control',
-        'Targeted weeding (not blanket spraying)',
-        'Soil improvement for long-term stability',
-        'Ongoing plant health monitoring',
+        'Expert maintenance services that reduce recurring problems and gradually lower the amount of work your yard needs. We maintain both traditional gardens and ecological landscapes.',
+      links: [
+        { text: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
+        { text: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
       ],
     },
     {
@@ -48,16 +38,11 @@ export default function Services() {
         </svg>
       ),
       title: 'Consultation & Guidance',
-      heading: 'Practical Advice Before You Spend Money',
       description:
-        'Not sure what your yard needs? We help you understand what\'s really failing, what will actually work on your site, and what will realistically fit in your schedule — whether you plan to DIY or hire.',
-      features: [
-        'On-site consultations',
-        'Garden problem diagnosis',
-        'Plant identification',
-        'Soil and drainage evaluation (critical)',
-        'DIY guidance and next steps',
-        'Continued support when questions come up',
+        'Professional consultation to help you understand what your yard needs and what will realistically work for your situation — whether you plan to DIY or hire.',
+      links: [
+        { text: 'Landscape Consultation', href: '/services/landscape-consultation-muskegon' },
+        { text: 'Soil & Drainage Assessment', href: '/services/soil-drainage-assessment' },
       ],
     },
   ]
@@ -75,8 +60,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-xl text-earth-700">
-            Comprehensive native landscaping solutions from design to ongoing
-            care
+            From design and installation to ongoing care and guidance
           </p>
         </div>
 
@@ -97,35 +81,37 @@ export default function Services() {
               <h3 className="font-display text-2xl font-semibold text-earth-900 mb-4">
                 {service.title}
               </h3>
-              <h4 className="text-lg font-semibold text-moss-700 mb-3">
-                {service.heading}
-              </h4>
               <p className="text-earth-700 mb-6 leading-relaxed">
                 {service.description}
               </p>
 
-              {/* Features list */}
-              <ul className="space-y-3">
-                {service.features.map((feature) => (
-                  <li
-                    key={feature}
-                    className="flex items-start text-earth-700 text-sm"
+              {/* Service Links */}
+              <div className="space-y-3">
+                {service.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="block text-moss-600 hover:text-moss-700 font-medium transition-colors group"
                   >
-                    <svg
-                      className="w-5 h-5 text-moss-600 mr-2 flex-shrink-0 mt-0.5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    {feature}
-                  </li>
+                    <span className="flex items-center">
+                      {link.text}
+                      <svg
+                        className="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </span>
+                  </a>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>

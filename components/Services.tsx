@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+
 export default function Services() {
   const services = [
     {
@@ -88,7 +90,7 @@ export default function Services() {
               {/* Service Links */}
               <div className="space-y-3">
                 {service.links.map((link) => (
-                  <a
+                  <Link
                     key={link.href}
                     href={link.href}
                     className="block text-moss-600 hover:text-moss-700 font-medium transition-colors group"
@@ -109,7 +111,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

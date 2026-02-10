@@ -3,12 +3,12 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Landscape Maintenance in Muskegon | Low-Maintenance Care',
-  description: 'Thoughtful maintenance that stabilizes your landscape over time — pruning, weeding, soil care, and seasonal upkeep without over-managing.',
-  keywords: 'landscape maintenance Muskegon, garden care, seasonal cleanup, pruning services, yard maintenance West Michigan',
+  title: 'Overgrown Yard Cleanup in Muskegon, MI | Landscape Reset Services',
+  description: 'We reset messy, neglected yards into manageable spaces so you can move forward with a clear plan — not just a temporary cleanup.',
+  keywords: 'overgrown yard cleanup Muskegon, property cleanup, garden reset, neglected yard West Michigan',
 }
 
-export default function LandscapeMaintenancePage() {
+export default function OvergrownCleanupPage() {
   return (
     <>
       <Navigation />
@@ -18,10 +18,10 @@ export default function LandscapeMaintenancePage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Landscape Maintenance That Reduces Work Over Time
+                Overgrown Yard & Garden Cleanup
               </h1>
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                Our maintenance focuses on stabilizing your landscape — not just keeping it trimmed. We manage growth, soil health, and plant balance so your yard requires less effort each season instead of more.
+                When a yard feels overwhelming, the hardest part is knowing where to start. We clear, organize, and reset the space so you can move forward with a manageable plan instead of constant catch-up work.
               </p>
               <p className="text-earth-600">
                 Serving Muskegon, Spring Lake, Grand Haven, and surrounding West Michigan communities.
@@ -41,46 +41,49 @@ export default function LandscapeMaintenancePage() {
         <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-earth max-w-none">
             
-            <h2>Landscape Maintenance That Makes Your Yard Easier Over Time</h2>
+            <h2>Not sure where to start?</h2>
             <p>
-              A good maintenance plan isn't just keeping things "clean." It's stabilizing the landscape so it becomes healthier, fuller, and less work year after year. We maintain both traditional gardens and ecological landscapes with an approach built around long-term success.
+              Some properties reach a point where maintenance alone doesn't fix the problem. Plants compete, spacing disappears, weeds take advantage of open ground, and the yard feels unmanageable.
+            </p>
+            <p>
+              Cleanup isn't just cutting everything back — that usually makes it worse next season.
             </p>
 
-            <h2>Maintenance Services We Provide</h2>
+            <h2>We focus on resetting structure</h2>
+            <p>
+              We identify what should stay, what should be removed, and how to stabilize the space so it doesn't immediately revert.
+            </p>
+            <p>Typical work includes:</p>
             <ul>
-              <li>Seasonal cleanup (spring/fall)</li>
-              <li>Pruning and shaping for plant health</li>
-              <li>Weed management strategies</li>
-              <li>Invasive species removal and control</li>
-              <li>Garden bed restoration and overgrown recovery</li>
-              <li>Soil improvement and amendments</li>
-              <li>Plant health monitoring and problem solving</li>
+              <li>Selective clearing and pruning</li>
+              <li>Removing aggressive or failing plants</li>
+              <li>Re-establishing spacing and edges</li>
+              <li>Mulching and soil stabilization</li>
+              <li>Creating a maintainable baseline</li>
             </ul>
-
-            <h2>The Difference: Maintenance With a Plan</h2>
             <p>
-              Many landscapes become high-maintenance because the underlying structure isn't working — plants are crowded, the soil is depleted, or weeds/invasives keep taking advantage of open ground.
-            </p>
-            <p>
-              We look for the "why" behind recurring issues and recommend improvements that reduce effort long-term.
+              The goal is to get the landscape back to a workable starting point.
             </p>
 
-            <h2>Great for Homeowners Who Want…</h2>
+            <h2>Good for</h2>
             <ul>
-              <li>A yard that looks cared for without weekly stress</li>
-              <li>Help getting back on track after a few busy seasons</li>
-              <li>Better results without harsh chemical dependence</li>
-              <li>A long-term plan, not random one-off visits</li>
+              <li>Newly purchased homes</li>
+              <li>Neglected properties</li>
+              <li>Rentals becoming residences</li>
+              <li>Yards that feel overwhelming</li>
             </ul>
+            <p>
+              After the reset, ongoing care becomes realistic again.
+            </p>
 
           </div>
 
           <div className="mt-16 p-8 bg-moss-50 rounded-2xl border-2 border-moss-200 text-center">
             <h3 className="text-2xl font-bold text-earth-900 mb-4">
-              Start With a Site Visit
+              Ready to Reset Your Yard?
             </h3>
             <p className="text-earth-700 mb-6 max-w-2xl mx-auto">
-              We'll walk the property, identify what your landscape needs, and recommend a practical maintenance plan.
+              We'll assess the situation and create a plan to get you back to a manageable starting point.
             </p>
             <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
               Schedule Consultation

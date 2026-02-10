@@ -3,12 +3,12 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Native & Low-Maintenance Landscaping in Muskegon | Earth Stewards',
-  description: 'Create a beautiful, low-maintenance landscape designed for West Michigan conditions. Native or traditional plantings tailored to your property and goals.',
-  keywords: 'native landscaping Muskegon, native plants Michigan, low maintenance landscaping, ecological landscaping West Michigan',
+  title: 'Landscape Consultation in Muskegon, MI | Site & Planting Guidance',
+  description: 'Not sure what your yard needs? Get clear guidance on plants, drainage, layout, and next steps before investing in major work.',
+  keywords: 'landscape consultation Muskegon, garden advice, landscape planning, site assessment West Michigan',
 }
 
-export default function NativeLandscapingPage() {
+export default function LandscapeConsultationPage() {
   return (
     <>
       <Navigation />
@@ -18,17 +18,17 @@ export default function NativeLandscapingPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Native & Low-Maintenance Landscaping in Muskegon
+                Landscape Consultation & Planning Guidance
               </h1>
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                We design landscapes that fit West Michigan conditions and your comfort level — whether you want habitat support, traditional curb appeal, or a balance of both. Our goal is simple: a yard that looks intentional and becomes easier to manage over time.
+                Before investing in major work, we help you understand what your yard actually needs — drainage, layout changes, plant selection, or a simpler maintenance strategy.
               </p>
               <p className="text-earth-600">
                 Serving Muskegon, Spring Lake, Grand Haven, and surrounding West Michigan communities.
               </p>
               <div className="flex flex-wrap gap-4 justify-center pt-4">
                 <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
-                  Schedule Site Visit
+                  Schedule Consultation
                 </a>
                 <a href="/#projects" className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all">
                   View Our Work
@@ -41,39 +41,34 @@ export default function NativeLandscapingPage() {
         <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-earth max-w-none">
             
-            <h2>What Native Landscaping Can Do for Your Property</h2>
+            <h2>Understand the problem before spending money</h2>
             <p>
-              A landscape designed for local conditions can reduce recurring problems and create a yard that gets easier over time.
+              Many landscape issues repeat because the underlying cause isn't identified — wrong plant placement, drainage patterns, or unrealistic expectations for the site.
             </p>
+            <p>
+              A consultation clarifies what's happening and what will actually work.
+            </p>
+
+            <h2>During the visit</h2>
+            <p>We walk the property and discuss:</p>
             <ul>
-              <li>Lower water needs once established</li>
-              <li>Fewer inputs (fertilizer, pesticides, constant replanting)</li>
-              <li>More seasonal interest and structure</li>
-              <li>Improved soil health and resilience</li>
-              <li>Increased habitat for birds and pollinators</li>
+              <li>Why certain plants struggle</li>
+              <li>What maintenance level the site supports</li>
+              <li>Whether redesign or adjustment makes more sense</li>
+              <li>Realistic next steps (DIY or hired)</li>
             </ul>
-
-            <h2>Lawn Conversion to Ecologically Functional Landscapes</h2>
             <p>
-              Want less mowing and more purpose? We convert lawns into stable, ecologically functional landscapes that look designed — not messy. Whether you want a full transformation or a phased approach, we'll recommend a plan that makes sense for your space and budget.
+              You leave with a clear direction instead of trial-and-error.
             </p>
-
-            <h2>Our Process</h2>
-            <ol>
-              <li><strong>Site visit</strong> to review sun, soil, drainage, and your goals</li>
-              <li><strong>Design plan</strong> aligned with your desired look and maintenance level</li>
-              <li><strong>Installation</strong> with proper preparation for long-term success</li>
-              <li><strong>Support & care</strong> as the landscape establishes and fills in</li>
-            </ol>
 
           </div>
 
           <div className="mt-16 p-8 bg-moss-50 rounded-2xl border-2 border-moss-200 text-center">
             <h3 className="text-2xl font-bold text-earth-900 mb-4">
-              Start With a Site Visit
+              Get Clear on What Your Yard Needs
             </h3>
             <p className="text-earth-700 mb-6 max-w-2xl mx-auto">
-              We'll walk the property, answer questions, and recommend options that will actually work in your conditions.
+              We'll walk your property and give you an honest assessment of what's happening and what will actually work.
             </p>
             <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
               Schedule Consultation

@@ -3,9 +3,9 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Pollinator Garden Installation in Muskegon, MI | Earth Stewards LLC',
-  description: 'Pollinator-friendly garden design and installation in Muskegon. Support bees, butterflies, and hummingbirds with native plants that actually thrive.',
-  keywords: 'pollinator garden Muskegon, butterfly garden, bee garden, native pollinator plants Michigan, hummingbird garden West Michigan',
+  title: 'Pollinator Garden Installation in West Michigan | Earth Stewards',
+  description: 'Install a pollinator-friendly garden that supports butterflies and bees while staying intentional, clean, and manageable.',
+  keywords: 'pollinator garden West Michigan, butterfly garden, bee garden, native pollinator plants, hummingbird garden Muskegon',
 }
 
 export default function PollinatorGardenPage() {
@@ -18,10 +18,13 @@ export default function PollinatorGardenPage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Pollinator Garden Installation
+                Pollinator Garden Installation in West Michigan
               </h1>
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                Gardens that support local pollinators while requiring less maintenance than traditional landscaping
+                We install pollinator-friendly plantings that support butterflies and bees while still looking clean and intentional. Designed for beauty, structure, and long-term manageability — not wild chaos.
+              </p>
+              <p className="text-earth-600">
+                Serving Muskegon, Spring Lake, Grand Haven, and surrounding West Michigan communities.
               </p>
               <div className="flex flex-wrap gap-4 justify-center pt-4">
                 <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
@@ -47,9 +50,7 @@ export default function PollinatorGardenPage() {
             </p>
 
             <h2>Why Homeowners Choose Pollinator Gardens</h2>
-            <p>
-              Most people start with one of these goals:
-            </p>
+            <p>Most people start with one of these goals:</p>
             <ul>
               <li>Want to see more bees, butterflies, and birds in their yard</li>
               <li>Looking for lower-maintenance alternatives to traditional beds</li>
@@ -62,9 +63,7 @@ export default function PollinatorGardenPage() {
             <p>
               We assess sun exposure, soil drainage, and existing conditions to select plants that will actually thrive in your specific site. The goal is a stable planting that fills in over time rather than requiring constant replacement.
             </p>
-            <p>
-              Typical pollinator garden elements:
-            </p>
+            <p>Typical pollinator garden elements:</p>
             <ul>
               <li>Native perennials selected for bloom sequence (spring through fall nectar)</li>
               <li>Proper spacing to allow natural spread without overcrowding</li>
@@ -74,9 +73,7 @@ export default function PollinatorGardenPage() {
             </ul>
 
             <h2>Common Plants We Use</h2>
-            <p>
-              Plant selection depends on your site conditions, but frequently used species include:
-            </p>
+            <p>Plant selection depends on your site conditions, but frequently used species include:</p>
             <ul>
               <li>Purple Coneflower (Echinacea) — long blooming, attracts many pollinators</li>
               <li>Black-Eyed Susan (Rudbeckia) — reliable perennial, thrives in most conditions</li>
@@ -93,23 +90,6 @@ export default function PollinatorGardenPage() {
             </p>
             <p>
               By the second season, plants fill in more. By the third year, the garden reaches maturity with dense growth and consistent blooms. This is why proper spacing matters — plants need room to reach their natural size.
-            </p>
-
-            <h2>Maintenance Requirements</h2>
-            <p>
-              Once established, pollinator gardens need minimal care:
-            </p>
-            <ul>
-              <li>Leave seed heads through winter (food for birds, habitat for beneficial insects)</li>
-              <li>Cut back dead growth in early spring</li>
-              <li>Occasional weeding during the first two seasons</li>
-              <li>No fertilizer needed if soil is decent</li>
-              <li>No supplemental watering after first season (in most cases)</li>
-            </ul>
-
-            <h2>Service Area</h2>
-            <p>
-              We install pollinator gardens in Muskegon and surrounding West Michigan communities including Norton Shores, North Muskegon, Whitehall, Montague, Grand Haven, and Spring Lake.
             </p>
 
           </div>

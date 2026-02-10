@@ -22,12 +22,26 @@ export default function Hero() {
               <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-earth-900 leading-tight text-balance animate-fade-in-up">
                 Stop Fighting Your Yard
               </h1>
+
+              {/* Suggested edit: clearer, more concrete promise */}
               <p className="text-lg sm:text-xl text-earth-700 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                Get a Landscape That Looks Better — and Gets Easier Every Year
+                A clean, intentional landscape that requires less work each season
               </p>
+
+              {/* Suggested edit: position as native + climate-adapted (not native-only) */}
               <p className="text-base text-earth-600 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                We design, improve, and care for landscapes across Muskegon and Ottawa Counties — from traditional gardens to ecological plantings — creating spaces that stay healthy, manageable, and naturally resilient in West Michigan conditions.
+                We design, restore, and maintain landscapes across Muskegon and Ottawa Counties — using native and climate-adapted plants to create yards that stabilize over time instead of needing constant upkeep.
+                <br />
+                <br />
+                The result is a landscape that looks cared for, functions naturally, and holds up in West Michigan conditions.
               </p>
+
+              {/* Optional micro-SEO line (uncomment if you want the extra locality signal) */}
+              {/*
+              <p className="text-sm text-earth-500 leading-relaxed max-w-xl animate-fade-in-up delay-200">
+                Serving Muskegon, Norton Shores, Spring Lake, Grand Haven, and nearby communities.
+              </p>
+              */}
             </div>
 
             <div className="animate-fade-in-up delay-300">
@@ -58,8 +72,10 @@ export default function Hero() {
                   View Our Work
                 </a>
               </div>
+
+              {/* Suggested edit: friendlier than “property,” keeps your tone */}
               <p className="text-sm text-earth-600 mt-3 ml-1">
-                A short visit to understand your property and options — no pressure, just clarity.
+                A short visit to understand your yard and explain realistic options — no pressure, just clarity.
               </p>
             </div>
           </div>
@@ -69,7 +85,7 @@ export default function Hero() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
               <img
                 src="/images/hero-project.jpg"
-                alt="Native landscape installation project"
+                alt="Landscape installation project in West Michigan"
                 className="w-full h-full object-cover"
               />
             </div>

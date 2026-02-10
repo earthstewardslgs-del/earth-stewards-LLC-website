@@ -23,25 +23,20 @@ export default function Hero() {
                 Stop Fighting Your Yard
               </h1>
 
-              {/* Suggested edit: clearer, more concrete promise */}
               <p className="text-lg sm:text-xl text-earth-700 leading-relaxed max-w-xl animate-fade-in-up delay-200">
                 A clean, intentional landscape that requires less work each season
               </p>
 
-              {/* Suggested edit: position as native + climate-adapted (not native-only) */}
               <p className="text-base text-earth-600 leading-relaxed max-w-xl animate-fade-in-up delay-200">
                 We design, restore, and maintain landscapes across Muskegon and Ottawa Counties — using native and climate-adapted plants to create yards that stabilize over time instead of needing constant upkeep.
-                <br />
-                <br />
+                <br /><br />
                 The result is a landscape that looks cared for, functions naturally, and holds up in West Michigan conditions.
               </p>
 
-              {/* Optional micro-SEO line (uncomment if you want the extra locality signal) */}
-              {/*
+              {/* Local SEO signal */}
               <p className="text-sm text-earth-500 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                Serving Muskegon, Norton Shores, Spring Lake, Grand Haven, and nearby communities.
+                Serving Muskegon, Norton Shores, Spring Lake, Grand Haven, and nearby West Michigan communities.
               </p>
-              */}
             </div>
 
             <div className="animate-fade-in-up delay-300">
@@ -73,7 +68,6 @@ export default function Hero() {
                 </a>
               </div>
 
-              {/* Suggested edit: friendlier than “property,” keeps your tone */}
               <p className="text-sm text-earth-600 mt-3 ml-1">
                 A short visit to understand your yard and explain realistic options — no pressure, just clarity.
               </p>

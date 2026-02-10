@@ -4,49 +4,48 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Ecological Garden Care & Native Garden Maintenance in Muskegon | Earth Stewards',
+  title: 'Ecological & Adaptive Garden Care in Muskegon | Earth Stewards LLC',
   description:
-    'Specialized maintenance for native and pollinator gardens in Muskegon. Stabilize plantings, prevent takeover, and reduce yearly work instead of increasing it.',
+    'Holistic garden care that works with natural growth cycles, site conditions, and plant communities — creating landscapes that mature into healthier, easier spaces over time.',
   keywords:
-    'ecological garden care Muskegon, native garden maintenance, pollinator garden maintenance, habitat garden care West Michigan',
+    'ecological garden care Muskegon, holistic landscape maintenance, adaptive garden care, low maintenance garden care Michigan, sustainable landscape maintenance',
 }
 
 export default function EcologicalGardenCarePage() {
-
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'How is ecological garden care different from regular landscaping maintenance?',
+        name: 'How is ecological garden care different from regular maintenance?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Traditional maintenance often focuses on trimming and resetting plants repeatedly. Ecological garden care focuses on stability — managing competition, timing cuts correctly, and guiding the planting so it becomes easier each year.',
+          text: 'Instead of repeatedly cutting everything back to the same shape, ecological care focuses on timing, plant relationships, and site conditions so the garden gradually stabilizes and requires less intervention over time.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Will a native garden eventually need less work?',
+        name: 'Does this mean the garden will look wild?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. When maintained correctly, native and habitat gardens mature and stabilize. Over time they require less watering, fewer replacements, and fewer large cleanups.',
+          text: 'No. The goal is an intentional, cared-for appearance — just maintained in a way that supports how plants actually grow rather than constantly fighting them.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Do you cut everything down every fall?',
+        name: 'Do you only maintain native plant gardens?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No. Timing matters for plant health and pollinators. We cut selectively and seasonally so the garden remains healthy and structured rather than constantly restarting.',
+          text: 'Not at all. This approach works for traditional, mixed, and native plantings. The focus is understanding how the space functions and guiding it toward balance.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Can you take over care of an existing native garden?',
+        name: 'Will maintenance decrease over time?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Many clients already have plantings but struggle with maintenance. We evaluate what is working, correct what is not, and guide the garden toward stability.',
+          text: 'Usually yes. As spacing improves and plant communities stabilize, recurring problems tend to reduce and the work becomes lighter and more seasonal rather than constant.',
         },
       },
     ],
@@ -70,12 +69,15 @@ export default function EcologicalGardenCarePage() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
             <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-              Ecological & Native Garden Care
+              Ecological & Adaptive Garden Care
             </h1>
 
             <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-              Native and habitat gardens need a different maintenance approach. We guide growth, prevent takeover,
-              and help the planting stabilize so it becomes easier instead of harder each year.
+              Some landscapes are maintained by constant correction.
+              Others are guided so they mature into stability.
+              Our approach focuses on understanding growth patterns,
+              seasonal cycles, and site conditions — so the garden
+              becomes healthier and easier over time.
             </p>
 
             <p className="text-earth-600">
@@ -90,77 +92,118 @@ export default function EcologicalGardenCarePage() {
                 View Our Work
               </a>
             </div>
+          </div>
+        </section>
 
-            {/* VALUE CARDS */}
-            <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              <div className="bg-white/70 rounded-2xl border border-earth-200 p-5">
-                <p className="font-semibold text-earth-900">Prevent takeover</p>
-                <p className="text-earth-700 text-sm mt-1">Manage competition before problems start</p>
-              </div>
-              <div className="bg-white/70 rounded-2xl border border-earth-200 p-5">
-                <p className="font-semibold text-earth-900">Guide maturity</p>
-                <p className="text-earth-700 text-sm mt-1">Plants fill in instead of collapsing</p>
-              </div>
-              <div className="bg-white/70 rounded-2xl border border-earth-200 p-5">
-                <p className="font-semibold text-earth-900">Less work yearly</p>
-                <p className="text-earth-700 text-sm mt-1">Maintenance decreases over time</p>
-              </div>
+        {/* MAIN CONTENT */}
+        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="grid lg:grid-cols-2 gap-12">
+
+            {/* LEFT */}
+            <div className="prose prose-lg prose-earth max-w-none">
+              <h2>Maintenance designed for living systems</h2>
+              <p>
+                Plants don’t grow on a calendar — they grow in response to light,
+                temperature, moisture, and competition. When maintenance ignores
+                those patterns, landscapes require constant effort to keep them
+                presentable.
+              </p>
+
+              <p>
+                Ecological care works differently. Instead of repeatedly resetting
+                the yard, we guide its development so structure improves, pressure
+                decreases, and the space becomes more resilient.
+              </p>
+
+              <h3>Good fit if you notice:</h3>
+              <ul>
+                <li>Plants collapsing or competing heavily</li>
+                <li>Areas that never seem to settle in</li>
+                <li>Constant trimming just to keep order</li>
+                <li>Weeds filling gaps every season</li>
+                <li>The yard requiring more effort each year</li>
+              </ul>
             </div>
+
+            {/* RIGHT */}
+            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-earth-900">Ongoing care may include</h3>
+
+              <ul className="mt-6 space-y-3 text-earth-800">
+                <li>Seasonal cutting at ecological timing</li>
+                <li>Selective thinning instead of blanket trimming</li>
+                <li>Weed pressure reduction through density</li>
+                <li>Adjusting spacing as plants mature</li>
+                <li>Monitoring plant relationships and dominance</li>
+                <li>Soil improvement when needed</li>
+                <li>Supporting natural fill-in instead of constant replanting</li>
+              </ul>
+            </div>
+
           </div>
-        </section>
 
-        {/* CONTENT */}
-        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
-
-          {/* LEFT */}
-          <div className="prose prose-lg prose-earth max-w-none">
-            <h2>Maintenance designed for evolving gardens</h2>
+          {/* PHILOSOPHY */}
+          <div className="mt-16 prose prose-lg prose-earth max-w-none">
+            <h2>Working with the site, not against it</h2>
             <p>
-              Ecological plantings are meant to change gradually — not be reset repeatedly.
-              Incorrect timing, over-cutting, and blanket cleanup can undo stability.
+              The goal is not strict control and not neglect — it’s guidance.
+              By understanding how the landscape behaves, we can encourage balance
+              between people, plants, and habitat so the space feels intentional
+              while still functioning naturally.
             </p>
-
-            <h3>Good fit if…</h3>
-            <ul>
-              <li>Your native garden looks messy despite effort</li>
-              <li>Plants compete aggressively</li>
-              <li>Sections collapse mid-season</li>
-              <li>You’re unsure when to cut or leave growth</li>
-              <li>You want less yearly maintenance</li>
-            </ul>
           </div>
 
-          {/* RIGHT */}
-          <div className="bg-white rounded-2xl border border-earth-200 p-8">
-            <h3 className="text-2xl font-bold text-earth-900">What we manage</h3>
-
-            <ul className="mt-6 space-y-4 text-earth-800">
-              <li>✓ Seasonal cutting at appropriate timing</li>
-              <li>✓ Targeted weed & invasive control</li>
-              <li>✓ Monitoring plant competition</li>
-              <li>✓ Supporting natural fill-in</li>
-              <li>✓ Adjusting density over time</li>
-              <li>✓ Soil improvement when needed</li>
-            </ul>
-          </div>
-
-        </section>
-
-        {/* CTA */}
-        <section className="pb-20">
-          <div className="max-w-4xl mx-auto px-4 text-center bg-moss-50 border-2 border-moss-200 rounded-2xl p-10">
+          {/* CTA */}
+          <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
             <h3 className="text-2xl font-bold text-earth-900 mb-4">
-              Maintain Your Garden Properly
+              Care that helps your landscape mature
             </h3>
-            <p className="text-earth-700 mb-6">
-              We create a care plan that supports long-term stability — not constant correction.
+            <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
+              We’ll assess your site and create a care plan that supports long-term stability
+              instead of repeated correction.
             </p>
             <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
               Schedule Consultation
             </a>
           </div>
-        </section>
 
+          {/* FAQ */}
+          <div className="mt-20 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-earth-900 mb-8 text-center">Common Questions</h2>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-earth-900">How is this different from standard maintenance?</h3>
+                <p className="text-earth-700 mt-2">
+                  Standard maintenance keeps resetting growth. Ecological care guides development so problems gradually decrease instead of repeating.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-earth-900">Will the yard still look maintained?</h3>
+                <p className="text-earth-700 mt-2">
+                  Yes — the intention is a cared-for appearance, achieved through timing and structure rather than constant cutting.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-earth-900">Do you only maintain native gardens?</h3>
+                <p className="text-earth-700 mt-2">
+                  No. This approach works for traditional, mixed, and ecological plantings alike.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-earth-900">Will maintenance become easier?</h3>
+                <p className="text-earth-700 mt-2">
+                  In most cases yes — as the planting stabilizes, recurring work reduces and care becomes more seasonal.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
       </main>
 
       <Footer />

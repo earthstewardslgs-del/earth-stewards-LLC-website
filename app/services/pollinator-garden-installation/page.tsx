@@ -1,112 +1,322 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Pollinator Garden Installation in West Michigan | Earth Stewards',
-  description: 'Install a pollinator-friendly garden that supports butterflies and bees while staying intentional, clean, and manageable.',
-  keywords: 'pollinator garden West Michigan, butterfly garden, bee garden, native pollinator plants, hummingbird garden Muskegon',
+  title: 'Pollinator Garden Installation in Muskegon, MI | Earth Stewards LLC',
+  description:
+    'Pollinator garden installation in Muskegon, MI. Beautiful, intentional gardens that support bees and butterflies with season-long blooms—designed to stay clean and manageable.',
+  keywords:
+    'pollinator garden installation Muskegon, pollinator garden Muskegon MI, butterfly garden, bee garden, native pollinator plants, hummingbird garden Muskegon, West Michigan pollinator garden',
 }
 
 export default function PollinatorGardenPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Do pollinator gardens have to look wild?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'No. We design pollinator gardens to look intentional with clean edges, structured plant groupings, and balanced spacing. You can support pollinators without a messy look.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you only use native plants in pollinator gardens?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Not necessarily. We often use natives because they support local pollinators and thrive in West Michigan conditions, but we can also include non-invasive, pollinator-friendly plants when they fit your goals and site.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does it take for a pollinator garden to fill in?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Most pollinator gardens look sparse the first year as plants establish roots. By year two they fill in noticeably, and by year three they often reach a more mature, dense look with consistent blooms.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will a pollinator garden be lower maintenance than annuals?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Often, yes. Once established, many pollinator plantings require less watering and replanting than annual flower beds. They still need seasonal maintenance, but the goal is less work over time.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What’s included in a pollinator garden installation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'We evaluate sun, soil, and drainage; select an appropriate plant palette with season-long bloom; prepare the bed properly; install plants with correct spacing; and recommend an establishment care plan so the garden succeeds long-term.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
       <Navigation />
+
+      {/* JSON-LD FAQ for SEO */}
+      <Script
+        id="faq-pollinator-garden"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       <main className="min-h-screen bg-earth-50">
+        {/* HERO */}
         <section className="relative pt-32 pb-20 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30"></div>
-          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
                 Pollinator Garden Installation in West Michigan
               </h1>
+
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                We install pollinator-friendly plantings that support butterflies and bees while still looking clean and intentional. Designed for beauty, structure, and long-term manageability — not wild chaos.
+                We install pollinator-friendly plantings that support bees and butterflies while still looking clean
+                and intentional—designed for beauty, structure, and long-term manageability.
               </p>
+
               <p className="text-earth-600">
                 Serving Muskegon, Spring Lake, Grand Haven, and surrounding West Michigan communities.
               </p>
+
               <div className="flex flex-wrap gap-4 justify-center pt-4">
-                <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
+                <a
+                  href="/#schedule"
+                  className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
+                >
                   Schedule Site Visit
                 </a>
-                <a href="/#projects" className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all">
+                <a
+                  href="/#projects"
+                  className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
+                >
                   View Our Work
                 </a>
+              </div>
+
+              {/* QUICK VALUE CARDS */}
+              <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
+                  <p className="font-semibold text-earth-900">Season-long blooms</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    A planned bloom sequence from spring through fall.
+                  </p>
+                </div>
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
+                  <p className="font-semibold text-earth-900">Looks intentional</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    Structure, edges, and spacing so it feels finished—not chaotic.
+                  </p>
+                </div>
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
+                  <p className="font-semibold text-earth-900">Lower inputs</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    Often less watering and replanting once established.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg prose-earth max-w-none">
-            
-            <h2>What a Pollinator Garden Does</h2>
-            <p>
-              Pollinator gardens use flowering plants that provide nectar and habitat for bees, butterflies, and hummingbirds. Most also happen to be lower-maintenance than traditional annuals or high-input perennials.
-            </p>
-            <p>
-              Native plants evolved alongside local pollinators, so they provide the right nutrition and bloom timing. This makes them more effective than generic "pollinator-friendly" plants from garden centers.
+        {/* CONTENT */}
+        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+          {/* WHAT IT DOES + WHY */}
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="prose prose-lg prose-earth max-w-none">
+              <h2>What a pollinator garden does</h2>
+              <p>
+                Pollinator gardens use flowering plants that provide nectar, pollen, and habitat for bees, butterflies,
+                and hummingbirds. When designed well, they’re also durable, beautiful, and easier to manage than
+                constantly replanting annuals.
+              </p>
+              <p>
+                We focus on plantings that thrive in West Michigan—so the garden gets stronger over time instead of
+                constantly needing rescue work.
+              </p>
+
+              <h3>Why homeowners choose pollinator gardens</h3>
+              <ul>
+                <li>Want to see more bees, butterflies, and birds</li>
+                <li>Prefer a lower-maintenance alternative to annual beds</li>
+                <li>Want blooms from spring through fall</li>
+                <li>Like the idea of a more resilient landscape</li>
+                <li>Want a designed look without weekly upkeep</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-earth-900">How we design pollinator gardens</h3>
+              <p className="text-earth-700 mt-2">
+                The goal is a stable planting that fills in over time—without looking messy.
+              </p>
+
+              <div className="mt-6 space-y-4">
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Site-based plant selection</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    Sun exposure, soil, and drainage determine what will actually thrive.
+                  </p>
+                </div>
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Bloom sequence planning</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    Spring-through-fall nectar so pollinators have consistent resources.
+                  </p>
+                </div>
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Structure and spacing</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    Layers, height variation, and clean edges for a finished look.
+                  </p>
+                </div>
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Establishment plan</p>
+                  <p className="text-earth-700 text-sm mt-1">
+                    Mulch + care guidance so weeds don’t take over while the garden fills in.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* COMMON PLANTS */}
+          <section className="space-y-6">
+            <h2 className="font-display text-2xl font-bold text-earth-900">Common plants we use</h2>
+            <p className="text-earth-700 text-lg max-w-4xl">
+              Plant selection depends on your site conditions. Here are a few commonly used options in West Michigan
+              pollinator plantings:
             </p>
 
-            <h2>Why Homeowners Choose Pollinator Gardens</h2>
-            <p>Most people start with one of these goals:</p>
-            <ul>
-              <li>Want to see more bees, butterflies, and birds in their yard</li>
-              <li>Looking for lower-maintenance alternatives to traditional beds</li>
-              <li>Tired of replanting annuals every season</li>
-              <li>Want blooms from spring through fall</li>
-              <li>Prefer plants that survive on rainfall once established</li>
-            </ul>
+            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+              <ul className="grid gap-3 md:grid-cols-2 list-disc pl-6 text-earth-700 text-lg">
+                <li>Purple Coneflower (Echinacea)</li>
+                <li>Black-Eyed Susan (Rudbeckia)</li>
+                <li>Wild Bergamot (Monarda)</li>
+                <li>Milkweed (Asclepias)</li>
+                <li>Joe Pye Weed</li>
+                <li>Asters (fall bloom)</li>
+                <li>Little Bluestem (structure + winter interest)</li>
+                <li>Other site-appropriate natives and non-invasive perennials</li>
+              </ul>
+            </div>
+          </section>
 
-            <h2>How We Design Pollinator Gardens</h2>
-            <p>
-              We assess sun exposure, soil drainage, and existing conditions to select plants that will actually thrive in your specific site. The goal is a stable planting that fills in over time rather than requiring constant replacement.
+          {/* WHAT TO EXPECT */}
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+              <h3 className="text-2xl font-bold text-earth-900">What to expect after installation</h3>
+              <p className="text-earth-700 mt-2">
+                Pollinator gardens often look sparse the first year. That’s normal—perennials focus on root
+                development before putting energy into flowering and spreading.
+              </p>
+
+              <ol className="mt-6 space-y-3 text-earth-800 text-sm list-decimal pl-5">
+                <li>
+                  <strong>Year 1:</strong> Establishment phase—watering, weed control, roots developing
+                </li>
+                <li>
+                  <strong>Year 2:</strong> Noticeable fill-in—more blooms, stronger growth
+                </li>
+                <li>
+                  <strong>Year 3:</strong> More mature look—denser planting, consistent seasonal interest
+                </li>
+              </ol>
+            </div>
+
+            <div className="prose prose-lg prose-earth max-w-none">
+              <h2>Clean, designed, and pollinator-supportive</h2>
+              <p>
+                You don’t have to choose between beauty and ecological function. With the right plant palette,
+                structure, and edges, a pollinator garden can look crisp and intentional while supporting wildlife.
+              </p>
+              <p>
+                If you’re also considering low-mow or lawn alternatives, you may like{' '}
+                <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/lawn-conversion-muskegon">
+                  Lawn Conversion
+                </a>{' '}
+                or{' '}
+                <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/native-landscaping-muskegon">
+                  Native Landscaping
+                </a>
+                .
+              </p>
+            </div>
+          </section>
+
+          {/* CTA */}
+          <section className="mt-6 p-10 bg-moss-50 rounded-2xl border-2 border-moss-200 text-center">
+            <h3 className="text-2xl font-bold text-earth-900 mb-4">Ready to Attract More Pollinators?</h3>
+            <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
+              We’ll assess your site and recommend a pollinator planting that fits your yard, your style, and your
+              maintenance comfort level.
             </p>
-            <p>Typical pollinator garden elements:</p>
-            <ul>
-              <li>Native perennials selected for bloom sequence (spring through fall nectar)</li>
-              <li>Proper spacing to allow natural spread without overcrowding</li>
-              <li>Layering with different plant heights for visual interest and habitat</li>
-              <li>Mulching to suppress weeds during establishment</li>
-              <li>Optional native grasses for structure and winter interest</li>
-            </ul>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="/#schedule"
+                className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
+              >
+                Schedule Site Visit
+              </a>
+              <a
+                href="/#projects"
+                className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
+              >
+                View Our Work
+              </a>
+            </div>
+          </section>
 
-            <h2>Common Plants We Use</h2>
-            <p>Plant selection depends on your site conditions, but frequently used species include:</p>
-            <ul>
-              <li>Purple Coneflower (Echinacea) — long blooming, attracts many pollinators</li>
-              <li>Black-Eyed Susan (Rudbeckia) — reliable perennial, thrives in most conditions</li>
-              <li>Wild Bergamot (Monarda) — loved by hummingbirds and bees</li>
-              <li>Milkweed (Asclepias) — essential for monarch butterflies</li>
-              <li>Joe Pye Weed — late-season nectar when other blooms are gone</li>
-              <li>Asters — critical fall food source for pollinators</li>
-              <li>Little Bluestem Grass — adds structure, winter interest</li>
-            </ul>
+          {/* FAQ (visible; matches JSON-LD) */}
+          <section className="space-y-6">
+            <h2 className="font-display text-2xl font-bold text-earth-900">FAQs</h2>
 
-            <h2>What to Expect After Installation</h2>
-            <p>
-              Pollinator gardens look sparse the first year. This is normal. Perennials focus on root development before putting energy into flowering and spreading.
-            </p>
-            <p>
-              By the second season, plants fill in more. By the third year, the garden reaches maturity with dense growth and consistent blooms. This is why proper spacing matters — plants need room to reach their natural size.
-            </p>
+            <div className="bg-white rounded-2xl border border-earth-200 p-6">
+              <p className="font-semibold text-earth-900">Do pollinator gardens have to look wild?</p>
+              <p className="text-earth-700 mt-2">
+                No. We design pollinator gardens to look intentional with clean edges, structured plant groupings, and
+                balanced spacing. You can support pollinators without a messy look.
+              </p>
+            </div>
 
-          </div>
+            <div className="bg-white rounded-2xl border border-earth-200 p-6">
+              <p className="font-semibold text-earth-900">How long does it take to fill in?</p>
+              <p className="text-earth-700 mt-2">
+                Most gardens look sparse the first year, fill in noticeably in year two, and reach a more mature look
+                by year three.
+              </p>
+            </div>
 
-          <div className="mt-16 p-8 bg-moss-50 rounded-2xl border-2 border-moss-200 text-center">
-            <h3 className="text-2xl font-bold text-earth-900 mb-4">
-              Ready to Attract More Pollinators?
-            </h3>
-            <p className="text-earth-700 mb-6 max-w-2xl mx-auto">
-              We'll assess your site and recommend plants that will thrive in your specific conditions.
-            </p>
-            <a href="/#schedule" className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all">
-              Schedule Site Visit
-            </a>
-          </div>
+            <div className="bg-white rounded-2xl border border-earth-200 p-6">
+              <p className="font-semibold text-earth-900">
+                What’s included in a pollinator garden installation?
+              </p>
+              <p className="text-earth-700 mt-2">
+                We evaluate sun, soil, and drainage; select an appropriate plant palette with season-long bloom;
+                prepare the bed; install plants with correct spacing; and provide establishment care guidance so the
+                garden succeeds long-term.
+              </p>
+            </div>
+          </section>
         </section>
       </main>
+
       <Footer />
     </>
   )

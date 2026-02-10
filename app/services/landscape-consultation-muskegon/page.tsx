@@ -6,48 +6,44 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Landscape Consultation in Muskegon, MI | Earth Stewards LLC',
   description:
-    'Landscape consultation in Muskegon, MI. Get clear guidance on drainage, layout, plants, and next steps—before you invest in major work.',
+    'Landscape consultation in Muskegon and West Michigan. Get clear guidance on drainage, soil, layout, plants, and next steps—before you invest in major work.',
   keywords:
-    'landscape consultation Muskegon, garden consultation Muskegon MI, landscape planning, site assessment West Michigan, garden advice Muskegon',
+    'landscape consultation Muskegon, garden consultation Muskegon MI, landscape planning West Michigan, site assessment Muskegon, garden advice Muskegon',
 }
 
 const faqItems = [
   {
-    q: 'What happens during a landscape consultation?',
-    a: 'We walk the property with you and evaluate sun, soil, drainage, existing plants, and problem areas. We’ll talk through your goals and maintenance comfort level, then outline clear next steps—whether you DIY or hire us for the work.',
+    q: 'Do I need a consultation before landscaping work?',
+    a: 'Not always, but it helps prevent unnecessary work and makes sure changes fit your site conditions. Many clients use a consultation to prioritize what matters most before investing in plants or major projects.',
   },
   {
-    q: 'Can a consultation help if I’m not doing a full redesign?',
-    a: 'Yes. Many yards improve with targeted changes—fixing drainage, adjusting plant placement, simplifying high-effort areas, or improving soil. A consultation helps you avoid spending money on changes that won’t hold up long-term.',
+    q: 'Will you recommend plants for my yard?',
+    a: 'Yes. We suggest plant options that match your soil, light, moisture, and maintenance comfort level—native, traditional, or a mix—based on your goals and the site.',
   },
   {
-    q: 'Will you recommend native plants only?',
-    a: 'No. We can recommend native, pollinator-friendly, and traditional options depending on your goals, site conditions, and the look you want. The goal is a landscape that thrives and stays manageable.',
+    q: 'Can I do the work myself after the visit?',
+    a: 'Absolutely. Many homeowners use the consultation as a roadmap and implement improvements gradually. If you want help, we can also outline done-for-you options.',
   },
   {
-    q: 'Do I get a plan after the visit?',
-    a: 'You’ll leave with a clear direction and prioritized recommendations. If you want a more detailed design plan or phased implementation roadmap, we can outline options based on your property and goals.',
-  },
-  {
-    q: 'How do I know if I need a consultation or a soil & drainage assessment?',
-    a: 'If you’re unsure what to do overall—layout, plants, maintenance, or general direction—start with a consultation. If the main issue is persistent plant failure, standing water, or drainage/soil problems, a dedicated soil & drainage assessment may be the better starting point.',
+    q: 'What if my main issue is drainage or plants keep dying?',
+    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil & Drainage Assessment may be the better starting point. We’ll tell you what makes the most sense.',
   },
 ]
 
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqItems.map((item) => ({
-    '@type': 'Question',
-    name: item.q,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: item.a,
-    },
-  })),
-}
-
 export default function LandscapeConsultationPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  }
+
   return (
     <>
       <Navigation />
@@ -67,12 +63,18 @@ export default function LandscapeConsultationPage() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Landscape Consultation &amp; Planning Guidance
+                Landscape Consultation in Muskegon &amp; West Michigan
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                Before investing in major work, we help you understand what your yard actually needs—drainage,
-                layout, plant selection, or a simpler maintenance strategy—so you can move forward with confidence.
+                Before changing your yard, it helps to understand what your property is already doing.
+                Sunlight, drainage, soil conditions, and plant competition shape how a landscape develops—and many
+                recurring yard problems come from working against those patterns instead of with them.
+              </p>
+
+              <p className="text-earth-700 max-w-3xl mx-auto">
+                A landscape consultation gives you clear direction before investing in planting, maintenance, or
+                major work.
               </p>
 
               <p className="text-earth-600">
@@ -94,24 +96,24 @@ export default function LandscapeConsultationPage() {
                 </a>
               </div>
 
-              {/* QUICK VALUE CARDS */}
+              {/* VALUE CARDS */}
               <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Stop trial-and-error</p>
+                  <p className="font-semibold text-earth-900">Clarity before cost</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Identify the root cause before you buy plants or hire big work.
+                    Avoid spending money on plants or projects that won’t last.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Clear priorities</p>
+                  <p className="font-semibold text-earth-900">Work with site conditions</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Know what matters first (and what can wait) for your budget and timeline.
+                    Use your property’s natural patterns to your advantage.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">A yard that stays manageable</p>
+                  <p className="font-semibold text-earth-900">Lower effort over time</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Recommendations that fit your maintenance comfort level.
+                    Better decisions now prevent constant correction later.
                   </p>
                 </div>
               </div>
@@ -122,81 +124,97 @@ export default function LandscapeConsultationPage() {
         {/* MAIN CONTENT */}
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            {/* LEFT: STORY + PROBLEM */}
+            {/* LEFT */}
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>Understand the problem before spending money</h2>
+              <h2>Read the landscape before changing it</h2>
               <p>
-                Many landscape issues repeat because the underlying cause isn’t identified—wrong plant placement,
-                drainage patterns, soil limitations, or expectations that don’t match the site.
+                Many homeowners call us after trying multiple fixes: plants that keep dying, wet areas that never
+                dry out, constant trimming to keep things presentable, or beds that collapse into weeds every
+                season.
               </p>
               <p>
-                A consultation helps you see what’s actually happening and what will work long-term.
+                The issue is usually not effort—it’s mismatch between the landscape and the conditions.
+                A consultation helps you understand what your yard needs so improvements hold up in West
+                Michigan’s climate.
               </p>
 
-              <h3>Good fit for you if…</h3>
+              <h3>Common reasons people book a consultation</h3>
               <ul>
-                <li>You’re not sure where to start (or what to do next)</li>
                 <li>Plants keep failing and you’re tired of replacing them</li>
-                <li>You want a cleaner, more intentional look with less ongoing effort</li>
-                <li>You’re deciding between DIY and hiring help</li>
-                <li>You want to phase improvements over time instead of a full overhaul</li>
+                <li>Standing water, soggy spots, or confusing drainage patterns</li>
+                <li>Beds that need constant mulching, trimming, or “resetting”</li>
+                <li>A yard that looks okay briefly—then chaotic again</li>
+                <li>Unsure whether you need maintenance, restoration, or redesign</li>
               </ul>
             </div>
 
-            {/* RIGHT: WHAT YOU GET */}
+            {/* RIGHT */}
             <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-earth-900">What you’ll leave with</h3>
-              <p className="text-earth-700 mt-2">A clear direction you can act on—without guessing.</p>
-
-              <div className="mt-6 space-y-4">
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">A diagnosis</p>
-                  <p className="text-earth-700 text-sm mt-1">
-                    Why things aren’t working (and what’s driving recurring issues).
-                  </p>
-                </div>
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">A prioritized plan</p>
-                  <p className="text-earth-700 text-sm mt-1">
-                    What to do first, what to do later, and what to avoid.
-                  </p>
-                </div>
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Next steps (DIY or done-for-you)</p>
-                  <p className="text-earth-700 text-sm mt-1">
-                    Clear options based on your budget, timeline, and maintenance comfort level.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* DURING THE VISIT */}
-          <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-              <h3 className="text-2xl font-bold text-earth-900">During the visit</h3>
-              <p className="text-earth-700 mt-2">We’ll walk the property and discuss:</p>
+              <h3 className="text-2xl font-bold text-earth-900">What we look at during the visit</h3>
+              <p className="text-earth-700 mt-2">
+                We walk the property together and observe how the space functions.
+              </p>
 
               <ul className="mt-6 space-y-3 text-earth-800">
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
-                  <span>Why certain plants struggle (sun, soil, moisture, spacing)</span>
+                  <span>Sunlight exposure throughout the day</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
-                  <span>Drainage patterns and practical fixes</span>
+                  <span>Drainage patterns and water movement</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
-                  <span>Whether small adjustments or a redesign makes more sense</span>
+                  <span>Soil structure and compaction</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
-                  <span>Plant choices that fit your style and maintenance comfort level</span>
+                  <span>Plant spacing and competition</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
-                  <span>Realistic next steps you can do yourself—or we can handle</span>
+                  <span>Recurring maintenance problem areas</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>How you want the space to feel and function</span>
+                </li>
+              </ul>
+
+              <div className="mt-8 rounded-xl bg-earth-50 border border-earth-200 p-5">
+                <p className="font-semibold text-earth-900">No prep needed</p>
+                <p className="text-earth-700 text-sm mt-1">
+                  You don’t need a plan in advance—just show us what’s frustrating you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* WHAT YOU LEAVE WITH + GOALS */}
+          <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+              <h3 className="text-2xl font-bold text-earth-900">What you leave with</h3>
+              <p className="text-earth-700 mt-2">
+                You won’t leave with a rigid blueprint—you’ll leave with direction.
+              </p>
+
+              <ul className="mt-6 space-y-3 text-earth-800">
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>What to fix first (and what can wait)</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>What not to spend money on</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>Whether adjustment, restoration, or redesign makes sense</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>DIY-friendly guidance or done-for-you options</span>
                 </li>
               </ul>
             </div>
@@ -204,87 +222,63 @@ export default function LandscapeConsultationPage() {
             <div className="prose prose-lg prose-earth max-w-none">
               <h2>Different goals are welcome</h2>
               <p>
-                Some clients want a more ecological, pollinator-friendly yard. Others want traditional curb appeal
-                with fewer headaches. Most want something in-between.
+                Some clients want habitat support and ecological function. Others want a cleaner, easier yard.
+                Most want a balance.
               </p>
               <p>
-                We’re not here to force a style—we’re here to make your landscape work for your site and your life.
+                We’re not trying to force a style—we help your property and your expectations meet in the middle.
               </p>
 
               <h3>Related services</h3>
               <ul>
                 <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/soil-drainage-assessment">
+                  <a
+                    className="text-moss-700 hover:text-moss-900 font-semibold"
+                    href="/services/soil-drainage-assessment"
+                  >
                     Soil &amp; Drainage Assessment
                   </a>{' '}
-                  — if plants keep dying or water sits where it shouldn’t
+                  — for standing water or repeated plant failure
                 </li>
                 <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/garden-restoration-muskegon">
+                  <a
+                    className="text-moss-700 hover:text-moss-900 font-semibold"
+                    href="/services/garden-restoration-muskegon"
+                  >
                     Garden Restoration
                   </a>{' '}
-                  — if beds are overgrown, failing, or confusing to maintain
+                  — for overgrown or collapsing beds
                 </li>
                 <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/landscape-maintenance-muskegon">
+                  <a
+                    className="text-moss-700 hover:text-moss-900 font-semibold"
+                    href="/services/landscape-maintenance-muskegon"
+                  >
                     Landscape Maintenance
                   </a>{' '}
-                  — if you want the yard to get easier year after year
+                  — ongoing care that stabilizes the yard
+                </li>
+                <li>
+                  <a
+                    className="text-moss-700 hover:text-moss-900 font-semibold"
+                    href="/services/lawn-conversion-muskegon"
+                  >
+                    Lawn Conversion
+                  </a>{' '}
+                  — reduce mowing and upkeep
                 </li>
               </ul>
             </div>
-          </div>
-
-          {/* WHEN TO START WITH A CONSULTATION */}
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When a consultation is the right first step</h2>
-              <p>
-                Many homeowners aren’t sure what service they need yet—only that something isn’t working. Starting
-                with a consultation prevents expensive trial-and-error and gives you a clear plan.
-              </p>
-              <ul>
-                <li>You’ve tried fixes that didn’t last</li>
-                <li>You’re weighing multiple ideas and want a smart path forward</li>
-                <li>You want a plan before hiring major work</li>
-                <li>You want to phase improvements over time</li>
-                <li>You want honest guidance that fits your maintenance comfort level</li>
-              </ul>
-            </div>
-
-            <div className="bg-earth-50 border border-earth-200 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-earth-900">Not a sales visit</h3>
-              <p className="text-earth-700 mt-3">
-                The goal is clarity. Some clients hire us afterward, others implement the plan themselves. Either
-                way, you leave knowing what will work on your property.
-              </p>
-            </div>
-          </div>
-
-          {/* AFTER THE VISIT */}
-          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-10">
-            <h2 className="text-2xl font-bold text-earth-900">What happens after the visit</h2>
-            <p className="text-earth-700 mt-4 max-w-3xl">
-              After the walkthrough, you’ll have a clear path forward. From there you can:
-            </p>
-
-            <ul className="mt-6 space-y-2 text-earth-800">
-              <li>Implement changes yourself at your own pace</li>
-              <li>Hire us for specific phases of work</li>
-              <li>Request a more detailed design or phased implementation plan</li>
-            </ul>
-
-            <p className="mt-6 text-earth-700">
-              The consultation stands on its own—you’re not locked into anything.
-            </p>
           </div>
 
           {/* CTA */}
           <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
-            <h3 className="text-2xl font-bold text-earth-900 mb-4">Get Clear on What Your Yard Needs</h3>
+            <h3 className="text-2xl font-bold text-earth-900 mb-4">
+              Get Clear Direction For Your Yard
+            </h3>
             <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
-              We’ll walk your property and give you an honest assessment of what’s happening—plus a clear,
-              prioritized path forward.
+              A landscape consultation helps you make confident decisions before investing in landscaping work—
+              with a plan that fits your site conditions.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
@@ -302,12 +296,12 @@ export default function LandscapeConsultationPage() {
             </div>
           </div>
 
-          {/* FAQ (visible) */}
+          {/* FAQ (VISIBLE) */}
           <section className="mt-16">
             <div className="text-center mb-8">
               <h2 className="font-display font-bold text-3xl text-earth-900">FAQ</h2>
               <p className="text-earth-700 mt-2">
-                Quick answers to common questions about landscape consultations.
+                Quick answers about landscape consultations in Muskegon and West Michigan.
               </p>
             </div>
 

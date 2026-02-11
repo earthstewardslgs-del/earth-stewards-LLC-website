@@ -26,7 +26,7 @@ const faqItems = [
   },
   {
     q: 'What if my main issue is drainage or plants keep dying?',
-    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil & Drainage Assessment may be the better starting point. We'll tell you what makes the most sense.',
+    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil & Drainage Assessment may be the better starting point. We\'ll tell you what makes the most sense.',
   },
 ]
 

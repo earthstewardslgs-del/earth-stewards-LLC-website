@@ -214,39 +214,37 @@ export default function EcologicalGardenCarePage() {
             </div>
 
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>Related services</h2>
-              <ul>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/garden-restoration-muskegon">
-                    Garden Restoration
-                  </a>{' '}
-                  — rebuild structure in overgrown or failing beds
-                </li>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/landscape-maintenance-muskegon">
-                    Landscape Maintenance
-                  </a>{' '}
-                  — broader maintenance that reduces work year after year
-                </li>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/invasive-species-removal-muskegon">
-                    Invasive Plant Removal
-                  </a>{' '}
-                  — targeted removal to protect what you want to keep
-                </li>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/soil-drainage-assessment">
-                    Soil &amp; Drainage Assessment
-                  </a>{' '}
-                  — diagnose why plants fail or areas stay wet
-                </li>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/landscape-consultation-muskegon">
-                    Landscape Consultation
-                  </a>{' '}
-                  — get clear direction before investing in changes
-                </li>
-              </ul>
+              <section className="space-y-4">
+                <h2 className="font-display text-2xl font-bold text-earth-900">
+                  Related services
+                </h2>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="/services/landscape-maintenance-muskegon"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Landscape Maintenance →
+                  </a>
+                  <a
+                    href="/services/native-landscaping-muskegon"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Native Landscaping →
+                  </a>
+                  <a
+                    href="/services/pollinator-garden-installation"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Pollinator Garden Installation →
+                  </a>
+                  <a
+                    href="/services/ecological-landscaping"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Ecological Landscaping Approach →
+                  </a>
+                </div>
+              </section>
             </div>
           </div>
 

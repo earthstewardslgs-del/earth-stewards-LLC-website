@@ -26,7 +26,7 @@ const faqItems = [
   },
   {
     q: 'What if my main issue is drainage or plants keep dying?',
-    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil & Drainage Assessment may be the better starting point. We’ll tell you what makes the most sense.',
+    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil & Drainage Assessment may be the better starting point. We'll tell you what makes the most sense.',
   },
 ]
 
@@ -82,13 +82,13 @@ export default function LandscapeConsultationPage() {
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">
-                <a
+                
                   href="/#schedule"
                   className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
                 >
                   Schedule Consultation
                 </a>
-                <a
+                
                   href="/#projects"
                   className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
                 >
@@ -101,13 +101,13 @@ export default function LandscapeConsultationPage() {
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Clarity before cost</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Avoid spending money on plants or projects that won’t last.
+                    Avoid spending money on plants or projects that won't last.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Work with site conditions</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Use your property’s natural patterns to your advantage.
+                    Use your property's natural patterns to your advantage.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
@@ -133,16 +133,16 @@ export default function LandscapeConsultationPage() {
                 season.
               </p>
               <p>
-                The issue is usually not effort—it’s mismatch between the landscape and the conditions.
+                The issue is usually not effort—it's mismatch between the landscape and the conditions.
                 A consultation helps you understand what your yard needs so improvements hold up in West
-                Michigan’s climate.
+                Michigan's climate.
               </p>
 
               <h3>Common reasons people book a consultation</h3>
               <ul>
-                <li>Plants keep failing and you’re tired of replacing them</li>
+                <li>Plants keep failing and you're tired of replacing them</li>
                 <li>Standing water, soggy spots, or confusing drainage patterns</li>
-                <li>Beds that need constant mulching, trimming, or “resetting”</li>
+                <li>Beds that need constant mulching, trimming, or "resetting"</li>
                 <li>A yard that looks okay briefly—then chaotic again</li>
                 <li>Unsure whether you need maintenance, restoration, or redesign</li>
               </ul>
@@ -185,7 +185,7 @@ export default function LandscapeConsultationPage() {
               <div className="mt-8 rounded-xl bg-earth-50 border border-earth-200 p-5">
                 <p className="font-semibold text-earth-900">No prep needed</p>
                 <p className="text-earth-700 text-sm mt-1">
-                  You don’t need a plan in advance—just show us what’s frustrating you.
+                  You don't need a plan in advance—just show us what's frustrating you.
                 </p>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function LandscapeConsultationPage() {
             <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
               <h3 className="text-2xl font-bold text-earth-900">What you leave with</h3>
               <p className="text-earth-700 mt-2">
-                You won’t leave with a rigid blueprint—you’ll leave with direction.
+                You won't leave with a rigid blueprint—you'll leave with direction.
               </p>
 
               <ul className="mt-6 space-y-3 text-earth-800">
@@ -226,48 +226,41 @@ export default function LandscapeConsultationPage() {
                 Most want a balance.
               </p>
               <p>
-                We’re not trying to force a style—we help your property and your expectations meet in the middle.
+                We're not trying to force a style—we help your property and your expectations meet in the middle.
               </p>
 
-              <h3>Related services</h3>
-              <ul>
-                <li>
-                  <a
-                    className="text-moss-700 hover:text-moss-900 font-semibold"
-                    href="/services/soil-drainage-assessment"
+              {/* RELATED SERVICES */}
+              <section className="space-y-4">
+                <h2 className="font-display text-2xl font-bold text-earth-900">
+                  Related services
+                </h2>
+                <div className="flex flex-wrap gap-3">
+                  
+                    href="/services/ecological-landscaping"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
-                    Soil &amp; Drainage Assessment
-                  </a>{' '}
-                  — for standing water or repeated plant failure
-                </li>
-                <li>
-                  <a
-                    className="text-moss-700 hover:text-moss-900 font-semibold"
-                    href="/services/garden-restoration-muskegon"
-                  >
-                    Garden Restoration
-                  </a>{' '}
-                  — for overgrown or collapsing beds
-                </li>
-                <li>
-                  <a
-                    className="text-moss-700 hover:text-moss-900 font-semibold"
-                    href="/services/landscape-maintenance-muskegon"
-                  >
-                    Landscape Maintenance
-                  </a>{' '}
-                  — ongoing care that stabilizes the yard
-                </li>
-                <li>
-                  <a
-                    className="text-moss-700 hover:text-moss-900 font-semibold"
+                    Ecological Landscaping Approach →
+                  </a>
+                  
                     href="/services/lawn-conversion-muskegon"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
-                    Lawn Conversion
-                  </a>{' '}
-                  — reduce mowing and upkeep
-                </li>
-              </ul>
+                    Lawn Conversion →
+                  </a>
+                  
+                    href="/services/pollinator-garden-installation"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Pollinator Garden Installation →
+                  </a>
+                  
+                    href="/services/landscape-maintenance-muskegon"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Landscape Maintenance →
+                  </a>
+                </div>
+              </section>
             </div>
           </div>
 
@@ -281,13 +274,13 @@ export default function LandscapeConsultationPage() {
               with a plan that fits your site conditions.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a
+              
                 href="/#schedule"
                 className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
               >
                 Schedule Consultation
               </a>
-              <a
+              
                 href="/#projects"
                 className="inline-flex items-center px-8 py-4 bg-earth-50 text-moss-800 font-semibold rounded-full border border-earth-200 hover:bg-earth-100 transition-all"
               >

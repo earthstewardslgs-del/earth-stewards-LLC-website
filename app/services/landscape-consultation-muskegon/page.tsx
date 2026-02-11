@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Landscape Consultation in Muskegon, MI | Earth Stewards LLC',
   description:
-    'Landscape consultation in Muskegon and West Michigan. Get clear guidance on drainage, soil, layout, plants, and next steps—before you invest in major work.',
+    'Landscape consultation in Muskegon and West Michigan. Get clear guidance on drainage, soil, layout, plants, and next steps before you invest in major work.',
   keywords:
     'landscape consultation Muskegon, garden consultation Muskegon MI, landscape planning West Michigan, site assessment Muskegon, garden advice Muskegon',
 }
@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     q: 'Will you recommend plants for my yard?',
-    a: 'Yes. We suggest plant options that match your soil, light, moisture, and maintenance comfort level—native, traditional, or a mix—based on your goals and the site.',
+    a: 'Yes. We suggest plant options that match your soil, light, moisture, and maintenance comfort level native, traditional, or a mix based on your goals and the site.',
   },
   {
     q: 'Can I do the work myself after the visit?',
@@ -26,7 +26,7 @@ const faqItems = [
   },
   {
     q: 'What if my main issue is drainage or plants keep dying?',
-    a: "If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil & Drainage Assessment may be the better starting point. We'll tell you what makes the most sense.",
+    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil and Drainage Assessment may be the better starting point. We will tell you what makes the most sense.',
   },
 ]
 
@@ -48,7 +48,6 @@ export default function LandscapeConsultationPage() {
     <>
       <Navigation />
 
-      {/* JSON-LD FAQ for SEO */}
       <Script
         id="faq-landscape-consultation"
         type="application/ld+json"
@@ -56,19 +55,18 @@ export default function LandscapeConsultationPage() {
       />
 
       <main className="min-h-screen bg-earth-50">
-        {/* HERO */}
         <section className="relative pt-32 pb-20 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30"></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Landscape Consultation in Muskegon &amp; West Michigan
+                Landscape Consultation in Muskegon and West Michigan
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
                 Before changing your yard, it helps to understand what your property is already doing.
-                Sunlight, drainage, soil conditions, and plant competition shape how a landscape develops—and many
+                Sunlight, drainage, soil conditions, and plant competition shape how a landscape develops and many
                 recurring yard problems come from working against those patterns instead of with them.
               </p>
 
@@ -82,13 +80,13 @@ export default function LandscapeConsultationPage() {
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">
-                
+                <a
                   href="/#schedule"
                   className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
                 >
                   Schedule Consultation
                 </a>
-                
+                <a
                   href="/#projects"
                   className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
                 >
@@ -96,18 +94,17 @@ export default function LandscapeConsultationPage() {
                 </a>
               </div>
 
-              {/* VALUE CARDS */}
               <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Clarity before cost</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Avoid spending money on plants or projects that won't last.
+                    Avoid spending money on plants or projects that will not last.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Work with site conditions</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Use your property's natural patterns to your advantage.
+                    Use your property natural patterns to your advantage.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
@@ -121,10 +118,8 @@ export default function LandscapeConsultationPage() {
           </div>
         </section>
 
-        {/* MAIN CONTENT */}
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            {/* LEFT */}
             <div className="prose prose-lg prose-earth max-w-none">
               <h2>Read the landscape before changing it</h2>
               <p>
@@ -133,22 +128,21 @@ export default function LandscapeConsultationPage() {
                 season.
               </p>
               <p>
-                The issue is usually not effort—it's mismatch between the landscape and the conditions.
+                The issue is usually not effort it is mismatch between the landscape and the conditions.
                 A consultation helps you understand what your yard needs so improvements hold up in West
-                Michigan's climate.
+                Michigan climate.
               </p>
 
               <h3>Common reasons people book a consultation</h3>
               <ul>
-                <li>Plants keep failing and you're tired of replacing them</li>
+                <li>Plants keep failing and you are tired of replacing them</li>
                 <li>Standing water, soggy spots, or confusing drainage patterns</li>
-                <li>Beds that need constant mulching, trimming, or "resetting"</li>
-                <li>A yard that looks okay briefly—then chaotic again</li>
+                <li>Beds that need constant mulching, trimming, or resetting</li>
+                <li>A yard that looks okay briefly then chaotic again</li>
                 <li>Unsure whether you need maintenance, restoration, or redesign</li>
               </ul>
             </div>
 
-            {/* RIGHT */}
             <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
               <h3 className="text-2xl font-bold text-earth-900">What we look at during the visit</h3>
               <p className="text-earth-700 mt-2">
@@ -185,24 +179,23 @@ export default function LandscapeConsultationPage() {
               <div className="mt-8 rounded-xl bg-earth-50 border border-earth-200 p-5">
                 <p className="font-semibold text-earth-900">No prep needed</p>
                 <p className="text-earth-700 text-sm mt-1">
-                  You don't need a plan in advance—just show us what's frustrating you.
+                  You do not need a plan in advance just show us what is frustrating you.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* WHAT YOU LEAVE WITH + GOALS */}
           <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
               <h3 className="text-2xl font-bold text-earth-900">What you leave with</h3>
               <p className="text-earth-700 mt-2">
-                You won't leave with a rigid blueprint—you'll leave with direction.
+                You will not leave with a rigid blueprint you will leave with direction.
               </p>
 
               <ul className="mt-6 space-y-3 text-earth-800">
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
-                  <span>What to fix first (and what can wait)</span>
+                  <span>What to fix first and what can wait</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 text-moss-700">✓</span>
@@ -226,34 +219,33 @@ export default function LandscapeConsultationPage() {
                 Most want a balance.
               </p>
               <p>
-                We're not trying to force a style—we help your property and your expectations meet in the middle.
+                We are not trying to force a style we help your property and your expectations meet in the middle.
               </p>
 
-              {/* RELATED SERVICES */}
               <section className="space-y-4">
                 <h2 className="font-display text-2xl font-bold text-earth-900">
                   Related services
                 </h2>
                 <div className="flex flex-wrap gap-3">
-                  
+                  <a
                     href="/services/ecological-landscaping"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
                     Ecological Landscaping Approach →
                   </a>
-                  
+                  <a
                     href="/services/lawn-conversion-muskegon"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
                     Lawn Conversion →
                   </a>
-                  
+                  <a
                     href="/services/pollinator-garden-installation"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
                     Pollinator Garden Installation →
                   </a>
-                  
+                  <a
                     href="/services/landscape-maintenance-muskegon"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
@@ -264,23 +256,22 @@ export default function LandscapeConsultationPage() {
             </div>
           </div>
 
-          {/* CTA */}
           <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
             <h3 className="text-2xl font-bold text-earth-900 mb-4">
               Get Clear Direction For Your Yard
             </h3>
             <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
-              A landscape consultation helps you make confident decisions before investing in landscaping work—
+              A landscape consultation helps you make confident decisions before investing in landscaping work
               with a plan that fits your site conditions.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              
+              <a
                 href="/#schedule"
                 className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
               >
                 Schedule Consultation
               </a>
-              
+              <a
                 href="/#projects"
                 className="inline-flex items-center px-8 py-4 bg-earth-50 text-moss-800 font-semibold rounded-full border border-earth-200 hover:bg-earth-100 transition-all"
               >
@@ -289,7 +280,6 @@ export default function LandscapeConsultationPage() {
             </div>
           </div>
 
-          {/* FAQ (VISIBLE) */}
           <section className="mt-16">
             <div className="text-center mb-8">
               <h2 className="font-display font-bold text-3xl text-earth-900">FAQ</h2>

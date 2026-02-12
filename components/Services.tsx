@@ -12,11 +12,10 @@ export default function Services() {
       ),
       title: 'New Landscapes & Conversions',
       description:
-        'Custom landscape design and professional installation that works long-term. We assess your site, select appropriate plants, and install correctly — so the landscape can establish properly instead of requiring constant intervention.',
+        'Design and installation for people who want a landscape that settles in and gets easier over time. We match plants and layout to real site conditions so it matures reliably.',
       links: [
-        { text: 'Ecological Landscaping Approach', href: '/services/ecological-landscaping' },
         { text: 'Native Landscaping', href: '/services/native-landscaping-muskegon' },
-        { text: 'Pollinator Gardens', href: '/services/pollinator-garden-installation' },
+        { text: 'Pollinator Garden Installation', href: '/services/pollinator-garden-installation' },
         { text: 'Lawn Conversion', href: '/services/lawn-conversion-muskegon' },
       ],
     },
@@ -28,13 +27,14 @@ export default function Services() {
       ),
       title: 'Fixing & Managing Existing Landscapes',
       description:
-        'Expert maintenance services that reduce recurring problems and gradually lower the amount of work your yard needs. We maintain both traditional gardens and ecological landscapes.',
+        'When a yard is overwhelmed or not working, we reset the problem areas and guide the landscape back to stability — from cleanup and invasives to restoration and long-term care.',
       links: [
-        { text: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
-        { text: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
-        { text: 'Garden Restoration', href: '/services/garden-restoration-muskegon' },
         { text: 'Overgrown Yard Cleanup', href: '/services/overgrown-yard-cleanup' },
         { text: 'Invasive Plant Removal', href: '/services/invasive-species-removal-muskegon' },
+        { text: 'Soil & Drainage Assessment', href: '/services/soil-drainage-assessment' },
+        { text: 'Garden Restoration', href: '/services/garden-restoration-muskegon' },
+        { text: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
+        { text: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
       ],
     },
     {
@@ -45,13 +45,14 @@ export default function Services() {
       ),
       title: 'Planning & Site Advice',
       description:
-        'Professional consultation to help you understand what your yard needs and what will realistically work for your situation — whether you plan to DIY or hire.',
+        'Professional guidance when you want clarity before investing. We interpret what the site is doing and outline practical next steps — whether you plan to DIY or hire.',
       links: [
         { text: 'Landscape Consultation', href: '/services/landscape-consultation-muskegon' },
         { text: 'Soil & Drainage Assessment', href: '/services/soil-drainage-assessment' },
-      ],
+        ],
     },
   ]
+
 
   return (
     <section id="services" className="py-24 bg-white relative overflow-hidden">
@@ -68,6 +69,22 @@ export default function Services() {
           <p className="text-xl text-earth-700">
             From design and installation to ongoing care and guidance
           </p>
+          <div className="mt-6">
+            <Link
+              href="/services/ecological-landscaping"
+              className="inline-flex items-center text-moss-700 hover:text-moss-800 font-semibold transition-colors group"
+            >
+              <span>Not sure which service fits? See how ecological landscaping works</span>
+              <svg
+                className="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
         {/* Services grid */}

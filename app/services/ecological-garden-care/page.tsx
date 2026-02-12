@@ -123,21 +123,18 @@ export default function EcologicalGardenCarePage() {
             <div className="prose prose-lg prose-earth max-w-none">
               <h2>When people call us</h2>
               <p>
-                Plants respond to light, temperature, moisture, and competition—not a calendar. When maintenance
-                ignores those patterns, gardens can become stuck in a cycle of overgrowth, collapse, and repeated
-                reset work.
+                New or recently changed landscapes don&apos;t stabilize on their own. In West Michigan&apos;s conditions, young plantings often swing between overgrowth, dieback, and constant correction during the first few seasons.
               </p>
               <p>
-                Our approach is simple: understand what the site is doing, then make targeted moves that support
-                healthier cycles—so the landscape becomes more stable and enjoyable over time.
+                Our role is to guide that establishment period — making selective adjustments, reducing early weed pressure, and helping plants fill in correctly so the landscape becomes stable instead of high-maintenance.
               </p>
 
-              <h3>Good fit for gardens that</h3>
+              <h3>This is a good fit for landscapes that:</h3>
               <ul>
-                <li>Are native-forward or pollinator-focused</li>
-                <li>Need to work with seasonal patterns</li>
-                <li>Should feel natural but still intentional</li>
-                <li>Benefit from less intervention as they establish</li>
+                <li>Were recently installed or heavily changed</li>
+                <li>Feel messy or unpredictable from month to month</li>
+                <li>Need seasonal adjustments to settle in properly</li>
+                <li>Should become easier to manage as they mature</li>
               </ul>
             </div>
 

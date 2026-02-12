@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     q: 'Will you recommend plants for my yard?',
-    a: 'Yes. We suggest plant options that match your soil, light, moisture, and maintenance comfort level native, traditional, or a mix based on your goals and the site.',
+    a: 'Yes. We suggest plant options that match your soil, light, moisture, and maintenance comfort level—native, traditional, or a mix—based on your goals and the site.',
   },
   {
     q: 'Can I do the work myself after the visit?',
@@ -27,6 +27,14 @@ const faqItems = [
   {
     q: 'What if my main issue is drainage or plants keep dying?',
     a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil and Drainage Assessment may be the better starting point. We will tell you what makes the most sense.',
+  },
+  {
+    q: 'How long does a consultation take?',
+    a: 'Most consultations take 1 to 2 hours, depending on property size and the number of areas we walk through together. We take the time needed to understand your site properly.',
+  },
+  {
+    q: 'Do you work in Spring Lake, Grand Haven, and Norton Shores?',
+    a: 'Yes. We serve Muskegon, Norton Shores, Spring Lake, Grand Haven, and surrounding West Michigan communities. Contact us to confirm coverage for your specific location.',
   },
 ]
 
@@ -66,7 +74,7 @@ export default function LandscapeConsultationPage() {
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
                 Before changing your yard, it helps to understand what your property is already doing.
-                Sunlight, drainage, soil conditions, and plant competition shape how a landscape develops and many
+                Sunlight, drainage, soil conditions, and plant competition shape how a landscape develops—and many
                 recurring yard problems come from working against those patterns instead of with them.
               </p>
 
@@ -98,13 +106,13 @@ export default function LandscapeConsultationPage() {
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Clarity before cost</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Avoid spending money on plants or projects that will not last.
+                    Avoid spending money on plants or projects that won't hold up long-term.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Work with site conditions</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Use your property natural patterns to your advantage.
+                    Use your property's natural patterns to your advantage.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
@@ -128,17 +136,17 @@ export default function LandscapeConsultationPage() {
                 season.
               </p>
               <p>
-                The issue is usually not effort it is mismatch between the landscape and the conditions.
+                The issue is usually not effort—it's a mismatch between the landscape and the conditions.
                 A consultation helps you understand what your yard needs so improvements hold up in West
-                Michigan climate.
+                Michigan's climate.
               </p>
 
               <h3>Common reasons people book a consultation</h3>
               <ul>
-                <li>Plants keep failing and you are tired of replacing them</li>
+                <li>Plants keep failing and you're tired of replacing them</li>
                 <li>Standing water, soggy spots, or confusing drainage patterns</li>
                 <li>Beds that need constant mulching, trimming, or resetting</li>
-                <li>A yard that looks okay briefly then chaotic again</li>
+                <li>A yard that looks okay briefly—then chaotic again</li>
                 <li>Unsure whether you need maintenance, restoration, or redesign</li>
               </ul>
             </div>
@@ -179,7 +187,7 @@ export default function LandscapeConsultationPage() {
               <div className="mt-8 rounded-xl bg-earth-50 border border-earth-200 p-5">
                 <p className="font-semibold text-earth-900">No prep needed</p>
                 <p className="text-earth-700 text-sm mt-1">
-                  You do not need a plan in advance just show us what is frustrating you.
+                  You don't need a plan in advance—just show us what's frustrating you.
                 </p>
               </div>
             </div>
@@ -189,7 +197,7 @@ export default function LandscapeConsultationPage() {
             <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
               <h3 className="text-2xl font-bold text-earth-900">What you leave with</h3>
               <p className="text-earth-700 mt-2">
-                You will not leave with a rigid blueprint you will leave with direction.
+                You won't leave with a rigid blueprint—you'll leave with direction.
               </p>
 
               <ul className="mt-6 space-y-3 text-earth-800">
@@ -219,7 +227,7 @@ export default function LandscapeConsultationPage() {
                 Most want a balance.
               </p>
               <p>
-                We are not trying to force a style we help your property and your expectations meet in the middle.
+                We're not trying to force a style—we help your property and your expectations meet in the middle.
               </p>
 
               <section className="space-y-4">
@@ -228,22 +236,22 @@ export default function LandscapeConsultationPage() {
                 </h2>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="/services/ecological-landscaping"
+                    href="/services/soil-drainage-assessment"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
-                    Ecological Landscaping Approach →
+                    Soil & Drainage Assessment →
+                  </a>
+                  <a
+                    href="/services/garden-restoration-muskegon"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+                  >
+                    Garden Restoration →
                   </a>
                   <a
                     href="/services/lawn-conversion-muskegon"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
                   >
                     Lawn Conversion →
-                  </a>
-                  <a
-                    href="/services/pollinator-garden-installation"
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-                  >
-                    Pollinator Garden Installation →
                   </a>
                   <a
                     href="/services/landscape-maintenance-muskegon"
@@ -261,7 +269,7 @@ export default function LandscapeConsultationPage() {
               Get Clear Direction For Your Yard
             </h3>
             <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
-              A landscape consultation helps you make confident decisions before investing in landscaping work
+              A landscape consultation helps you make confident decisions before investing in landscaping work—
               with a plan that fits your site conditions.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

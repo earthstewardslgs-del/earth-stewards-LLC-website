@@ -123,14 +123,14 @@ export default function EcologicalGardenCarePage() {
             <div className="prose prose-lg prose-earth max-w-none">
               <h2>When people call us</h2>
               <p>
-                New or recently changed landscapes don&apos;t stabilize on their own. In West Michigan&apos;s conditions, young plantings often swing between overgrowth, dieback, and constant correction during the first few seasons.
+                New or recently changed landscapes often look great at install — then feel unpredictable as the seasons shift. In West Michigan&apos;s conditions, young plantings can swing between fast growth, dieback, and recurring weed pressure during the first few years.
               </p>
               <p>
-                Our role is to guide that establishment period — making selective adjustments, reducing early weed pressure, and helping plants fill in correctly so the landscape becomes stable instead of high-maintenance.
+                Our role is to guide that establishment period with small, targeted adjustments so the planting fills in correctly and becomes stable instead of high-maintenance.
               </p>
 
               <h3>This is a good fit for landscapes that:</h3>
-              <ul>
+              <ul className="list-disc pl-6 space-y-2">
                 <li>Were recently installed or heavily changed</li>
                 <li>Feel messy or unpredictable from month to month</li>
                 <li>Need seasonal adjustments to settle in properly</li>

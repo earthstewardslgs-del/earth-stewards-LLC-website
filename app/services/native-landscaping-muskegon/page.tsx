@@ -129,7 +129,7 @@ export default function NativeLandscapingPage() {
                 We redesign the space using climate‑adapted plant communities so it looks intentional and matures reliably instead of needing constant correction.
               </p>
 
-              <h3>Good fit if you want</h3>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Good fit if you want</h3>
               <ul>
                 <li>Less watering and fewer recurring problems</li>
                 <li>Support for pollinators and beneficial insects</li>
@@ -170,7 +170,7 @@ export default function NativeLandscapingPage() {
           </div>
 
           <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-            <h2>What you leave with</h2>
+            <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
             <p className="text-earth-700 mt-2">
               A landscape designed for West Michigan conditions—plants that thrive without constant inputs, structure that holds up through seasons, and a maintenance approach that gets easier as the garden establishes.
             </p>

@@ -68,15 +68,13 @@ export default function LandscapeConsultationPage() {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
-              <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Landscape Consultation in Muskegon and West Michigan
-              </h1>
+              <h1 className="font-display text-5xl font-bold text-earth-900 mb-6">
+Professional Landscape Consultation
+</h1>
 
-              <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                Before changing your yard, it helps to understand what your property is already doing.
-                Sunlight, drainage, soil conditions, and plant competition shape how a landscape develops—and many
-                recurring yard problems come from working against those patterns instead of with them.
-              </p>
+              <p className="text-xl text-earth-700 leading-relaxed mb-6">
+This visit is for clarity. We walk the property together, interpret what the site is doing, and outline practical next steps before you invest in installation or long-term work.
+</p>
 
               <p className="text-earth-700 max-w-3xl mx-auto">
                 A landscape consultation gives you clear direction before investing in planting, maintenance, or

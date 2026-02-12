@@ -121,12 +121,12 @@ export default function NativeLandscapingPage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
-                Many homeowners want a landscape that supports local ecosystems and requires less constant input—but they also want something that looks clean, organized, and appropriate for their neighborhood.
+                Sometimes the existing landscape simply doesn’t match the site — plants struggle, spacing fails, and the yard never settles into a comfortable rhythm.
               </p>
               <p>
-                Native-forward landscaping does both. It uses plants adapted to West Michigan's climate and sandy soil while maintaining structure, curb appeal, and manageable maintenance levels.
+                We redesign the space using climate‑adapted plant communities so it looks intentional and matures reliably instead of needing constant correction.
               </p>
 
               <h3>Good fit if you want</h3>

@@ -122,15 +122,12 @@ export default function PollinatorGardenPage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
-                Pollinator gardens use flowering plants that provide nectar, pollen, and habitat for bees, butterflies,
-                and hummingbirds. When designed well, they are also durable, beautiful, and easier to manage than
-                constantly replanting annuals.
+                Many homeowners want to support wildlife but worry a habitat garden will feel chaotic or temporary.
               </p>
               <p>
-                We focus on plantings that thrive in West Michigan—so the garden gets stronger over time instead of
-                constantly needing rescue work.
+                We install season‑long bloom plantings arranged with structure so pollinators are supported while the garden still reads as a maintained space.
               </p>
 
               <h3>Why homeowners choose pollinator gardens</h3>

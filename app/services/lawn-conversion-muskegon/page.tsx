@@ -130,15 +130,12 @@ export default function LawnConversionPage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
-                Some lawns never become easy—dry patches, constant growth, and weekly upkeep just to keep things
-                acceptable. A lawn conversion replaces high-effort turf with stable plantings that fill in, look
-                intentional, and reduce ongoing work in Muskegon's sandy soil.
+                If mowing feels endless, the issue isn’t the grass — it’s that the space is asking for a different use. Large turf areas often require constant input in West Michigan conditions.
               </p>
               <p>
-                This isn't removing lawn just for appearance. It's changing the structure of the landscape so it
-                maintains itself better.
+                We convert portions of lawn into stable plantings sized to how you actually use the yard, reducing weekly upkeep while keeping an intentional look.
               </p>
 
               <h3>Good candidates for conversion</h3>

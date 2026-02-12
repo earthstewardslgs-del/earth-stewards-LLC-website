@@ -19,8 +19,8 @@ export default function EcologicalLandscapingPage() {
         <section className="py-24 bg-earth-50">
           <div className="max-w-5xl mx-auto px-6">
             <h1 className="font-display text-5xl font-bold text-earth-900 mb-6">
-              Ecological Landscaping — How We Design Landscapes That Last
-            </h1>
+Why Ecological Landscaping Works
+</h1>
 
             <p className="text-xl text-earth-700 leading-relaxed mb-6">
               Most landscapes look good at installation but slowly become work. 

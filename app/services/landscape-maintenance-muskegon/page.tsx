@@ -129,15 +129,17 @@ export default function LandscapeMaintenancePage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
-                A good maintenance plan isn&apos;t just about keeping things tidy — it&apos;s about keeping a landscape stable so it becomes healthier and easier to manage each year in West Michigan&apos;s conditions.
+                A good maintenance plan isn't just keeping things clean. It's stabilizing the landscape so it becomes
+                healthier, fuller, and easier to manage year after year in West Michigan's climate.
               </p>
               <p>
-                We maintain both traditional gardens and ecological landscapes with attention to plant health, soil health, and realistic long-term upkeep.
+                We maintain both traditional gardens and ecological landscapes with an approach built around plant
+                health, soil health, and realistic maintenance levels.
               </p>
 
-              <h3>This is a good fit if you want:</h3>
+              <h3>Great fit if you want</h3>
               <ul>
                 <li>A yard that looks cared for without weekly stress</li>
                 <li>Help getting back on track after a few busy seasons</li>

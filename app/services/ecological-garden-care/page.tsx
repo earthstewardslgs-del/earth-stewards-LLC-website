@@ -121,7 +121,7 @@ export default function EcologicalGardenCarePage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
                 New or recently changed landscapes often look great at install — then feel unpredictable as the seasons shift. In West Michigan&apos;s conditions, young plantings can swing between fast growth, dieback, and recurring weed pressure during the first few years.
               </p>

@@ -122,14 +122,12 @@ export default function SoilDrainagePage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
-                Repeated plant loss often comes down to water movement—too wet, too dry, or inconsistent conditions
-                within the same yard. Compacted soil and poor drainage can suffocate roots even when everything looks
-                fine on the surface.
+                When plants repeatedly fail, the cause is usually underground — water movement, compaction, or drainage patterns that the surface doesn’t reveal.
               </p>
               <p>
-                Replacing plants without addressing this usually leads to the same outcome—just with new plants.
+                We diagnose how the site actually behaves so solutions address the cause instead of repeating replacements.
               </p>
 
               <h3>Common symptoms</h3>

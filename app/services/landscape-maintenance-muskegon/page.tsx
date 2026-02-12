@@ -76,12 +76,11 @@ export default function LandscapeMaintenancePage() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Landscape Maintenance That Reduces Work Over Time
+                Ongoing Ecological Landscape Maintenance
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                Our maintenance focuses on stabilizing your landscape—not just keeping it trimmed. We manage growth,
-                soil health, and plant balance so your yard in Muskegon requires less effort each season instead of more.
+                This is recurring long‑term care for established landscapes. Visits are scheduled seasonally or regularly to keep plant balance, prevent regression, and maintain a stable appearance without constant intervention.
               </p>
 
               <p className="text-earth-600">

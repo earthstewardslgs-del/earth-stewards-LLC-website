@@ -21,7 +21,7 @@ export default function EcologicalGardenCarePage() {
         name: 'How is ecological garden care different from regular maintenance?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Ecological garden care works with seasonal cycles, site conditions, and plant communities. Instead of repeatedly resetting growth, we guide the garden development so it matures into better balance over time.',
+          text: 'Ecological garden care works with seasonal cycles, site conditions, and plant communities. Rather than recurring upkeep, this is time‑limited establishment work that helps a landscape settle correctly before it becomes routine maintenance.',
         },
       },
       {
@@ -68,13 +68,11 @@ export default function EcologicalGardenCarePage() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Ecological and Adaptive Garden Care
+                Establishment & Seasonal Guidance for Developing Landscapes
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                Great landscapes are not maintained by constant correction—they are guided through seasons, growth
-                cycles, and real site conditions in West Michigan. We help gardens mature into healthier, more resilient spaces that
-                feel intentional and become easier to live with over time.
+                This service guides a young or recently changed landscape through its establishment years. We adjust spacing, manage early weeds, and respond to West Michigan conditions so the planting stabilizes instead of becoming high-maintenance.
               </p>
 
               <p className="text-earth-600">
@@ -227,7 +225,7 @@ export default function EcologicalGardenCarePage() {
                   <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
                 </summary>
                 <p className="mt-4 text-earth-700 leading-relaxed">
-                  Ecological garden care works with seasonal cycles, site conditions, and plant communities. Instead of repeatedly resetting growth, we guide the garden development so it matures into better balance over time.
+                  Ecological garden care works with seasonal cycles, site conditions, and plant communities. Rather than recurring upkeep, this is time‑limited establishment work that helps a landscape settle correctly before it becomes routine maintenance.
                 </p>
               </details>
 

@@ -4,14 +4,14 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Native & Low-Maintenance Landscaping in Muskegon, MI | Earth Stewards LLC',
+  title: 'Native Landscaping in Muskegon, MI | Earth Stewards LLC',
   description:
-    'Native-forward and low-maintenance landscaping in Muskegon, MI. Clean, intentional designs using native and climate-adapted plants—less watering, fewer recurring problems, and better seasonal structure in West Michigan conditions.',
+    'Native landscaping in Muskegon that looks intentional. Clean designs using native and climate-adapted plants—less watering, fewer problems, and better structure.',
   keywords:
-    'native landscaping Muskegon, low maintenance landscaping Muskegon MI, ecological landscaping Muskegon, climate adapted plants Michigan, native plants Michigan, lawn alternatives Muskegon, pollinator garden Muskegon, West Michigan landscaping',
+    'native landscaping Muskegon, low maintenance landscaping Muskegon MI, ecological landscaping, native plants Michigan, pollinator garden, climate adapted plants West Michigan',
 }
 
-export default function Page() {
+export default function NativeLandscapingPage() {
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -21,8 +21,7 @@ export default function Page() {
         name: 'Does native landscaping have to look wild?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'No. We design native-forward landscapes to look intentional—clean edges, structured plant groupings, and a maintenance plan that fits your comfort level for neatness.',
+          text: 'No. We design native-forward landscapes to look intentional—clean edges, structured plant groupings, and a maintenance plan that fits your comfort level for neatness.',
         },
       },
       {
@@ -30,8 +29,7 @@ export default function Page() {
         name: 'Do you only install native plants?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'No. We prioritize native plants where they make sense, and we also use climate-adapted and pollinator-friendly plants when they provide better structure, durability, or seasonal balance. The goal is a landscape that thrives and stays manageable.',
+          text: 'No. We prioritize native plants where they make sense, and we also use climate-adapted and pollinator-friendly plants when they provide better structure, durability, or seasonal balance. The goal is a landscape that thrives and stays manageable.',
         },
       },
       {
@@ -39,8 +37,7 @@ export default function Page() {
         name: 'Will native landscaping reduce maintenance?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'It often reduces recurring problems like constant replanting, heavy watering, and high-input lawn care. Every landscape needs some seasonal maintenance, but the goal is less work over time as the planting stabilizes.',
+          text: 'It often reduces recurring problems like constant replanting, heavy watering, and high-input lawn care. Every landscape needs some seasonal maintenance, but the goal is less work over time as the planting stabilizes.',
         },
       },
       {
@@ -48,17 +45,7 @@ export default function Page() {
         name: 'How do you choose the right plants?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'We match plants to your site: sunlight, soil type, moisture/drainage, and how you want to use the space. That’s how we build landscapes that hold up long-term in West Michigan.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How do we start?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'We start with a site visit to evaluate conditions and goals. Then we recommend a design direction and an implementation plan—either phased over time or installed in one project.',
+          text: 'We match plants to your site: sunlight, soil type, moisture and drainage, and how you want to use the space. That is how we build landscapes that hold up long-term in West Michigan.',
         },
       },
     ],
@@ -68,7 +55,6 @@ export default function Page() {
     <>
       <Navigation />
 
-      {/* JSON-LD FAQ for SEO */}
       <Script
         id="faq-native-landscaping"
         type="application/ld+json"
@@ -76,13 +62,12 @@ export default function Page() {
       />
 
       <main className="min-h-screen bg-earth-50">
-        {/* HERO */}
         <section className="relative pt-32 pb-20 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30" />
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Native-Forward Landscaping in Muskegon That Looks Intentional — Not Wild
+                Native Landscaping in Muskegon That Looks Intentional
               </h1>
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
                 We design landscapes that thrive in West Michigan conditions and
@@ -94,22 +79,12 @@ export default function Page() {
                 Michigan communities.
               </p>
 
-              <p className="text-sm text-earth-600">
-                Curious what we mean by “ecological landscaping”?{' '}
-                <a
-                  href="/services/ecological-landscaping"
-                  className="text-moss-700 font-semibold hover:text-moss-800 underline underline-offset-4"
-                >
-                  Read our approach →
-                </a>
-              </p>
-
               <div className="flex flex-wrap gap-4 justify-center pt-4">
                 <a
                   href="/#schedule"
                   className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
                 >
-                  Start With a Site Visit
+                  Schedule Site Visit
                 </a>
                 <a
                   href="/#projects"
@@ -119,24 +94,23 @@ export default function Page() {
                 </a>
               </div>
 
-              {/* QUICK VALUE CARDS */}
               <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Designed for Michigan</p>
+                  <p className="font-semibold text-earth-900">Less recurring work</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Plants matched to sun, soil, and moisture—so they hold up.
+                    Plants suited to your site reduce replanting, watering, and corrections.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Looks clean &amp; intentional</p>
+                  <p className="font-semibold text-earth-900">Clean and intentional</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Structure, edges, and planting patterns that feel “finished.”
+                    Structured designs that look maintained—not wild.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Lower inputs over time</p>
+                  <p className="font-semibold text-earth-900">Better every year</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Less watering and fewer recurring problems as it stabilizes.
+                    As plants establish, the landscape improves and requires less input.
                   </p>
                 </div>
               </div>
@@ -144,138 +118,74 @@ export default function Page() {
           </div>
         </section>
 
-        {/* CONTENT */}
-        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
-          {/* PROBLEMS */}
-          <section className="space-y-6">
-            <h2 className="font-display text-3xl font-bold text-earth-900">
-              Is your yard stuck in maintenance mode?
-            </h2>
+        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="prose prose-lg prose-earth max-w-none">
+              <h2>When people call us</h2>
+              <p>
+                Many homeowners want a landscape that supports local ecosystems and requires less constant input—but they also want something that looks clean, organized, and appropriate for their neighborhood.
+              </p>
+              <p>
+                Native-forward landscaping does both. It uses plants adapted to West Michigan's climate and sandy soil while maintaining structure, curb appeal, and manageable maintenance levels.
+              </p>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-              <ul className="grid gap-3 md:grid-cols-2 list-disc pl-6 text-earth-700 text-lg">
-                <li>Grass struggles in dry or shady areas</li>
-                <li>Beds constantly overgrown or weedy</li>
-                <li>Plants die every year and need replacing</li>
-                <li>Too much mowing to keep up with</li>
-                <li>Drainage issues or soggy areas</li>
-                <li>You want habitat — but not a messy look</li>
+              <h3>Good fit if you want</h3>
+              <ul>
+                <li>Less watering and fewer recurring problems</li>
+                <li>Support for pollinators and beneficial insects</li>
+                <li>A landscape that stabilizes instead of constantly declining</li>
+                <li>Seasonal interest and year-round structure</li>
               </ul>
             </div>
-          </section>
 
-          {/* BENEFITS */}
-          <section className="space-y-6">
-            <h2 className="font-display text-2xl font-bold text-earth-900">
-              What native-forward landscaping changes
-            </h2>
+            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
+              <p className="text-earth-700 mt-2">
+                We match plants to your site conditions and design for how you actually use the space.
+              </p>
 
-            <div className="grid gap-6 lg:grid-cols-2">
-              <div className="prose prose-lg prose-earth max-w-none">
-                <p>
-                  Instead of forcing plants to survive here, we match plants to soil,
-                  moisture, and sunlight so the yard stabilizes naturally. We often
-                  use native plants, and we also incorporate climate-adapted plants
-                  when they perform better for structure, durability, or seasonal
-                  balance. That usually means fewer recurring problems—and a
-                  landscape that looks better as it matures.
-                </p>
-              </div>
-
-              <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-                <h3 className="text-xl font-bold text-earth-900">
-                  Benefits you’ll notice
-                </h3>
-                <ul className="mt-5 space-y-3 text-earth-800">
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Less watering (once established)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Fewer inputs (fertilizer &amp; pesticides)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>More seasonal interest and structure</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Stronger soil structure and resilience</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Reduced recurring “problem zones”</span>
-                  </li>
-                </ul>
-              </div>
+              <ul className="mt-6 space-y-3 text-earth-800">
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>Site assessment: sun, soil, drainage, and goals</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>Design that looks intentional with clean edges and structure</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>Native and climate-adapted plant selection</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>Installation and establishment support</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="mt-1 text-moss-700">✓</span>
+                  <span>Maintenance plan that reduces work over time</span>
+                </li>
+              </ul>
             </div>
-          </section>
+          </div>
 
-          {/* PROCESS */}
-          <section className="space-y-6">
-            <h2 className="font-display text-2xl font-bold text-earth-900">
-              Our process
-            </h2>
+          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+            <h2>What you leave with</h2>
+            <p className="text-earth-700 mt-2">
+              A landscape designed for West Michigan conditions—plants that thrive without constant inputs, structure that holds up through seasons, and a maintenance approach that gets easier as the garden establishes.
+            </p>
+          </div>
 
-            <ol className="grid gap-4 md:grid-cols-2">
-              <li className="bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
-                <p className="text-sm font-semibold text-moss-700">Step 01</p>
-                <p className="text-lg font-semibold text-earth-900 mt-1">
-                  Site Visit
-                </p>
-                <p className="text-earth-700 mt-2">
-                  Evaluate sun, soil, drainage, and how you want to use the
-                  space.
-                </p>
-              </li>
-
-              <li className="bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
-                <p className="text-sm font-semibold text-moss-700">Step 02</p>
-                <p className="text-lg font-semibold text-earth-900 mt-1">
-                  Design Direction
-                </p>
-                <p className="text-earth-700 mt-2">
-                  A plan aligned with your goals, style, and maintenance comfort
-                  level.
-                </p>
-              </li>
-
-              <li className="bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
-                <p className="text-sm font-semibold text-moss-700">Step 03</p>
-                <p className="text-lg font-semibold text-earth-900 mt-1">
-                  Installation
-                </p>
-                <p className="text-earth-700 mt-2">
-                  Proper prep and planting for long-term success—not quick
-                  fixes.
-                </p>
-              </li>
-
-              <li className="bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
-                <p className="text-sm font-semibold text-moss-700">Step 04</p>
-                <p className="text-lg font-semibold text-earth-900 mt-1">
-                  Support
-                </p>
-                <p className="text-earth-700 mt-2">
-                  Guidance as the landscape fills in so it keeps looking
-                  intentional as it matures.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          {/* RELATED SERVICES */}
-          <section className="space-y-4">
+          <section className="mt-14 space-y-4">
             <h2 className="font-display text-2xl font-bold text-earth-900">
               Related services
             </h2>
             <div className="flex flex-wrap gap-3">
               <a
-                href="/services/ecological-landscaping"
+                href="/services/pollinator-garden-installation"
                 className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
               >
-                Ecological Landscaping Approach →
+                Pollinator Garden Installation →
               </a>
               <a
                 href="/services/lawn-conversion-muskegon"
@@ -284,113 +194,80 @@ export default function Page() {
                 Lawn Conversion →
               </a>
               <a
-                href="/services/pollinator-garden-installation"
-                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-              >
-                Pollinator Garden Installation →
-              </a>
-              <a
-                href="/services/landscape-maintenance-muskegon"
-                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-              >
-                Landscape Maintenance →
-              </a>
-              <a
                 href="/services/landscape-consultation-muskegon"
                 className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
               >
                 Landscape Consultation →
               </a>
-            </div>
-          </section>
-
-          {/* CTA */}
-          <section className="mt-6 p-10 bg-moss-50 rounded-2xl border-2 border-moss-200 text-center">
-            <h3 className="text-2xl font-bold text-earth-900 mb-4">
-              Start With a Site Visit
-            </h3>
-            <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
-              We’ll look at your property conditions and goals, then recommend a
-              design direction that looks clean, fits your style, and stays
-              manageable long-term.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="/#schedule"
-                className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
+                href="/services/ecological-landscaping"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
               >
-                Schedule Consultation
-              </a>
-              <a
-                href="/#projects"
-                className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
-              >
-                View Our Work
+                Ecological Landscaping Approach →
               </a>
             </div>
           </section>
 
-          {/* FAQ (must match JSON-LD above) */}
-          <section className="space-y-6">
-            <h2 className="font-display text-2xl font-bold text-earth-900">
-              FAQs
+          <section className="mt-16">
+            <h2 className="font-display font-bold text-3xl text-earth-900 mb-8 text-center">
+              Frequently asked questions
             </h2>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-6">
-              <p className="font-semibold text-earth-900">
-                Does native landscaping have to look wild?
-              </p>
-              <p className="text-earth-700 mt-2">
-                No. We design native-forward landscapes to look intentional—clean
-                edges, structured plant groupings, and a maintenance plan that fits
-                your comfort level for neatness.
-              </p>
-            </div>
+            <div className="space-y-4">
+              <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+                <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                  <span>Does native landscaping have to look wild?</span>
+                  <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-4 text-earth-700 leading-relaxed">
+                  No. We design native-forward landscapes to look intentional—clean edges, structured plant groupings, and a maintenance plan that fits your comfort level for neatness.
+                </p>
+              </details>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-6">
-              <p className="font-semibold text-earth-900">
-                Do you only install native plants?
-              </p>
-              <p className="text-earth-700 mt-2">
-                No. We prioritize native plants where they make sense, and we also
-                use climate-adapted and pollinator-friendly plants when they provide
-                better structure, durability, or seasonal balance. The goal is a
-                landscape that thrives and stays manageable.
-              </p>
-            </div>
+              <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+                <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                  <span>Do you only install native plants?</span>
+                  <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-4 text-earth-700 leading-relaxed">
+                  No. We prioritize native plants where they make sense, and we also use climate-adapted and pollinator-friendly plants when they provide better structure, durability, or seasonal balance. The goal is a landscape that thrives and stays manageable.
+                </p>
+              </details>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-6">
-              <p className="font-semibold text-earth-900">
-                Will native landscaping reduce maintenance?
-              </p>
-              <p className="text-earth-700 mt-2">
-                It often reduces recurring problems like constant replanting,
-                heavy watering, and high-input lawn care. Every landscape needs
-                some seasonal maintenance, but the goal is less work over time
-                as the planting stabilizes.
-              </p>
-            </div>
+              <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+                <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                  <span>Will native landscaping reduce maintenance?</span>
+                  <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-4 text-earth-700 leading-relaxed">
+                  It often reduces recurring problems like constant replanting, heavy watering, and high-input lawn care. Every landscape needs some seasonal maintenance, but the goal is less work over time as the planting stabilizes.
+                </p>
+              </details>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-6">
-              <p className="font-semibold text-earth-900">
-                How do you choose the right plants?
-              </p>
-              <p className="text-earth-700 mt-2">
-                We match plants to your site: sunlight, soil type,
-                moisture/drainage, and how you want to use the space. That’s how
-                we build landscapes that hold up long-term in West Michigan.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl border border-earth-200 p-6">
-              <p className="font-semibold text-earth-900">How do we start?</p>
-              <p className="text-earth-700 mt-2">
-                We start with a site visit to evaluate conditions and goals.
-                Then we recommend a design direction and an implementation
-                plan—either phased over time or installed in one project.
-              </p>
+              <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+                <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                  <span>How do you choose the right plants?</span>
+                  <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-4 text-earth-700 leading-relaxed">
+                  We match plants to your site: sunlight, soil type, moisture and drainage, and how you want to use the space. That is how we build landscapes that hold up long-term in West Michigan.
+                </p>
+              </details>
             </div>
           </section>
+
+          <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
+            <h3 className="text-2xl font-bold text-earth-900 mb-4">Start with a site visit</h3>
+            <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
+              We will evaluate conditions and goals, then recommend a design direction and implementation plan—either phased over time or installed in one project.
+            </p>
+            <a
+              href="/#schedule"
+              className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
+            >
+              Schedule Consultation
+            </a>
+          </div>
         </section>
       </main>
 

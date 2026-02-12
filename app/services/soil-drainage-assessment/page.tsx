@@ -6,9 +6,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Soil & Drainage Assessment in Muskegon, MI | Earth Stewards LLC',
   description:
-    'Soil and drainage assessment in Muskegon, MI. If plants keep dying or areas stay wet, we diagnose the cause and recommend practical fixes so you stop repeating failures.',
+    'Soil and drainage assessment in Muskegon and West Michigan. Diagnose why plants keep dying or areas stay wet, then get practical fixes to stop repeating failures.',
   keywords:
-    'soil assessment Muskegon, drainage assessment Muskegon MI, drainage problems, why plants keep dying, grading and drainage evaluation West Michigan, soil compaction, standing water yard',
+    'soil assessment Muskegon, drainage assessment Muskegon MI, drainage problems West Michigan, soil compaction, standing water yard, grading evaluation',
 }
 
 export default function SoilDrainagePage() {
@@ -21,8 +21,7 @@ export default function SoilDrainagePage() {
         name: 'Why do my plants keep dying even when I water them?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'Plant failure is often caused by water movement and root-zone conditions—too wet, too dry, compacted soil, or drainage patterns that change across the yard. Replacing plants without addressing the underlying cause often leads to the same result.',
+          text: 'Plant failure is often caused by water movement and root-zone conditions—too wet, too dry, compacted soil, or drainage patterns that change across the yard. Replacing plants without addressing the underlying cause often leads to the same result.',
         },
       },
       {
@@ -30,8 +29,7 @@ export default function SoilDrainagePage() {
         name: 'What do you look at during a soil and drainage assessment?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'We evaluate soil type and compaction, drainage patterns after rain, grading and downspout impacts, moisture levels in the root zone, and whether plant choices match the site conditions.',
+          text: 'We evaluate soil type and compaction, drainage patterns after rain, grading and downspout impacts, moisture levels in the root zone, and whether plant choices match the site conditions.',
         },
       },
       {
@@ -39,8 +37,7 @@ export default function SoilDrainagePage() {
         name: 'Do you do soil testing?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'We start with an on-site assessment of soil structure and drainage behavior. If lab soil testing would be helpful for your goals, we can recommend what to test for and next steps based on what we find.',
+          text: 'We start with an on-site assessment of soil structure and drainage behavior. If lab soil testing would be helpful for your goals, we can recommend what to test for and next steps based on what we find.',
         },
       },
       {
@@ -48,17 +45,7 @@ export default function SoilDrainagePage() {
         name: 'Will the solution require major construction?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text:
-            'Not always. Many problems improve with practical changes like plant placement, soil improvement, minor grading adjustments, or redirecting water sources. We’ll recommend the simplest effective fix first.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'What happens after the assessment?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text:
-            'You’ll receive clear, prioritized recommendations you can implement yourself or hire us to handle. The goal is predictable plant performance and fewer recurring issues over time.',
+          text: 'Not always. Many problems improve with practical changes like plant placement, soil improvement, minor grading adjustments, or redirecting water sources. We will recommend the simplest effective fix first.',
         },
       },
     ],
@@ -68,7 +55,6 @@ export default function SoilDrainagePage() {
     <>
       <Navigation />
 
-      {/* JSON-LD FAQ for SEO */}
       <Script
         id="faq-soil-drainage"
         type="application/ld+json"
@@ -76,19 +62,18 @@ export default function SoilDrainagePage() {
       />
 
       <main className="min-h-screen bg-earth-50">
-        {/* HERO */}
         <section className="relative pt-32 pb-20 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30"></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Soil &amp; Drainage Assessment
+                Soil and Drainage Assessment
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
                 If plants keep dying or areas stay wet, the issue is usually below the surface. We identify soil and
-                drainage problems and recommend clear solutions so you stop repeating failed plantings.
+                drainage problems in Muskegon and recommend clear solutions so you stop repeating failed plantings.
               </p>
 
               <p className="text-earth-600">
@@ -110,12 +95,11 @@ export default function SoilDrainagePage() {
                 </a>
               </div>
 
-              {/* QUICK VALUE CARDS */}
               <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
                   <p className="font-semibold text-earth-900">Stop repeating failures</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Diagnose the cause so you don’t keep replacing plants.
+                    Diagnose the cause so you don't keep replacing plants.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
@@ -135,16 +119,14 @@ export default function SoilDrainagePage() {
           </div>
         </section>
 
-        {/* CONTENT */}
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            {/* LEFT */}
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When plants keep failing</h2>
+              <h2>When people call us</h2>
               <p>
                 Repeated plant loss often comes down to water movement—too wet, too dry, or inconsistent conditions
                 within the same yard. Compacted soil and poor drainage can suffocate roots even when everything looks
-                “fine” on the surface.
+                fine on the surface.
               </p>
               <p>
                 Replacing plants without addressing this usually leads to the same outcome—just with new plants.
@@ -155,14 +137,13 @@ export default function SoilDrainagePage() {
                 <li>Standing water after rain</li>
                 <li>Soggy zones that never dry out</li>
                 <li>Dry patches that burn out quickly</li>
-                <li>Plants that decline despite “doing everything right”</li>
+                <li>Plants that decline despite doing everything right</li>
                 <li>Mulch that washes or soil that erodes</li>
               </ul>
             </div>
 
-            {/* RIGHT: WHAT WE EVALUATE */}
             <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-earth-900">What we evaluate</h3>
+              <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
               <p className="text-earth-700 mt-2">
                 We look at the root causes—not just surface symptoms.
               </p>
@@ -181,15 +162,15 @@ export default function SoilDrainagePage() {
                   </p>
                 </div>
                 <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Grading &amp; downspouts</p>
+                  <p className="font-semibold text-earth-900">Grading and downspouts</p>
                   <p className="text-earth-700 text-sm mt-2">
                     Slopes, runoff paths, and water sources impacting the yard.
                   </p>
                 </div>
                 <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Plant/site match</p>
+                  <p className="font-semibold text-earth-900">Plant and site match</p>
                   <p className="text-earth-700 text-sm mt-2">
-                    Whether current (or planned) plants fit the conditions.
+                    Whether current or planned plants fit the conditions.
                   </p>
                 </div>
               </div>
@@ -204,60 +185,110 @@ export default function SoilDrainagePage() {
             </div>
           </div>
 
-          {/* NEXT STEPS + RELATED SERVICES */}
-          <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-              <h3 className="text-2xl font-bold text-earth-900">What you’ll get</h3>
-              <ul className="mt-6 space-y-3 text-earth-800">
-                <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Clear diagnosis of what’s driving the problem</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Prioritized recommendations (what matters most first)</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Plant selection guidance matched to moisture and sunlight</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Options you can DIY or hire us to implement</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="prose prose-lg prose-earth max-w-none">
-              <h2>Related services</h2>
-              <ul>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/landscape-consultation-muskegon">
-                    Landscape Consultation
-                  </a>{' '}
-                  — for broader planning and layout guidance
-                </li>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/garden-restoration-muskegon">
-                    Garden Restoration
-                  </a>{' '}
-                  — if beds are overgrown or failing
-                </li>
-                <li>
-                  <a className="text-moss-700 hover:text-moss-900 font-semibold" href="/services/native-landscaping-muskegon">
-                    Native Landscaping
-                  </a>{' '}
-                  — if you want a long-term redesign built for your site
-                </li>
-              </ul>
-            </div>
+          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+            <h2>What you leave with</h2>
+            <ul className="mt-6 space-y-3 text-earth-800">
+              <li className="flex gap-3">
+                <span className="mt-1 text-moss-700">✓</span>
+                <span>Clear diagnosis of what is driving the problem</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 text-moss-700">✓</span>
+                <span>Prioritized recommendations—what matters most first</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 text-moss-700">✓</span>
+                <span>Plant selection guidance matched to moisture and sunlight</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-1 text-moss-700">✓</span>
+                <span>Options you can DIY or hire us to implement</span>
+              </li>
+            </ul>
           </div>
 
-          {/* CTA */}
+          <section className="mt-14 space-y-4">
+            <h2 className="font-display text-2xl font-bold text-earth-900">
+              Related services
+            </h2>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="/services/landscape-consultation-muskegon"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+              >
+                Landscape Consultation →
+              </a>
+              <a
+                href="/services/garden-restoration-muskegon"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+              >
+                Garden Restoration →
+              </a>
+              <a
+                href="/services/native-landscaping-muskegon"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+              >
+                Native Landscaping →
+              </a>
+              <a
+                href="/services/lawn-conversion-muskegon"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+              >
+                Lawn Conversion →
+              </a>
+            </div>
+          </section>
+
+          <section className="mt-16 space-y-6">
+            <h2 className="font-display text-2xl font-bold text-earth-900">
+              Frequently asked questions
+            </h2>
+
+            <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+              <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                <span>Why do my plants keep dying even when I water them?</span>
+                <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="mt-4 text-earth-700 leading-relaxed">
+                Plant failure is often caused by water movement and root-zone conditions—too wet, too dry, compacted soil, or drainage patterns that change across the yard. Replacing plants without addressing the underlying cause often leads to the same result.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+              <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                <span>What do you look at during a soil and drainage assessment?</span>
+                <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="mt-4 text-earth-700 leading-relaxed">
+                We evaluate soil type and compaction, drainage patterns after rain, grading and downspout impacts, moisture levels in the root zone, and whether plant choices match the site conditions.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+              <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                <span>Do you do soil testing?</span>
+                <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="mt-4 text-earth-700 leading-relaxed">
+                We start with an on-site assessment of soil structure and drainage behavior. If lab soil testing would be helpful for your goals, we can recommend what to test for and next steps based on what we find.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-2xl border border-earth-200 p-6 shadow-sm">
+              <summary className="cursor-pointer list-none font-semibold text-earth-900 flex items-center justify-between">
+                <span>Will the solution require major construction?</span>
+                <span className="text-moss-700 group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="mt-4 text-earth-700 leading-relaxed">
+                Not always. Many problems improve with practical changes like plant placement, soil improvement, minor grading adjustments, or redirecting water sources. We will recommend the simplest effective fix first.
+              </p>
+            </details>
+          </section>
+
           <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
-            <h3 className="text-2xl font-bold text-earth-900 mb-4">Find Out What’s Actually Wrong</h3>
+            <h3 className="text-2xl font-bold text-earth-900 mb-4">Find out what is actually wrong</h3>
             <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
-              We’ll assess your soil and drainage conditions and recommend practical solutions that work—so your yard
+              We will assess your soil and drainage conditions and recommend practical solutions that work—so your yard
               stops cycling through the same issues.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

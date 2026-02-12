@@ -138,7 +138,7 @@ export default function LawnConversionPage() {
                 We convert portions of lawn into stable plantings sized to how you actually use the yard, reducing weekly upkeep while keeping an intentional look.
               </p>
 
-              <h3>Good candidates for conversion</h3>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Good candidates for conversion</h3>
               <ul>
                 <li>Slopes that are hard to mow</li>
                 <li>Areas that burn out every summer</li>
@@ -197,7 +197,7 @@ export default function LawnConversionPage() {
           </div>
 
           <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-            <h2>What you leave with</h2>
+            <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
             <p className="text-earth-700 mt-2">
               A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.
             </p>

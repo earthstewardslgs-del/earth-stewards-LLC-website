@@ -196,7 +196,7 @@ export default function LawnConversionPage() {
             </div>
           </div>
 
-          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+          <div className="mt-8 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
             <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
             <p className="text-earth-700 mt-2">
               A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.

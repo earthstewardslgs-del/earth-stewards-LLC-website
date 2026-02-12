@@ -139,7 +139,7 @@ export default function LandscapeMaintenancePage() {
                 health, soil health, and realistic maintenance levels.
               </p>
 
-              <h3>Great fit if you want</h3>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Great fit if you want</h3>
               <ul>
                 <li>A yard that looks cared for without weekly stress</li>
                 <li>Help getting back on track after a few busy seasons</li>
@@ -202,10 +202,10 @@ export default function LandscapeMaintenancePage() {
             </div>
           </div>
 
-          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-10">
+          <div className="mt-8 bg-moss-50 rounded-2xl border-2 border-moss-200 p-10">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div>
-                <h2>What you leave with</h2>
+                <h2 className="text-2xl font-semibold text-earth-900 tracking-wide border-l-4 border-moss-600 pl-3 mb-4">What you leave with</h2>
                 <p className="text-earth-700 mt-2">
                   Many landscapes become high-maintenance because the structure isn't working—plants are crowded,
                   weeds and invasives exploit open ground, or soil is depleted.

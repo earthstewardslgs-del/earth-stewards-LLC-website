@@ -130,7 +130,7 @@ export default function SoilDrainagePage() {
                 We diagnose how the site actually behaves so solutions address the cause instead of repeating replacements.
               </p>
 
-              <h3>Common symptoms</h3>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Common symptoms</h3>
               <ul>
                 <li>Standing water after rain</li>
                 <li>Soggy zones that never dry out</li>
@@ -183,8 +183,8 @@ export default function SoilDrainagePage() {
             </div>
           </div>
 
-          <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-            <h2>What you leave with</h2>
+          <div className="mt-8 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+            <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
             <ul className="mt-6 space-y-3 text-earth-800">
               <li className="flex gap-3">
                 <span className="mt-1 text-moss-700">✓</span>

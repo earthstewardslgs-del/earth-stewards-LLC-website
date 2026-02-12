@@ -127,7 +127,7 @@ This visit is for clarity. We walk the property together, interpret what the sit
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>Read the landscape before changing it</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">Read the landscape before changing it</h2>
               <p>
                 Many homeowners call us after trying multiple fixes: plants that keep dying, wet areas that never
                 dry out, constant trimming to keep things presentable, or beds that collapse into weeds every
@@ -139,7 +139,7 @@ This visit is for clarity. We walk the property together, interpret what the sit
                 Michigan's climate.
               </p>
 
-              <h3>Common reasons people book a consultation</h3>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Common reasons people book a consultation</h3>
               <ul>
                 <li>Plants keep failing and you're tired of replacing them</li>
                 <li>Standing water, soggy spots, or confusing drainage patterns</li>
@@ -191,9 +191,9 @@ This visit is for clarity. We walk the property together, interpret what the sit
             </div>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-              <h3 className="text-2xl font-bold text-earth-900">What you leave with</h3>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h3>
               <p className="text-earth-700 mt-2">
                 You won't leave with a rigid blueprint—you'll leave with direction.
               </p>
@@ -219,7 +219,7 @@ This visit is for clarity. We walk the property together, interpret what the sit
             </div>
 
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2>Different goals are welcome</h2>
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">Different goals are welcome</h2>
               <p>
                 Some clients want habitat support and ecological function. Others want a cleaner, easier yard.
                 Most want a balance.

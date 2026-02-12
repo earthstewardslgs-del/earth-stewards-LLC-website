@@ -138,7 +138,7 @@ export default function GardenRestorationPage() {
           </section>
 
           <section className="space-y-6">
-            <h2 className="font-display text-2xl font-bold text-earth-900">
+            <h2 className="text-2xl font-semibold text-earth-900 tracking-wide border-l-4 border-moss-600 pl-3">
               What you leave with
             </h2>
 

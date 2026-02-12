@@ -140,69 +140,72 @@ export default function SoilDrainagePage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
-              <p className="text-earth-700 mt-2">
-                We look at the root causes—not just surface symptoms.
-              </p>
 
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Soil structure</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    Soil type, compaction, and root-zone conditions.
-                  </p>
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+                <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
+                <p className="text-earth-700 mt-2">
+                  We look at the root causes—not just surface symptoms.
+                </p>
+
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Soil structure</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      Soil type, compaction, and root-zone conditions.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Drainage behavior</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      How water moves after rain and where it collects.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Grading and downspouts</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      Slopes, runoff paths, and water sources impacting the yard.
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Plant and site match</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      Whether current or planned plants fit the conditions.
+                    </p>
+                  </div>
                 </div>
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Drainage behavior</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    How water moves after rain and where it collects.
-                  </p>
-                </div>
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Grading and downspouts</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    Slopes, runoff paths, and water sources impacting the yard.
-                  </p>
-                </div>
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Plant and site match</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    Whether current or planned plants fit the conditions.
+
+                <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
+                  <p className="font-semibold text-earth-900">Then we recommend solutions</p>
+                  <p className="text-earth-800 text-sm mt-2">
+                    Not always major construction. Often the best fixes are placement changes, soil improvement, drainage
+                    redirection, or minor grading adjustments—prioritized for impact.
                   </p>
                 </div>
               </div>
 
-              <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
-                <p className="font-semibold text-earth-900">Then we recommend solutions</p>
-                <p className="text-earth-800 text-sm mt-2">
-                  Not always major construction. Often the best fixes are placement changes, soil improvement, drainage
-                  redirection, or minor grading adjustments—prioritized for impact.
-                </p>
+              <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+                <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
+                <ul className="mt-6 space-y-3 text-earth-800">
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Clear diagnosis of what is driving the problem</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Prioritized recommendations—what matters most first</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Plant selection guidance matched to moisture and sunlight</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Options you can DIY or hire us to implement</span>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-
-          <div className="mt-8 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-            <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
-            <ul className="mt-6 space-y-3 text-earth-800">
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Clear diagnosis of what is driving the problem</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Prioritized recommendations—what matters most first</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Plant selection guidance matched to moisture and sunlight</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Options you can DIY or hire us to implement</span>
-              </li>
-            </ul>
           </div>
 
           <section className="mt-14 space-y-4">

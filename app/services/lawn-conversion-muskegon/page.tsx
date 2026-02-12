@@ -148,77 +148,79 @@ export default function LawnConversionPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
-              <p className="text-earth-700 mt-2">
-                We evaluate sun, soil, drainage, and how you use the space—then choose a planting strategy that fits.
-              </p>
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+                <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
+                <p className="text-earth-700 mt-2">
+                  We evaluate sun, soil, drainage, and how you use the space—then choose a planting strategy that fits.
+                </p>
 
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Low-growing meadow</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    A more natural look with seasonal interest—designed to be managed, not wild.
-                  </p>
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Low-growing meadow</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      A more natural look with seasonal interest—designed to be managed, not wild.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Perennial beds</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      Mixed or native-forward plantings with structure, edges, and clear intentional design.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Groundcover zones</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      Simple, low-maintenance coverage where turf struggles—especially in awkward or unused areas.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                    <p className="font-semibold text-earth-900">Habitat-supportive</p>
+                    <p className="text-earth-700 text-sm mt-2">
+                      Plantings that support pollinators and wildlife while still looking clean and designed.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Perennial beds</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    Mixed or native-forward plantings with structure, edges, and clear intentional design.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Groundcover zones</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    Simple, low-maintenance coverage where turf struggles—especially in awkward or unused areas.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                  <p className="font-semibold text-earth-900">Habitat-supportive</p>
-                  <p className="text-earth-700 text-sm mt-2">
-                    Plantings that support pollinators and wildlife while still looking clean and designed.
-                  </p>
+                <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
+                  <p className="font-semibold text-earth-900">How it works</p>
+                  <ol className="mt-3 space-y-2 text-earth-800 text-sm list-decimal pl-5">
+                    <li>Site visit to assess sun, soil, drainage, and your goals</li>
+                    <li>Recommend an option that fits your maintenance comfort level</li>
+                    <li>Preparation and installation for long-term success</li>
+                    <li>Guidance so the area fills in and gets easier over time</li>
+                  </ol>
                 </div>
               </div>
 
-              <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
-                <p className="font-semibold text-earth-900">How it works</p>
-                <ol className="mt-3 space-y-2 text-earth-800 text-sm list-decimal pl-5">
-                  <li>Site visit to assess sun, soil, drainage, and your goals</li>
-                  <li>Recommend an option that fits your maintenance comfort level</li>
-                  <li>Preparation and installation for long-term success</li>
-                  <li>Guidance so the area fills in and gets easier over time</li>
-                </ol>
+              <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
+                <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
+                <p className="text-earth-700 mt-2">
+                  A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.
+                </p>
+                <ul className="mt-6 space-y-3 text-earth-800">
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Clear understanding of what will thrive in your specific conditions</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Realistic timeline and phasing options</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Maintenance plan that reduces work as the planting establishes</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>Clean, intentional design that doesn't look like you gave up on the yard</span>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-
-          <div className="mt-8 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-            <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
-            <p className="text-earth-700 mt-2">
-              A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.
-            </p>
-            <ul className="mt-6 space-y-3 text-earth-800">
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Clear understanding of what will thrive in your specific conditions</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Realistic timeline and phasing options</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Maintenance plan that reduces work as the planting establishes</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-1 text-moss-700">✓</span>
-                <span>Clean, intentional design that doesn't look like you gave up on the yard</span>
-              </li>
-            </ul>
           </div>
 
           <section className="mt-14 space-y-4">

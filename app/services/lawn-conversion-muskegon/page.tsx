@@ -129,26 +129,51 @@ export default function LawnConversionPage() {
 
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
-              <p>
+            <div className="space-y-6">
+              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
+              <p className="text-earth-700 text-lg">
                 Some lawns never become easy—dry patches, constant growth, and weekly upkeep just to keep things
                 acceptable. A lawn conversion replaces high-effort turf with stable plantings that fill in, look
                 intentional, and reduce ongoing work in Muskegon's sandy soil.
               </p>
-              <p>
+              <p className="text-earth-700 text-lg">
                 This isn't removing lawn just for appearance. It's changing the structure of the landscape so it
                 maintains itself better.
               </p>
 
-              <h3>Good candidates for conversion</h3>
-              <ul>
+              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Good candidates for conversion</h3>
+              <ul className="space-y-2 text-earth-700">
                 <li>Slopes that are hard to mow</li>
                 <li>Areas that burn out every summer</li>
                 <li>Edges you constantly trim</li>
                 <li>Backyard spaces you don't actually use</li>
                 <li>Sections that never look good no matter what you try</li>
               </ul>
+
+              <div className="mt-8 rounded-xl border border-moss-200 bg-moss-50 p-6">
+                <p className="font-semibold text-earth-900 text-lg">What you leave with</p>
+                <p className="text-earth-800 text-sm mt-2">
+                  A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.
+                </p>
+                <ul className="mt-4 space-y-2 text-earth-800 text-sm">
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
+                    <span>Clear understanding of what will thrive in your specific conditions</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
+                    <span>Realistic timeline and phasing options</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
+                    <span>Maintenance plan that reduces work as the planting establishes</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
+                    <span>Clean, intentional design that doesn't look like you gave up on the yard</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
@@ -185,31 +210,6 @@ export default function LawnConversionPage() {
                     Plantings that support pollinators and wildlife while still looking clean and designed.
                   </p>
                 </div>
-              </div>
-
-              <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
-                <p className="font-semibold text-earth-900">What you leave with</p>
-                <p className="text-earth-800 text-sm mt-2">
-                  A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.
-                </p>
-                <ul className="mt-4 space-y-2 text-earth-800 text-sm">
-                  <li className="flex gap-2">
-                    <span className="text-moss-700">✓</span>
-                    <span>Clear understanding of what will thrive in your specific conditions</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-moss-700">✓</span>
-                    <span>Realistic timeline and phasing options</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-moss-700">✓</span>
-                    <span>Maintenance plan that reduces work as the planting establishes</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-moss-700">✓</span>
-                    <span>Clean, intentional design that doesn't look like you gave up on the yard</span>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

@@ -52,14 +52,6 @@ export default function InvasiveSpeciesRemovalPage() {
     ],
   }
 
-  const related = [
-    { name: 'Overgrown Yard Cleanup', href: '/services/overgrown-yard-cleanup' },
-    { name: 'Soil & Drainage Assessment', href: '/services/soil-drainage-assessment' },
-    { name: 'Garden Restoration', href: '/services/garden-restoration-muskegon' },
-    { name: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
-    { name: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
-  ]
-
   const faqs = [
     {
       q: 'What invasive plants do you remove in Muskegon?',
@@ -161,17 +153,38 @@ export default function InvasiveSpeciesRemovalPage() {
 
         {/* Related services */}
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-earth-900 mb-6">Related services</h2>
+          <h2 className="font-display text-2xl font-bold text-earth-900 mb-6">Related services</h2>
           <div className="flex flex-wrap gap-3">
-            {related.map((s) => (
-              <Link
-                key={s.href}
-                href={s.href}
-                className="px-4 py-2 rounded-full border border-earth-200 bg-white text-earth-800 hover:border-moss-300 hover:text-moss-800 transition-colors"
-              >
-                {s.name}
-              </Link>
-            ))}
+            <Link
+              href="/services/overgrown-yard-cleanup"
+              className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+            >
+              Overgrown Yard Cleanup →
+            </Link>
+            <Link
+              href="/services/soil-drainage-assessment"
+              className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+            >
+              Soil & Drainage Assessment →
+            </Link>
+            <Link
+              href="/services/garden-restoration-muskegon"
+              className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+            >
+              Garden Restoration →
+            </Link>
+            <Link
+              href="/services/ecological-garden-care"
+              className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+            >
+              Ecological Garden Care →
+            </Link>
+            <Link
+              href="/services/landscape-maintenance-muskegon"
+              className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+            >
+              Landscape Maintenance →
+            </Link>
           </div>
         </section>
 

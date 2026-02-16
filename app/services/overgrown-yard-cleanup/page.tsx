@@ -124,17 +124,21 @@ export default function OvergrownCleanupPage() {
 
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            <div className="prose prose-lg prose-earth max-w-none">
-              <h2>When people call us</h2>
-              <p>
+            <div className="space-y-6">
+              <div className="border-l-4 border-earth-900 pl-6">
+                <h2 className="text-3xl font-bold text-earth-900">When people call us</h2>
+              </div>
+              <p className="text-earth-700 text-lg">
                 People usually reach out when the yard no longer feels manageable. It may have been neglected for years, recently inherited, or overtaken after seasons of fast growth. Often there are valuable plants hidden beneath invasive growth, but the structure is unclear and hard to recover without starting fresh.
               </p>
-              <p>
+              <p className="text-earth-700 text-lg">
                 If you're searching for overgrown yard cleanup in Muskegon, this is the reset phase that makes the rest manageable.
               </p>
 
-              <h3>This service is a good fit if</h3>
-              <ul>
+              <div className="border-l-4 border-earth-900 pl-6 mt-8">
+                <h3 className="text-xl font-bold text-earth-900">This service is a good fit if</h3>
+              </div>
+              <ul className="space-y-2 text-earth-700">
                 <li>The property feels out of control</li>
                 <li>You don't know what should stay or go</li>
                 <li>Invasives or volunteer trees have taken over</li>
@@ -179,7 +183,9 @@ export default function OvergrownCleanupPage() {
           </div>
 
           <div className="mt-14 bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-            <h2>What you leave with</h2>
+            <div className="border-l-4 border-earth-900 pl-6 mb-4">
+              <h2 className="text-3xl font-bold text-earth-900">What you leave with</h2>
+            </div>
             <p className="text-earth-700 mt-2">
               You leave with a property that is readable again — clear boundaries, manageable growth, and a stable foundation for future decisions. Some clients continue with planting or design, others simply regain a yard they can maintain without constant struggle.
             </p>

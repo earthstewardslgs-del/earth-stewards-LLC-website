@@ -207,12 +207,6 @@ export default function PollinatorGardenPage() {
                 Native Landscaping →
               </a>
               <a
-                href="/services/ecological-landscaping"
-                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-              >
-                Ecological Landscaping Approach →
-              </a>
-              <a
                 href="/services/landscape-maintenance-muskegon"
                 className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
               >

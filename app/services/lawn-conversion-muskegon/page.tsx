@@ -130,15 +130,18 @@ export default function LawnConversionPage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="prose prose-lg prose-earth max-w-none">
-              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
+              <h2>When people call us</h2>
               <p>
-                If mowing feels endless, the issue isn’t the grass — it’s that the space is asking for a different use. Large turf areas often require constant input in West Michigan conditions.
+                Some lawns never become easy—dry patches, constant growth, and weekly upkeep just to keep things
+                acceptable. A lawn conversion replaces high-effort turf with stable plantings that fill in, look
+                intentional, and reduce ongoing work in Muskegon's sandy soil.
               </p>
               <p>
-                We convert portions of lawn into stable plantings sized to how you actually use the yard, reducing weekly upkeep while keeping an intentional look.
+                This isn't removing lawn just for appearance. It's changing the structure of the landscape so it
+                maintains itself better.
               </p>
 
-              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Good candidates for conversion</h3>
+              <h3>Good candidates for conversion</h3>
               <ul>
                 <li>Slopes that are hard to mow</li>
                 <li>Areas that burn out every summer</li>
@@ -148,74 +151,62 @@ export default function LawnConversionPage() {
               </ul>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-                <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
-                <p className="text-earth-700 mt-2">
-                  We evaluate sun, soil, drainage, and how you use the space—then choose a planting strategy that fits.
-                </p>
+            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-earth-900">What we do</h3>
+              <p className="text-earth-700 mt-2">
+                We evaluate sun, soil, drainage, and how you use the space—then choose a planting strategy that fits.
+              </p>
 
-                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                    <p className="font-semibold text-earth-900">Low-growing meadow</p>
-                    <p className="text-earth-700 text-sm mt-2">
-                      A more natural look with seasonal interest—designed to be managed, not wild.
-                    </p>
-                  </div>
-
-                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                    <p className="font-semibold text-earth-900">Perennial beds</p>
-                    <p className="text-earth-700 text-sm mt-2">
-                      Mixed or native-forward plantings with structure, edges, and clear intentional design.
-                    </p>
-                  </div>
-
-                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                    <p className="font-semibold text-earth-900">Groundcover zones</p>
-                    <p className="text-earth-700 text-sm mt-2">
-                      Simple, low-maintenance coverage where turf struggles—especially in awkward or unused areas.
-                    </p>
-                  </div>
-
-                  <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                    <p className="font-semibold text-earth-900">Habitat-supportive</p>
-                    <p className="text-earth-700 text-sm mt-2">
-                      Plantings that support pollinators and wildlife while still looking clean and designed.
-                    </p>
-                  </div>
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Low-growing meadow</p>
+                  <p className="text-earth-700 text-sm mt-2">
+                    A more natural look with seasonal interest—designed to be managed, not wild.
+                  </p>
                 </div>
 
-                <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
-                  <p className="font-semibold text-earth-900">How it works</p>
-                  <ol className="mt-3 space-y-2 text-earth-800 text-sm list-decimal pl-5">
-                    <li>Site visit to assess sun, soil, drainage, and your goals</li>
-                    <li>Recommend an option that fits your maintenance comfort level</li>
-                    <li>Preparation and installation for long-term success</li>
-                    <li>Guidance so the area fills in and gets easier over time</li>
-                  </ol>
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Perennial beds</p>
+                  <p className="text-earth-700 text-sm mt-2">
+                    Mixed or native-forward plantings with structure, edges, and clear intentional design.
+                  </p>
+                </div>
+
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Groundcover zones</p>
+                  <p className="text-earth-700 text-sm mt-2">
+                    Simple, low-maintenance coverage where turf struggles—especially in awkward or unused areas.
+                  </p>
+                </div>
+
+                <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
+                  <p className="font-semibold text-earth-900">Habitat-supportive</p>
+                  <p className="text-earth-700 text-sm mt-2">
+                    Plantings that support pollinators and wildlife while still looking clean and designed.
+                  </p>
                 </div>
               </div>
 
-              <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-                <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
-                <p className="text-earth-700 mt-2">
+              <div className="mt-6 rounded-xl border border-moss-200 bg-moss-50 p-6">
+                <p className="font-semibold text-earth-900">What you leave with</p>
+                <p className="text-earth-800 text-sm mt-2">
                   A conversion plan designed for your site conditions, maintenance comfort level, and aesthetic preferences.
                 </p>
-                <ul className="mt-6 space-y-3 text-earth-800">
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
+                <ul className="mt-4 space-y-2 text-earth-800 text-sm">
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
                     <span>Clear understanding of what will thrive in your specific conditions</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
                     <span>Realistic timeline and phasing options</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
                     <span>Maintenance plan that reduces work as the planting establishes</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700">✓</span>
                     <span>Clean, intentional design that doesn't look like you gave up on the yard</span>
                   </li>
                 </ul>
@@ -246,7 +237,12 @@ export default function LawnConversionPage() {
               >
                 Landscape Consultation →
               </a>
-              
+              <a
+                href="/services/ecological-landscaping"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
+              >
+                Ecological Landscaping Approach →
+              </a>
             </div>
           </section>
 

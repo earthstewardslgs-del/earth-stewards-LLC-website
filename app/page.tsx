@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
+import StartStep from '@/components/StartStep'
 import WhyNative from '@/components/WhyNative'
 import Process from '@/components/Process'
 import Projects from '@/components/Projects'
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Services />
+      <StartStep />
       <WhyNative />
       <Process />
       <Projects />

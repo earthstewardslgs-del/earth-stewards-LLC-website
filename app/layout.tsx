@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import Script from 'next/script'
 import StructuredData from '@/components/StructuredData'
 import './globals.css'
@@ -53,14 +54,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en">
       <head>
         <Script
           id="facebook-pixel"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -96,6 +97,7 @@ export default function RootLayout({
 
 declare global {
   interface Window {
-    fbq: (action: string, eventName: string, params?: Record<string, unknown>) => void
+    fbq?: (...args: any[]) => void
+    _fbq?: (...args: any[]) => void
   }
 }

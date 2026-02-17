@@ -21,7 +21,7 @@ export default function StartStep() {
               You want work done and need to know scope, order, and next steps before installation.
             </p>
             <Link
-              href="/services/consultation?type=assessment"
+              href="/services/landscape-consultation-muskegon?type=assessment"
               className="inline-block px-6 py-3 rounded-lg bg-earth-800 text-white hover:bg-earth-700 transition"
             >
               Start with a Site Assessment
@@ -34,7 +34,7 @@ export default function StartStep() {
               You want clarity before committing — drainage, plants, layout, and long-term direction.
             </p>
             <Link
-              href="/services/consultation?type=consulting"
+              href="/services/landscape-consultation-muskegon?type=consulting"
               className="inline-block px-6 py-3 rounded-lg bg-earth-600 text-white hover:bg-earth-500 transition"
             >
               Book a Consulting Session

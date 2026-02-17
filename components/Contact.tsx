@@ -1,6 +1,43 @@
 'use client'
 
+import { useState, FormEvent } from 'react'
+import { useRouter } from 'next/navigation'
+
 export default function Contact() {
+  const router = useRouter()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch('https://formspree.io/f/mreabyzp', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+
+      if (response.ok) {
+        // Reset form
+        form.reset()
+        // Redirect to thank-you page
+        router.push('/thank-you')
+      } else {
+        alert('There was a problem submitting your form. Please try again or contact us directly.')
+        setIsSubmitting(false)
+      }
+    } catch (error) {
+      alert('There was a problem submitting your form. Please try again or contact us directly.')
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <section
       id="contact"
@@ -127,8 +164,7 @@ export default function Contact() {
               Request a Free Consultation
             </h3>
             <form 
-              action="https://formspree.io/f/mreabyzp" 
-              method="POST"
+              onSubmit={handleSubmit}
               className="space-y-6"
             >
               <input type="hidden" name="_subject" value="New Earth Stewards LLC Contact Form Submission" />
@@ -145,7 +181,8 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors disabled:opacity-50"
                   placeholder="John Smith"
                 />
               </div>
@@ -162,7 +199,8 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors disabled:opacity-50"
                   placeholder="john@example.com"
                 />
               </div>
@@ -178,7 +216,8 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors disabled:opacity-50"
                   placeholder="(231) 769-0769"
                 />
               </div>
@@ -194,7 +233,8 @@ export default function Contact() {
                   id="projectType"
                   name="projectType"
                   required
-                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors disabled:opacity-50"
                 >
                   <option value="">Select a project type</option>
                   <option value="design">Design & Installation</option>
@@ -216,16 +256,18 @@ export default function Contact() {
                   name="message"
                   required
                   rows={4}
-                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors resize-none"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors resize-none disabled:opacity-50"
                   placeholder="Describe your property, goals, and any specific requirements..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-xl"
+                disabled={isSubmitting}
+                className="w-full px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
 
               <p className="text-sm text-earth-600 text-center">

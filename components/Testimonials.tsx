@@ -89,7 +89,7 @@ export default function Testimonials() {
             href="#contact"
             className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full hover:bg-moss-50 transition-all hover:shadow-xl"
           >
-            Get Your Free Consultation
+            Book a Project Review Call
             <svg
               className="ml-2 w-5 h-5"
               fill="none"

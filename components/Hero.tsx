@@ -24,7 +24,11 @@ export default function Hero() {
               </h1>
 
               <p className="text-lg sm:text-xl text-earth-700 leading-relaxed max-w-xl animate-fade-in-up delay-200">
-                A clean, intentional landscape that requires less work each season
+                A landscape designed to work with your property — becoming easier to care for over time.
+              </p>
+
+              <p className="text-base text-earth-600 leading-relaxed max-w-xl mt-4 mb-4">
+                Landscapes work best when treated as part of nature, not separate from it.
               </p>
 
               <p className="text-base text-earth-600 leading-relaxed max-w-xl animate-fade-in-up delay-200">

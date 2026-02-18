@@ -126,7 +126,7 @@ export default function AboutPage() {
           </h2>
           <div className="prose prose-lg prose-earth max-w-none space-y-6">
             <p className="text-earth-700 text-lg leading-relaxed">
-              Earth Stewards is owner-led and hands-on.
+              Earth Stewards is led by Kendall Hailstone, approaching each project as a partnership with the land rather than something to control.
             </p>
             <p className="text-earth-700 text-lg leading-relaxed">
               Rather than applying one style everywhere, each project begins by reading the land itself — understanding water flow, soil conditions, light patterns, and existing plant communities.

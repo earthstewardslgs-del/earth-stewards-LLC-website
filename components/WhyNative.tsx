@@ -92,6 +92,19 @@ export default function WhyNative() {
           ))}
         </div>
 
+        {/* Conservation projects link */}
+        <div className="text-center mt-16 mb-12">
+          <p className="text-sm text-earth-500">
+            We also collaborate on community and conservation projects —{' '}
+            <a 
+              href="/conservation-projects" 
+              className="text-earth-500 hover:text-moss-700 underline transition-colors"
+            >
+              implementation partnerships →
+            </a>
+          </p>
+        </div>
+
         {/* Detailed Benefits List */}
         <div className="bg-earth-800 text-white rounded-3xl p-8 md:p-12 space-y-8">
           <div className="border-b border-earth-700 pb-8">

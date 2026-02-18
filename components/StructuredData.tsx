@@ -1,5 +1,33 @@
 export default function StructuredData() {
-  const structuredData = {
+  const organizationData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://earthstewardsllc.org/#organization',
+    name: 'Earth Stewards LLC',
+    alternateName: 'Earth Stewards Landscape Design',
+    url: 'https://earthstewardsllc.org',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://earthstewardsllc.org/images/logo.png',
+      width: '512',
+      height: '512',
+    },
+    image: 'https://earthstewardsllc.org/images/logo.png',
+    description: 'Professional landscape design, garden restoration, and ecological landscaping services in Muskegon and Ottawa County, Michigan. Specializing in native plants, pollinator gardens, and low-maintenance landscapes.',
+    telephone: '+1-231-769-0769',
+    email: 'earthstewardslgs@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Muskegon',
+      addressRegion: 'MI',
+      addressCountry: 'US',
+    },
+    sameAs: [
+      'https://www.facebook.com/earthstewardsllc',
+    ],
+  }
+
+  const localBusinessData = {
     '@context': 'https://schema.org',
     '@type': 'LandscapingBusiness',
     '@id': 'https://earthstewardsllc.org',
@@ -155,9 +183,15 @@ export default function StructuredData() {
   }
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessData) }}
+      />
+    </>
   )
 }

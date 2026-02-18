@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://earthstewardsllc.org',
   },
+  icons: {
+    icon: '/favicon.ico',
+  },
   openGraph: {
     title: 'Landscape Design & Native Landscaping in Muskegon, MI | Earth Stewards LLC',
     description: 'Landscape design, garden restoration, and ecological landscaping in Muskegon and Ottawa County. Lower-maintenance landscapes that look better and work with nature.',

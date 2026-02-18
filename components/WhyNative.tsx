@@ -93,7 +93,7 @@ export default function WhyNative() {
         </div>
 
         {/* Conservation projects link */}
-        <div className="text-center mt-16 mb-12">
+        <div className="text-center mt-16 mb-6">
           <p className="text-sm text-earth-500">
             We also collaborate on community and conservation projects —{' '}
             <a 
@@ -105,49 +105,17 @@ export default function WhyNative() {
           </p>
         </div>
 
-        {/* Detailed Benefits List */}
-        <div className="bg-earth-800 text-white rounded-3xl p-8 md:p-12 space-y-8">
-          <div className="border-b border-earth-700 pb-8">
-            <h3 className="text-2xl font-display font-bold mb-3">Water Conservation</h3>
-            <p className="text-earth-200 leading-relaxed">
-              Landscapes designed for local conditions rely more on rainfall and less on irrigation once established — helping reduce watering needs during typical seasons.
-            </p>
-          </div>
-
-          <div className="border-b border-earth-700 pb-8">
-            <h3 className="text-2xl font-display font-bold mb-3">Lower Maintenance</h3>
-            <p className="text-earth-200 leading-relaxed">
-              Spend less time mowing, fertilizing, and managing recurring problems. A well-planned landscape stabilizes and becomes easier to care for each year.
-            </p>
-          </div>
-
-          <div className="border-b border-earth-700 pb-8">
-            <h3 className="text-2xl font-display font-bold mb-3">Supports Pollinators</h3>
-            <p className="text-earth-200 leading-relaxed">
-              Flowering plants provide food and habitat for butterflies, bees, birds, and other beneficial wildlife that help keep ecosystems balanced.
-            </p>
-          </div>
-
-          <div className="border-b border-earth-700 pb-8">
-            <h3 className="text-2xl font-display font-bold mb-3">Year-Round Interest</h3>
-            <p className="text-earth-200 leading-relaxed">
-              Thoughtful plant selection keeps the landscape visually appealing across seasons — from spring growth to winter structure.
-            </p>
-          </div>
-
-          <div className="border-b border-earth-700 pb-8">
-            <h3 className="text-2xl font-display font-bold mb-3">Reduces Chemical Use</h3>
-            <p className="text-earth-200 leading-relaxed">
-              Plants suited to the region are naturally more resilient, reducing the need for fertilizers and pest treatments.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-display font-bold mb-3">Improves Property Appeal</h3>
-            <p className="text-earth-200 leading-relaxed">
-              A healthy, intentional landscape enhances curb appeal and creates an inviting outdoor space people enjoy using.
-            </p>
-          </div>
+        {/* About page link */}
+        <div className="text-center mt-8">
+          <p className="text-base text-earth-700">
+            Curious why we approach landscapes this way?{' '}
+            <a 
+              href="/about" 
+              className="text-earth-700 hover:text-moss-700 hover:underline transition-colors"
+            >
+              Learn about Earth Stewards →
+            </a>
+          </p>
         </div>
       </div>
     </section>

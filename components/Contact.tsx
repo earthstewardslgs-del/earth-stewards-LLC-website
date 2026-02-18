@@ -55,8 +55,7 @@ export default function Contact() {
               Let&apos;s Grow Something Beautiful Together
             </h2>
             <p className="text-xl text-earth-700 mb-8">
-              Ready to transform your property with native landscaping? Get in
-              touch for a free consultation.
+              Tell us a bit about your property and goals — we’ll begin with a brief planning call and guide you on next steps.
             </p>
 
             {/* Contact details */}
@@ -161,7 +160,7 @@ export default function Contact() {
           {/* Right column - Contact form */}
           <div id="schedule" className="bg-white rounded-3xl p-8 shadow-xl">
             <h3 className="font-display text-2xl font-bold text-earth-900 mb-6">
-              Request a Free Consultation
+              Start With a Project Review Call
             </h3>
             <form 
               onSubmit={handleSubmit}

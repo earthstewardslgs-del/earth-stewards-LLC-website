@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -126,7 +127,7 @@ export default function AboutPage() {
           </h2>
           <div className="prose prose-lg prose-earth max-w-none space-y-6">
             <p className="text-earth-700 text-lg leading-relaxed">
-              Earth Stewards is led by Kendall Hailstone, approaching each project as a partnership with the land rather than something to control.
+              Earth Stewards is owner-led and hands-on.
             </p>
             <p className="text-earth-700 text-lg leading-relaxed">
               Rather than applying one style everywhere, each project begins by reading the land itself — understanding water flow, soil conditions, light patterns, and existing plant communities.
@@ -135,9 +136,18 @@ export default function AboutPage() {
               The goal is simple: create outdoor spaces that participate in their environment instead of fighting it.
             </p>
           </div>
-          {/* Space for future headshot */}
-          <div className="mt-12">
-            {/* Placeholder for owner photo - can be added later */}
+          <div className="mt-12 flex flex-col items-center text-center">
+            <Image
+              src="/images/kendall-hailstone.jpg"
+              alt="Kendall Hailstone, owner of Earth Stewards LLC"
+              width={220}
+              height={220}
+              className="rounded-2xl object-cover shadow-md"
+              priority
+            />
+            <p className="mt-4 text-sm text-earth-600">
+              Kendall Hailstone — Earth Stewards LLC
+            </p>
           </div>
         </section>
 

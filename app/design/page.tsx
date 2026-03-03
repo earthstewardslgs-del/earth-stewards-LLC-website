@@ -3,8 +3,8 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Ecological Landscape Design | Earth Stewards LLC | Muskegon MI',
-  description: 'Site-specific ecological landscape design focused on long-term function and beauty—plant communities, soil health, stormwater performance, and resilient, intentional aesthetics in West Michigan.',
+  title: 'Ecological Landscape Design in Muskegon, MI | Earth Stewards',
+  description: 'Ecological landscape design in Muskegon, MI. Site-based analysis, planting plans, and phased recommendations rooted in function, beauty, and long-term stewardship.',
   keywords: 'ecological landscape design Muskegon, native landscape design, landscape design West Michigan, plant communities, landscape architecture Muskegon MI',
 }
 
@@ -29,7 +29,7 @@ export default function DesignPage() {
               </p>
 
               <p className="text-earth-600">
-                Serving Muskegon & Ottawa Counties and surrounding West Michigan communities
+                Serving Muskegon, Ottawa County, and surrounding West Michigan communities
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function DesignPage() {
         <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg prose-earth max-w-none space-y-6">
             <p className="text-earth-700 text-lg leading-relaxed">
-              Ecological Landscape Design is where vision becomes structure. We study how your property behaves — water movement, soil conditions, sunlight patterns, and plant relationships — and translate those realities into a living system that works with the land instead of against it.
+              Ecological landscape design turns site realities into a living system. We study how your property behaves — water movement, soil conditions, sunlight patterns, and existing plant communities — and translate those findings into a plan that's resilient, intentional, and beautiful in every season.
             </p>
 
             <p className="text-earth-700 text-lg leading-relaxed">

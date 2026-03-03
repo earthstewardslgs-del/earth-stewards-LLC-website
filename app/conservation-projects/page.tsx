@@ -204,6 +204,10 @@ export default function ConservationProjectsPage() {
           <div className="space-y-6">
             <div className="flex gap-3 text-earth-700 text-lg">
               <span className="text-moss-700 mt-1 flex-shrink-0">•</span>
+              <p>We can design ecological installations from the ground up, from concept through planting plans.</p>
+            </div>
+            <div className="flex gap-3 text-earth-700 text-lg">
+              <span className="text-moss-700 mt-1 flex-shrink-0">•</span>
               <p>We can implement directly from an existing plan or specification.</p>
             </div>
             <div className="flex gap-3 text-earth-700 text-lg">
@@ -213,6 +217,10 @@ export default function ConservationProjectsPage() {
             <div className="flex gap-3 text-earth-700 text-lg">
               <span className="text-moss-700 mt-1 flex-shrink-0">•</span>
               <p>We can support multi-site installation periods during active project seasons.</p>
+            </div>
+            <div className="flex gap-3 text-earth-700 text-lg">
+              <span className="text-moss-700 mt-1 flex-shrink-0">•</span>
+              <p>We can provide ongoing ecological maintenance and stewardship to ensure projects establish and thrive over time.</p>
             </div>
           </div>
         </section>

@@ -10,15 +10,15 @@ export default function StartStep() {
         </h2>
 
         <p className="text-lg text-earth-700 mb-12 max-w-2xl mx-auto">
-          Some homeowners are ready to hire work. Others first need to understand why their landscape behaves the way it does.
+          Some property owners are ready to move forward with a specific improvement. Others first need clarity about how their landscape functions as a whole.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
 
           <div className="p-8 border rounded-xl bg-white">
-            <h3 className="text-2xl font-semibold mb-4">Planning a project</h3>
+            <h3 className="text-2xl font-semibold mb-4">Targeted Improvements</h3>
             <p className="mb-6 text-earth-700">
-              You want work done and need to know scope, order, and next steps before installation.
+              You have a specific area you'd like to improve and need clarity on scope, feasibility, and rough cost direction.
             </p>
             <Link
               href="/services/landscape-consultation-muskegon?type=assessment"
@@ -29,15 +29,15 @@ export default function StartStep() {
           </div>
 
           <div className="p-8 border rounded-xl bg-white">
-            <h3 className="text-2xl font-semibold mb-4">Understanding your land</h3>
+            <h3 className="text-2xl font-semibold mb-4">Ecological Planning</h3>
             <p className="mb-6 text-earth-700">
-              You want clarity before committing — drainage, plants, layout, and long-term direction.
+              You want to understand how water, sun, soil, and plant communities interact — and determine a long-term path forward for your landscape.
             </p>
             <Link
               href="/services/landscape-consultation-muskegon?type=consulting"
               className="inline-block px-6 py-3 rounded-lg bg-earth-600 text-white hover:bg-earth-500 transition"
             >
-              Book a Consulting Session
+              Book a Strategic Consultation
             </Link>
           </div>
 

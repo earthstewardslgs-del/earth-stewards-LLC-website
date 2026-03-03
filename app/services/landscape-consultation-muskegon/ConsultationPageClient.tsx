@@ -13,7 +13,7 @@ const faqItems = [
   },
   {
     q: 'Is the Site Assessment fee credited toward a project?',
-    a: 'Yes. The $75 Site Assessment fee is credited toward any project you hire us for.',
+    a: 'Yes. The $75 Site Assessment fee is credited toward installation or maintenance work scheduled within 30 days.',
   },
   {
     q: 'Do you provide a recording of the Strategic Consulting Session?',
@@ -256,7 +256,11 @@ export default function ConsultationPageClient() {
                 </p>
 
                 <p className="text-earth-700 mb-6">
-                  This visit determines scope, priorities, and rough cost direction if you're considering hiring us for work. It's focused on next steps — not long-term planning.
+                  This visit helps determine priorities, feasibility, and rough cost direction for the area you're considering — whether you're planning improvements, ongoing maintenance, or moving toward a larger project.
+                  <br /><br />
+                  It's focused on practical next steps rather than long-term planning or full design development.
+                  <br /><br />
+                  The assessment fee is credited toward future installation or maintenance work scheduled within 30 days.
                 </p>
 
                 <ul className="space-y-3 mb-6">
@@ -281,7 +285,7 @@ export default function ConsultationPageClient() {
                 <div className="border-t border-earth-200 pt-6 mb-6">
                   <p className="text-3xl font-bold text-earth-900 mb-2">$75</p>
                   <p className="text-sm text-earth-600">
-                    Credited toward project cost if you move forward
+                    Credited toward installation or maintenance work within 30 days
                   </p>
                 </div>
 
@@ -313,29 +317,31 @@ export default function ConsultationPageClient() {
                 </p>
 
                 <p className="text-earth-700 mb-6">
-                  This session is focused on understanding how your landscape functions — including soil, drainage, sunlight, and long-term goals — so you can make confident decisions with a clear roadmap.
+                  This on-site strategy session is designed for properties that need clarity, direction, or long-term ecological planning.
+                  <br /><br />
+                  We evaluate site conditions, plant communities, maintenance capacity, and phased possibilities — helping you determine what is realistic and what will create lasting ecological function and beauty.
+                  <br /><br />
+                  You'll receive a written summary with recommendations and next steps.
+                  <br /><br />
+                  Fifty percent of the consultation fee is credited toward ecological design services scheduled within 30 days.
                 </p>
 
                 <ul className="space-y-3 mb-6">
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Diagnose why issues are happening</span>
+                    <span className="text-earth-700">Clarify long-term ecological direction</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Develop a long-term strategy (not trial-and-error fixes)</span>
+                    <span className="text-earth-700">Receive written recommendations</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Ask questions freely — we adapt to your goals</span>
+                    <span className="text-earth-700">Explore phased or design-based solutions</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Written summary with plant suggestions</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Full session recording for future reference</span>
+                    <span className="text-earth-700">Determine whether full ecological design is warranted</span>
                   </li>
                 </ul>
 
@@ -345,7 +351,7 @@ export default function ConsultationPageClient() {
                     Strategic Landscape Consulting Session
                   </p>
                   <p className="text-sm text-moss-700 font-semibold">
-                    50% credited toward formal ecological design (if pursued)
+                    50% credited toward ecological design services within 30 days
                   </p>
                 </div>
 

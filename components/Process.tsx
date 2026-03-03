@@ -6,7 +6,7 @@ export default function Process() {
       number: '01',
       title: 'Begin With a Site Visit',
       description:
-        'We start by walking the property together.\n\nIf you have a clearly defined project in mind, a Site Assessment helps determine scope and feasibility. If you\'re seeking clarity about what\'s possible, a Strategic Consultation provides direction, plant guidance, and long-term vision.\n\nYou\'ll leave knowing what's realistic and what your options are.',
+        'We start by walking the property together.\n\nIf you have a clearly defined project in mind, a Site Assessment helps determine scope and feasibility. If you\'re seeking clarity about what\'s possible, a Strategic Consultation provides direction, plant guidance, and long-term vision.\n\nYou\'ll leave knowing what\'s realistic and what your options are.',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />

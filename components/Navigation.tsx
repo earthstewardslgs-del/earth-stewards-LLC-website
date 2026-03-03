@@ -16,11 +16,12 @@ export default function Navigation() {
   }, [])
 
   const navLinks = [
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/#services' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Testimonials', href: '/#testimonials' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'About', href: '/about', external: false },
+    { name: 'Services', href: '/#services', external: true },
+    { name: 'Design', href: '/design', external: false },
+    { name: 'Ecological Partnerships', href: '/conservation-projects', external: false },
+    { name: 'Testimonials', href: '/#testimonials', external: true },
+    { name: 'Contact', href: '/#contact', external: true },
   ]
 
   return (
@@ -53,13 +54,23 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="px-4 py-2 text-earth-800 hover:text-moss-700 font-medium transition-colors rounded-lg hover:bg-moss-50"
-              >
-                {link.name}
-              </a>
+              link.external ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="px-4 py-2 text-earth-800 hover:text-moss-700 font-medium transition-colors rounded-lg hover:bg-moss-50"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="px-4 py-2 text-earth-800 hover:text-moss-700 font-medium transition-colors rounded-lg hover:bg-moss-50"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
             <a
               href="https://www.facebook.com/earthstewardsllc"
@@ -80,7 +91,7 @@ export default function Navigation() {
               href="/#schedule"
               className="ml-4 px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-lg"
             >
-              Discuss Your Project
+              Schedule Consultation
             </a>
           </div>
 
@@ -88,6 +99,7 @@ export default function Navigation() {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 text-earth-900 hover:bg-moss-50 rounded-lg transition-colors"
+            aria-label="Toggle navigation menu"
           >
             <svg
               className="w-6 h-6"
@@ -120,21 +132,32 @@ export default function Navigation() {
         <div className="md:hidden bg-earth-50 border-t border-earth-200 shadow-lg">
           <div className="px-4 py-4 space-y-2">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-4 py-3 text-earth-800 hover:text-moss-700 hover:bg-moss-50 rounded-lg font-medium transition-colors"
-              >
-                {link.name}
-              </a>
+              link.external ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block px-4 py-3 text-earth-800 hover:text-moss-700 hover:bg-moss-50 rounded-lg font-medium transition-colors"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block px-4 py-3 text-earth-800 hover:text-moss-700 hover:bg-moss-50 rounded-lg font-medium transition-colors"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
             <a
               href="/#schedule"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all text-center"
             >
-              Discuss Your Project
+              Schedule Consultation
             </a>
           </div>
         </div>

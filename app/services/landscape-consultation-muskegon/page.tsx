@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import ConsultationPageClient from './ConsultationPageClient'
 
 export const metadata: Metadata = {
-  title: 'Landscape Consulting & Site Assessment in Muskegon, MI | Earth Stewards LLC',
+  title: 'Landscape Consultation & Strategy in Muskegon, MI | Earth Stewards LLC',
   description:
-    'Get clear guidance on drainage, soil, layout, and plant strategy. Choose a quick Site Assessment for project scope, or a recorded Consulting Session for deeper planning—whether you hire us or not.',
+    'Professional landscape consulting in Muskegon. Site Assessment ($75) for project scope, or Strategic Consulting ($225) for long-term planning with recording and written summary.',
   keywords:
-    'landscape consulting Muskegon, site assessment Muskegon, garden consultation Muskegon MI, landscape planning West Michigan, landscape consulting session, recorded landscape consultation',
+    'landscape consulting Muskegon, site assessment Muskegon, strategic landscape consulting, garden consultation Muskegon MI, landscape planning West Michigan',
 }
 
 export default function Page() {

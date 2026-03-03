@@ -8,40 +8,36 @@ import Footer from '@/components/Footer'
 
 const faqItems = [
   {
-    q: "What's the difference between a Site Assessment and a Consulting Session?",
-    a: "A Site Assessment is a shorter visit focused on determining project scope and priorities—primarily for people considering hiring us for work. A Consulting Session is a longer, deeper engagement covering soil, drainage, plant strategy, and long-term planning. It ends with a full recording delivered to you, and is designed for homeowners who want to understand their property well enough to make decisions independently.",
+    q: "What's the difference between a Site Assessment and Strategic Consulting?",
+    a: "A Site Assessment ($75) is focused on determining project scope and rough budget direction — primarily for people ready to hire installation work soon. Strategic Consulting ($225) is a deeper session covering soil, drainage, plant strategy, and long-term planning. It includes a written summary, plant suggestions, and a full recording, designed for property owners who want clarity before making changes.",
   },
   {
     q: 'Is the Site Assessment fee credited toward a project?',
-    a: 'Yes. The $75 Site Assessment fee is credited toward any project you hire us for. It is not a separate charge on top of project costs.',
+    a: 'Yes. The $75 Site Assessment fee is credited toward any project you hire us for.',
   },
   {
-    q: 'Do you provide a recording of the Consulting Session?',
-    a: 'Yes—the Consulting Session includes a full recording delivered after the visit. You can revisit the plan while working on the yard without needing to take notes during the conversation.',
+    q: 'Do you provide a recording of the Strategic Consulting Session?',
+    a: 'Yes—Strategic Consulting includes a full session recording delivered after the visit, plus a written summary with plant suggestions. You can revisit the plan while working on the yard without needing to take notes during the conversation.',
   },
   {
     q: 'Do I need a consultation before landscaping work?',
-    a: 'Not always, but it helps prevent unnecessary work and makes sure changes fit your site conditions. Many clients use a Site Assessment to clarify long-term direction before investing in changes.',
+    a: 'Not always, but it helps prevent unnecessary work and makes sure changes fit your site conditions. Many clients use a Site Assessment to clarify direction before investing in installation.',
   },
   {
     q: 'Will you recommend plants for my yard?',
-    a: 'Yes. We suggest plant options that match your soil, light, moisture, and maintenance comfort level—native, traditional, or a mix—based on your goals and the site.',
+    a: 'Yes. Strategic Consulting includes written plant suggestions that match your soil, light, moisture, and maintenance comfort level — native, traditional, or a mix — based on your goals and the site.',
   },
   {
     q: 'Can I do the work myself after the visit?',
-    a: 'Absolutely. Many homeowners use the Consulting Session as a roadmap and implement improvements gradually on their own. If you want help with execution, we can also outline done-for-you options.',
-  },
-  {
-    q: 'What if my main issue is drainage or plants keep dying?',
-    a: 'If the core issue is persistent wet areas, standing water, or repeated plant failure, a Soil and Drainage Assessment may be the better starting point. We will tell you what makes the most sense.',
+    a: 'Absolutely. Many homeowners use Strategic Consulting as a roadmap and implement improvements gradually on their own. If you want help with execution, we can also outline done-for-you options.',
   },
   {
     q: 'How long does each visit take?',
-    a: 'A Site Assessment typically takes 45–60 minutes. A Consulting Session runs 1.5 to 2 hours depending on property size and how many areas we work through together.',
+    a: 'A Site Assessment typically takes 45–60 minutes. Strategic Consulting runs 1.5 to 2 hours depending on property size and how many areas we work through together.',
   },
   {
     q: "What if I'm not ready to hire work yet?",
-    a: "That's completely fine. Many people book consulting specifically to avoid making expensive mistakes or unnecessary projects. The goal is clarity, not commitment.",
+    a: "That's completely fine. Many people book Strategic Consulting specifically to avoid making expensive mistakes. The goal is clarity, not commitment.",
   },
   {
     q: 'Do you work in Spring Lake, Grand Haven, and Norton Shores?',
@@ -98,15 +94,11 @@ export default function ConsultationPageClient() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display text-5xl font-bold text-earth-900 mb-6">
-Professional Landscape Consultation
-</h1>
+                Landscape Consultation & Strategy
+              </h1>
 
               <p className="text-xl text-earth-700 leading-relaxed mb-6">
-This visit is for clarity. We walk the property together, interpret what the site is doing, and help you understand your landscape well enough to make confident decisions—whether you hire us or move forward on your own.
-</p>
-
-              <p className="text-earth-700 max-w-3xl mx-auto">
-                A landscape consultation gives you the interpretive expertise to read your own property—so the decisions you make are grounded in what the site actually needs.
+                Every property behaves differently. We walk your site together, interpret what the landscape is doing, and help you make grounded decisions — whether you're preparing to hire work or want a long-term plan before making changes.
               </p>
 
               <p className="text-earth-600">
@@ -115,250 +107,66 @@ This visit is for clarity. We walk the property together, interpret what the sit
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">
                 <a
-                  href="/?service=assessment#schedule"
+                  href="/#schedule"
                   className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
                 >
                   Schedule a Visit
                 </a>
                 <a
-                  href="/#projects"
+                  href="/design"
                   className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
                 >
-                  View Our Work
+                  Explore Ecological Design
                 </a>
-              </div>
-
-              <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Clarity before cost</p>
-                  <p className="text-earth-700 text-sm mt-1">
-                    Avoid spending money on plants or projects that won't hold up long-term.
-                  </p>
-                </div>
-                <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Work with site conditions</p>
-                  <p className="text-earth-700 text-sm mt-1">
-                    Use your property's natural patterns to your advantage.
-                  </p>
-                </div>
-                <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Lower effort over time</p>
-                  <p className="text-earth-700 text-sm mt-1">
-                    Better decisions now prevent constant correction later.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Opening context section */}
+        {/* Value-building context section - MOVED BEFORE service cards */}
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="font-display text-3xl font-bold text-earth-900">
               Understand your property before changing it
             </h2>
+
             <p className="text-earth-700 text-lg">
-              Most landscape problems don't come from plants — they come from decisions made without understanding the site.
+              Most landscape problems aren't cosmetic—they're functional. Drainage issues, failing plants, and constant corrections happen when the original design didn't account for how the site actually behaves.
             </p>
+
             <p className="text-earth-700 text-lg">
-              Drainage issues, dying plants, constant maintenance, overgrowth, and repeated "fixes" usually trace back to working against conditions instead of with them.
-            </p>
-            <p className="text-earth-700 text-lg">
-              We offer two types of visits depending on what you need right now.
+              A consultation helps you see what your property is doing—so you can work with it instead of against it.
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <div className="border-l-4 border-moss-600 pl-4">
-                <h3 className="text-xl font-bold text-earth-900">Site Assessment</h3>
-                <p className="text-moss-700 font-semibold text-sm mt-1">Planning a project with us</p>
-              </div>
-              <p className="text-earth-700">For homeowners preparing to hire work.</p>
-              <p className="text-earth-600 font-medium">You want to:</p>
-              <ul className="space-y-2 text-earth-700">
-                <li className="flex gap-2"><span className="text-moss-700 mt-0.5">•</span><span>Know what should happen first</span></li>
-                <li className="flex gap-2"><span className="text-moss-700 mt-0.5">•</span><span>Understand rough cost direction</span></li>
-                <li className="flex gap-2"><span className="text-moss-700 mt-0.5">•</span><span>Confirm we're the right fit</span></li>
-                <li className="flex gap-2"><span className="text-moss-700 mt-0.5">•</span><span>Move toward installation</span></li>
-              </ul>
-              <p className="text-earth-600 text-sm italic">This is a starting step before a project. This visit is not for developing a full plan — it's for determining whether a project should move forward.</p>
-            </div>
-
-            <div className="space-y-4">
-              <div className="border-l-4 border-earth-900 pl-4">
-                <h3 className="text-xl font-bold text-earth-900">Landscape Consulting Session</h3>
-                <p className="text-earth-700 font-semibold text-sm mt-1">Understanding your land</p>
-              </div>
-              <p className="text-earth-700">For homeowners who want clarity before committing to work.</p>
-              <p className="text-earth-600 font-medium">You want to:</p>
-              <ul className="space-y-2 text-earth-700">
-                <li className="flex gap-2"><span className="text-earth-500 mt-0.5">•</span><span>Stop guessing why things struggle</span></li>
-                <li className="flex gap-2"><span className="text-earth-500 mt-0.5">•</span><span>Understand drainage, soil, and light patterns</span></li>
-                <li className="flex gap-2"><span className="text-earth-500 mt-0.5">•</span><span>Make confident long-term decisions</span></li>
-                <li className="flex gap-2"><span className="text-earth-500 mt-0.5">•</span><span>Possibly implement changes yourself</span></li>
-              </ul>
-              <p className="text-earth-700 text-sm font-medium">You leave with a recorded walkthrough and a clear plan — whether you hire us or not.</p>
-              <p className="text-earth-600 text-sm italic">This is not a project quote — it's professional landscape advice.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Service tier selection */}
-        <section className="py-16 bg-white border-y border-earth-200">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display text-2xl font-bold text-earth-900 mb-4 text-center">
-              Choose the level of guidance you need
-            </h2>
-            <p className="text-earth-700 text-center max-w-3xl mx-auto mb-8">
-              Not everyone needs the same level of help. Some people just need to know whether a project makes sense. Others want to understand their property deeply before making decisions. Choose the visit that fits what you're hoping to get out of the conversation.
-            </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-              {/* Card 1: Site Assessment */}
-              <div
-                ref={assessmentRef}
-                className={`bg-earth-50 rounded-2xl border p-8 flex flex-col transition-shadow ${
-                  selected === 'assessment'
-                    ? 'border-earth-700 ring-2 ring-moss-600 ring-offset-4'
-                    : 'border-earth-200'
-                }`}
-              >
-                <p className="text-xs font-semibold text-moss-700 uppercase tracking-widest mb-2">Entry Visit</p>
-                <h3 className="text-2xl font-bold text-earth-900 mb-1">Site Assessment</h3>
-                <p className="text-earth-600 text-sm mb-2">Best for: preparing to hire work</p>
-                <p className="text-earth-600 text-sm mb-6 italic">This visit is primarily for determining scope and priorities if you're considering hiring us for work.</p>
-                <ul className="space-y-3 text-earth-800 flex-1">
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Walk the property together</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Identify problems and priorities</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Rough cost expectations</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-700">✓</span>
-                    <span>Credited toward future project</span>
-                  </li>
-                </ul>
-                <div className="mt-8 pt-6 border-t border-earth-200">
-                  <p className="text-earth-900 font-semibold mb-4">$75 — credited if hired</p>
-                  <a
-                    href="/?service=assessment#schedule"
-                    className="inline-flex items-center px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
-                  >
-                    Schedule Site Assessment
-                  </a>
-                </div>
-              </div>
-
-              {/* Card 2: Consulting Session */}
-              <div
-                ref={consultingRef}
-                className={`bg-earth-900 rounded-2xl border p-8 flex flex-col transition-shadow ${
-                  selected === 'consulting'
-                    ? 'border-earth-400 ring-2 ring-moss-600 ring-offset-4'
-                    : 'border-earth-800'
-                }`}
-              >
-                <p className="text-xs font-semibold text-moss-400 uppercase tracking-widest mb-2">Planning & Strategy</p>
-                <h3 className="text-2xl font-bold text-earth-50 mb-1">Landscape Consulting Session</h3>
-                <p className="text-earth-400 text-sm mb-2">Best for: planning your landscape yourself</p>
-                <p className="text-earth-400 text-sm mb-6">or wanting expert guidance before committing to installation</p>
-                <ul className="space-y-3 text-earth-200 flex-1">
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-400">✓</span>
-                    <span>Understand WHY the yard behaves the way it does</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-400">✓</span>
-                    <span>Clear long-term strategy (not trial-and-error fixes)</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-400">✓</span>
-                    <span>Ask questions freely — we adapt to your goals</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 text-moss-400">✓</span>
-                    <span>Full recording so you don't have to remember everything</span>
-                  </li>
-                </ul>
-                <div className="mt-8 pt-6 border-t border-earth-700">
-                  <p className="text-earth-300 text-sm mb-4">If you're unsure which plants, projects, or direction make sense, this session is designed for that stage.</p>
-                  <p className="text-earth-200 font-semibold mb-4">Typically 2–3× the cost of a site assessment</p>
-                  <a
-                    href="/?service=consulting#schedule"
-                    className="inline-flex items-center px-6 py-3 bg-white text-earth-900 font-semibold rounded-full hover:bg-earth-50 transition-all"
-                  >
-                    Book Consulting Session
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            <div className="prose prose-lg prose-earth max-w-none">
-              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">Read the landscape before changing it</h2>
-              <p>
-                Many homeowners call us after trying multiple fixes: plants that keep dying, wet areas that never
-                dry out, constant trimming to keep things presentable, or beds that collapse into weeds every
-                season.
-              </p>
-              <p>
-                The issue is usually not effort—it's a mismatch between the landscape and the conditions.
-                A consultation helps you understand what your yard needs so improvements hold up in West
-                Michigan's climate.
-              </p>
-
-              <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mt-8 mb-4 border-l-4 border-moss-600 pl-3">Common reasons people book a consultation</h3>
-              <ul>
-                <li>Plants keep failing and you're tired of replacing them</li>
-                <li>Standing water, soggy spots, or confusing drainage patterns</li>
-                <li>Beds that need constant mulching, trimming, or resetting</li>
-                <li>A yard that looks okay briefly—then chaotic again</li>
-                <li>Unsure whether you need maintenance, restoration, or redesign</li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-2xl border border-earth-200 p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-earth-900">What we look at during the visit</h3>
-              <p className="text-earth-700 mt-2">
-                We walk the property together and observe how the space functions.
-              </p>
-
-              <ul className="mt-6 space-y-3 text-earth-800">
+          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div>
+              <h3 className="text-2xl font-semibold text-earth-900 mb-6">
+                We look at
+              </h3>
+              <ul className="space-y-3 text-earth-700">
                 <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Sunlight exposure throughout the day</span>
+                  <span className="mt-1 text-moss-700 flex-shrink-0">→</span>
+                  <span>Where water goes during rain</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Drainage patterns and water movement</span>
+                  <span className="mt-1 text-moss-700 flex-shrink-0">→</span>
+                  <span>Sun and shade patterns across seasons</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Soil structure and compaction</span>
+                  <span className="mt-1 text-moss-700 flex-shrink-0">→</span>
+                  <span>Soil type and compaction</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Plant spacing and competition</span>
+                  <span className="mt-1 text-moss-700 flex-shrink-0">→</span>
+                  <span>Existing plant performance</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
-                  <span>Recurring maintenance problem areas</span>
+                  <span className="mt-1 text-moss-700 flex-shrink-0">→</span>
+                  <span>Maintenance expectations and comfort level</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="mt-1 text-moss-700">✓</span>
+                  <span className="mt-1 text-moss-700 flex-shrink-0">→</span>
                   <span>How you want the space to feel and function</span>
                 </li>
               </ul>
@@ -370,9 +178,7 @@ This visit is for clarity. We walk the property together, interpret what the sit
                 </p>
               </div>
             </div>
-          </div>
 
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
               <h3 className="text-2xl font-semibold text-earth-900 tracking-wide mb-6 border-l-4 border-moss-600 pl-3">What you leave with</h3>
 
@@ -397,7 +203,7 @@ This visit is for clarity. We walk the property together, interpret what the sit
               </ul>
 
               <div className="border-t border-moss-200 pt-6">
-                <p className="text-xs font-semibold text-moss-700 uppercase tracking-widest mb-3">After a Consulting Session</p>
+                <p className="text-xs font-semibold text-moss-700 uppercase tracking-widest mb-3">After Strategic Consulting</p>
                 <ul className="space-y-3 text-earth-800">
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
@@ -405,64 +211,178 @@ This visit is for clarity. We walk the property together, interpret what the sit
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
-                    <span>DIY-friendly guidance or done-for-you options</span>
+                    <span>Written summary with plant suggestions</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
-                    <span>A full recording of the session so you can revisit the plan while working on the yard — no note-taking required</span>
+                    <span>Full session recording — revisit the plan anytime</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1 text-moss-700">✓</span>
+                    <span>DIY-friendly guidance or done-for-you options</span>
                   </li>
                 </ul>
-                <p className="mt-4 text-earth-600 text-sm italic">This is not a project quote — it's professional landscape advice.</p>
-                <p className="mt-2 text-earth-700 text-sm">Many clients use this session even when they plan to do the work themselves.</p>
-                <p className="mt-4 text-earth-700 text-sm">You don't need to prepare anything beforehand. Many properties we visit are confusing, overgrown, or feel unmanageable — that's exactly when this session is most useful.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Two Options Section - NOW AFTER VALUE-BUILDING */}
+        <section className="py-16 bg-white border-y border-earth-200">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-3xl font-bold text-earth-900 mb-4">
+                Choose the right consultation for your needs
+              </h2>
+              <p className="text-earth-700 max-w-2xl mx-auto">
+                Whether you're ready to move forward with installation or need strategic direction first, we have an option that fits.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              {/* Site Assessment Card */}
+              <div
+                ref={assessmentRef}
+                className={`bg-white rounded-3xl border-2 p-8 shadow-lg transition-all ${
+                  selected === 'assessment' ? 'ring-2 ring-moss-600 ring-offset-4' : 'border-earth-200'
+                }`}
+              >
+                <h3 className="text-3xl font-bold text-earth-900 mb-3">
+                  Site Assessment
+                </h3>
+
+                <p className="text-sm font-semibold text-moss-700 mb-4">
+                  Best for: preparing to move forward with installation
+                </p>
+
+                <p className="text-earth-700 mb-6">
+                  This visit determines scope, priorities, and rough cost direction if you're considering hiring us for work. It's focused on next steps — not long-term planning.
+                </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Know what should happen first</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Understand rough budget direction</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Confirm we're the right fit</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Move toward installation</span>
+                  </li>
+                </ul>
+
+                <div className="border-t border-earth-200 pt-6 mb-6">
+                  <p className="text-3xl font-bold text-earth-900 mb-2">$75</p>
+                  <p className="text-sm text-earth-600">
+                    Credited toward project cost if you move forward
+                  </p>
+                </div>
+
+                <a
+                  href="/?service=assessment#schedule"
+                  className="block w-full px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all text-center"
+                >
+                  Schedule Assessment
+                </a>
+
+                <p className="text-sm text-earth-600 mt-4 text-center">
+                  This visit clarifies whether a project should move forward and what it would involve.
+                </p>
+              </div>
+
+              {/* Strategic Consulting Card */}
+              <div
+                ref={consultingRef}
+                className={`bg-white rounded-3xl border-2 p-8 shadow-lg transition-all ${
+                  selected === 'consulting' ? 'ring-2 ring-moss-600 ring-offset-4' : 'border-earth-200'
+                }`}
+              >
+                <h3 className="text-3xl font-bold text-earth-900 mb-3">
+                  Strategic Landscape Consulting
+                </h3>
+
+                <p className="text-sm font-semibold text-moss-700 mb-4">
+                  Best for: property owners who want long-term strategy before making changes
+                </p>
+
+                <p className="text-earth-700 mb-6">
+                  This session is focused on understanding how your landscape functions — including soil, drainage, sunlight, and long-term goals — so you can make confident decisions with a clear roadmap.
+                </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Diagnose why issues are happening</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Develop a long-term strategy (not trial-and-error fixes)</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Ask questions freely — we adapt to your goals</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Written summary with plant suggestions</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Full session recording for future reference</span>
+                  </li>
+                </ul>
+
+                <div className="border-t border-earth-200 pt-6 mb-6">
+                  <p className="text-3xl font-bold text-earth-900 mb-2">$225</p>
+                  <p className="text-sm text-earth-600 mb-2">
+                    Strategic Landscape Consulting Session
+                  </p>
+                  <p className="text-sm text-moss-700 font-semibold">
+                    50% credited toward formal ecological design (if pursued)
+                  </p>
+                </div>
+
+                <a
+                  href="/?service=consulting#schedule"
+                  className="block w-full px-6 py-3 bg-earth-900 text-white font-semibold rounded-full hover:bg-earth-800 transition-all text-center"
+                >
+                  Book Consulting Session
+                </a>
+
+                <p className="text-sm text-earth-600 mt-4 text-center">
+                  This session provides strategic direction — not installation pricing or scaled design drawings.
+                </p>
               </div>
             </div>
 
-            <div className="prose prose-lg prose-earth max-w-none">
-              <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">Different goals are welcome</h2>
-              <p>
-                Some clients want habitat support and ecological function. Others want a cleaner, easier yard.
-                Most want a balance.
+            {/* Design Link Section */}
+            <div className="max-w-3xl mx-auto mt-16 p-8 bg-moss-50 rounded-2xl border-2 border-moss-200 text-center">
+              <h3 className="text-2xl font-bold text-earth-900 mb-4">
+                Looking for a full design plan?
+              </h3>
+              <p className="text-earth-700 mb-6">
+                If your project needs a documented planting plan — including a layout, plant matrix, plant recommendations, and an installation estimate — explore our Ecological Landscape Design service.
               </p>
-              <p>
-                We're not trying to force a style—we help your property and your expectations meet in the middle.
-              </p>
-
-              <section className="space-y-4">
-                <h2 className="font-display text-2xl font-bold text-earth-900">
-                  Related services
-                </h2>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="/services/soil-drainage-assessment"
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-                  >
-                    Soil & Drainage Assessment →
-                  </a>
-                  <a
-                    href="/services/garden-restoration-muskegon"
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-                  >
-                    Garden Restoration →
-                  </a>
-                  <a
-                    href="/services/lawn-conversion-muskegon"
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-                  >
-                    Lawn Conversion →
-                  </a>
-                  <a
-                    href="/services/landscape-maintenance-muskegon"
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-                  >
-                    Landscape Maintenance →
-                  </a>
-                </div>
-              </section>
+              <a
+                href="/design"
+                className="inline-flex items-center text-moss-700 hover:text-moss-800 font-semibold hover:underline transition-colors"
+              >
+                Ecological Landscape Design →
+              </a>
             </div>
           </div>
+        </section>
 
-          <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
+        {/* Bottom CTA */}
+        <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
             <h3 className="text-2xl font-bold text-earth-900 mb-4">
               Get Clear Direction For Your Yard
             </h3>
@@ -471,7 +391,7 @@ This visit is for clarity. We walk the property together, interpret what the sit
             </p>
             <div className="text-earth-600 text-sm mb-8 max-w-xl mx-auto space-y-1">
               <p>Hiring a project soon → Site Assessment</p>
-              <p>Want to understand the land first → Consulting Session</p>
+              <p>Want to understand the land first → Strategic Consulting</p>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
               <a

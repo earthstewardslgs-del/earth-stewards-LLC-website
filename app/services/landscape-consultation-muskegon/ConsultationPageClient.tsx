@@ -252,35 +252,47 @@ export default function ConsultationPageClient() {
                 </h3>
 
                 <p className="text-sm font-semibold text-moss-700 mb-4">
-                  Best for: preparing to move forward with installation
+                  Best for: defined areas and practical next steps
                 </p>
 
-                <p className="text-earth-700 mb-6">
-                  This visit helps determine priorities, feasibility, and rough cost direction for the area you're considering — whether you're planning improvements, ongoing maintenance, or moving toward a larger project.
-                  <br /><br />
-                  It's focused on practical next steps rather than long-term planning or full design development.
-                  <br /><br />
-                  The assessment fee is credited toward future installation or maintenance work scheduled within 30 days.
+                <p className="text-earth-700 mb-4">
+                  A focused on-site visit to evaluate the specific areas you'd like to improve.
                 </p>
 
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-4">
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Know what should happen first</span>
+                    <span className="text-earth-700">Walk-through of the desired areas you're considering working on</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Understand rough budget direction</span>
+                    <span className="text-earth-700">Discussion of your goals and what you'd like to change</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Confirm we're the right fit</span>
+                    <span className="text-earth-700">Observational review of drainage patterns and seasonal sun exposure in those areas</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Move toward installation</span>
+                    <span className="text-earth-700">Practical guidance on feasibility and scope</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Rough cost direction for proposed work</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Brief written follow-up summary (1 page max)</span>
                   </li>
                 </ul>
+
+                <p className="text-sm text-earth-600 mb-3">
+                  This service is focused on defined areas and immediate next steps — not long-term planning or full design development.
+                </p>
+
+                <p className="text-sm text-earth-700 mb-6">
+                  The assessment fee is credited toward installation or maintenance work scheduled within 30 days.
+                </p>
 
                 <div className="border-t border-earth-200 pt-6 mb-6">
                   <p className="text-3xl font-bold text-earth-900 mb-2">$75</p>
@@ -297,7 +309,7 @@ export default function ConsultationPageClient() {
                 </a>
 
                 <p className="text-sm text-earth-600 mt-4 text-center">
-                  This visit clarifies whether a project should move forward and what it would involve.
+                  A practical visit focused on the specific areas you want to address.
                 </p>
               </div>
 
@@ -309,49 +321,64 @@ export default function ConsultationPageClient() {
                 }`}
               >
                 <h3 className="text-3xl font-bold text-earth-900 mb-3">
-                  Strategic Landscape Consulting
+                  Strategic Consultation
                 </h3>
 
                 <p className="text-sm font-semibold text-moss-700 mb-4">
-                  Best for: property owners who want long-term strategy before making changes
+                  Best for: property-wide clarity and long-term ecological direction
                 </p>
 
-                <p className="text-earth-700 mb-6">
-                  This on-site strategy session is designed for properties that need clarity, direction, or long-term ecological planning.
-                  <br /><br />
-                  We evaluate site conditions, plant communities, maintenance capacity, and phased possibilities — helping you determine what is realistic and what will create lasting ecological function and beauty.
-                  <br /><br />
-                  You'll receive a written summary with recommendations and next steps.
-                  <br /><br />
-                  Fifty percent of the consultation fee is credited toward ecological design services scheduled within 30 days.
+                <p className="text-earth-700 mb-4">
+                  A comprehensive on-site strategy session designed to help you understand how your property functions as a whole.
                 </p>
 
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-4">
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Clarify long-term ecological direction</span>
+                    <span className="text-earth-700">Whole-property evaluation of sun and water movement</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Receive written recommendations</span>
+                    <span className="text-earth-700">Brief on-site soil composition and drainage analysis</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Explore phased or design-based solutions</span>
+                    <span className="text-earth-700">Assessment of existing plant performance and compatibility</span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">Determine whether full ecological design is warranted</span>
+                    <span className="text-earth-700">Discussion of long-term goals and maintenance capacity</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Plant suggestions aligned with ecological function</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Phasing and development strategy recommendations</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Written summary with recommendations</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">Full session recording</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-moss-700 mt-0.5">✓</span>
+                    <span className="text-earth-700">50% credit toward ecological design scheduled within 30 days</span>
                   </li>
                 </ul>
 
+                <p className="text-sm text-earth-700 mb-6">
+                  You leave with a long-term ecological framework — not just a to-do list.
+                </p>
+
                 <div className="border-t border-earth-200 pt-6 mb-6">
                   <p className="text-3xl font-bold text-earth-900 mb-2">$225</p>
-                  <p className="text-sm text-earth-600 mb-2">
-                    Strategic Landscape Consulting Session
-                  </p>
-                  <p className="text-sm text-moss-700 font-semibold">
-                    50% credited toward ecological design services within 30 days
+                  <p className="text-sm text-earth-600">
+                    Strategic Consultation Session
                   </p>
                 </div>
 
@@ -359,11 +386,11 @@ export default function ConsultationPageClient() {
                   href="/?service=consulting#schedule"
                   className="block w-full px-6 py-3 bg-earth-900 text-white font-semibold rounded-full hover:bg-earth-800 transition-all text-center"
                 >
-                  Book Consulting Session
+                  Book Strategic Consultation
                 </a>
 
                 <p className="text-sm text-earth-600 mt-4 text-center">
-                  This session provides strategic direction — not installation pricing or scaled design drawings.
+                  A comprehensive session for understanding your property's ecological potential.
                 </p>
               </div>
             </div>

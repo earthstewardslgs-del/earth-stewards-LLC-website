@@ -15,22 +15,30 @@ export default function DesignPage() {
 
       <main className="min-h-screen bg-earth-50">
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
+        <section className="relative pt-20 pb-24 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30"></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center space-y-6">
-              <h1 className="font-display text-5xl font-bold text-earth-900 mb-6">
-                Ecological Landscape Design in Muskegon, MI
-              </h1>
+            <div className="text-center">
+              <div className="space-y-4">
+                <h1 className="font-display text-5xl font-bold text-earth-900 mb-2">
+                  Ecological Landscape Design in Muskegon, MI
+                </h1>
 
-              <p className="text-xl text-earth-700 leading-relaxed mb-6 max-w-3xl mx-auto">
-                Designing landscapes that function beautifully and endure over time.
-              </p>
+                <p className="text-base text-earth-600 font-medium">
+                  Native plant-forward design • ecological function • seasonal beauty
+                </p>
 
-              <p className="text-earth-600">
-                Serving Muskegon, Ottawa County, and surrounding West Michigan communities
-              </p>
+                <p className="text-xl text-earth-700 leading-relaxed max-w-3xl mx-auto">
+                  Designing landscapes that function beautifully and endure over time.
+                </p>
+
+                <p className="text-earth-600">
+                  Serving Muskegon, Ottawa County, and surrounding West Michigan communities
+                </p>
+
+                <div className="w-16 h-px bg-stone-300 mx-auto mt-6 mb-8"></div>
+              </div>
             </div>
           </div>
         </section>

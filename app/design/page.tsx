@@ -15,7 +15,7 @@ export default function DesignPage() {
 
       <main className="min-h-screen bg-earth-50 pt-20">
         {/* Hero Section */}
-        <section className="relative pt-28 pb-12 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
+        <section className="relative pt-36 pb-10 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30"></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

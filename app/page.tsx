@@ -15,9 +15,9 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Process />
+      <WhyNative />
       <Services />
       <StartStep />
-      <WhyNative />
       <Projects />
       <Testimonials />
       <Contact />

@@ -12,7 +12,7 @@ export default function Services() {
       ),
       title: 'New Landscapes & Conversions',
       description:
-        'Design and installation for people who want a landscape that settles in and gets easier over time. We match plants and layout to real site conditions so it matures reliably.',
+        'Creating new ecological landscapes or transforming existing lawns and gardens.',
       links: [
         { text: 'Native Landscaping', href: '/services/native-landscaping-muskegon' },
         { text: 'Pollinator Garden Installation', href: '/services/pollinator-garden-installation' },
@@ -27,7 +27,7 @@ export default function Services() {
       ),
       title: 'Fixing & Managing Existing Landscapes',
       description:
-        'When a yard is overwhelmed or not working, we reset the problem areas and guide the landscape back to stability — from cleanup and invasives to restoration and long-term care.',
+        'Restoring health and stability to landscapes that are overgrown, struggling, or neglected.',
       links: [
         { text: 'Overgrown Yard Cleanup', href: '/services/overgrown-yard-cleanup' },
         { text: 'Invasive Plant Removal', href: '/services/invasive-species-removal-muskegon' },
@@ -44,7 +44,7 @@ export default function Services() {
       ),
       title: 'Planning & Site Advice',
       description:
-        'Professional guidance when you want clarity before investing. We interpret what the site is doing and outline practical next steps — whether you plan to DIY or hire.',
+        'Professional guidance when you want clarity before making landscape decisions.',
       links: [
         { text: 'Landscape Consultation', href: '/services/landscape-consultation-muskegon' },
       ],

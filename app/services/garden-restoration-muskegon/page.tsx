@@ -103,6 +103,9 @@ export default function GardenRestorationPage() {
               over. The goal is a landscape that looks intentional again and
               becomes easier to maintain moving forward.
             </p>
+            <p className="text-earth-700 text-lg max-w-3xl">
+              When gardens fail repeatedly, the issue is often <a href="/services/soil-drainage-assessment" className="text-moss-700 hover:underline font-semibold">underlying soil conditions or drainage patterns</a> that weren't addressed when the bed was originally planted.
+            </p>
           </section>
 
           <section className="space-y-6">

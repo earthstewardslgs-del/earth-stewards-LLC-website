@@ -135,6 +135,10 @@ export default function ConsultationPageClient() {
             </p>
 
             <p className="text-earth-700 text-lg">
+              Many site visits begin because something in the landscape isn't working — plants struggling in wet soil, persistent standing water, or compacted ground. Learn more about <a href="/services/soil-drainage-assessment" className="text-moss-700 hover:underline font-semibold">soil and drainage problems in West Michigan landscapes</a>.
+            </p>
+
+            <p className="text-earth-700 text-lg">
               A consultation helps you see what your property is doing—so you can work with it instead of against it.
             </p>
           </div>

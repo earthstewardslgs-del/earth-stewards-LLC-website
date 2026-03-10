@@ -46,7 +46,7 @@ export default function WestMichiganLandingPage() {
             </div>
 
             <p className="text-earth-600 text-lg font-medium pt-4">
-              Serving Muskegon and Ottawa County
+              Serving Muskegon, Ottawa County, and surrounding West Michigan communities.
             </p>
           </div>
         </div>

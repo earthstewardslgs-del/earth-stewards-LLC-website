@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Thank You | Earth Stewards LLC',
-  description: 'Thank you for your consultation request. We'll be in touch soon.',
+  description: 'Thank you for your consultation request. We\'ll be in touch soon.',
   robots: 'noindex, nofollow',
 }
 

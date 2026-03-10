@@ -328,7 +328,7 @@ export default function WestMichiganLandingPage() {
 <input
     type="hidden"
     name="_redirect"
-    value="/west-michigan-ecological-landscaping/thank-you"
+    value="https://earthstewardsllc.org/west-michigan-ecological-landscaping/thank-you"
   />
             {/* Name */}
             <div className="mb-6">

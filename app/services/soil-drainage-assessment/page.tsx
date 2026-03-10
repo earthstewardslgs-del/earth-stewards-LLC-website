@@ -4,11 +4,11 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Soil & Drainage Assessment in Muskegon, MI | Earth Stewards LLC',
+  title: 'Soil and Drainage Problems in West Michigan Landscapes | Earth Stewards',
   description:
-    'Soil and drainage assessment in Muskegon and West Michigan. Diagnose why plants keep dying or areas stay wet, then get practical fixes to stop repeating failures.',
+    'Learn why plants fail in wet or compacted soil and how drainage problems develop in West Michigan landscapes. Earth Stewards helps diagnose root causes and guide long-term ecological solutions.',
   keywords:
-    'soil assessment Muskegon, drainage assessment Muskegon MI, drainage problems West Michigan, soil compaction, standing water yard, grading evaluation',
+    'soil problems Muskegon, drainage problems West Michigan, soil compaction, standing water yard, wet soil solutions, plant failure causes',
 }
 
 export default function SoilDrainagePage() {
@@ -68,12 +68,13 @@ export default function SoilDrainagePage() {
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6">
               <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-earth-900">
-                Soil and Drainage Assessment
+                Understanding Soil and Drainage Problems
               </h1>
 
               <p className="text-xl text-earth-700 max-w-3xl mx-auto">
-                If plants keep dying or areas stay wet, the issue is usually below the surface. We identify soil and
-                drainage problems in Muskegon and recommend clear solutions so you stop repeating failed plantings.
+                If plants keep dying or areas stay wet, the issue is usually below the surface. Many landscape problems begin with soil structure, compaction, or water movement across the property.
+                <br /><br />
+                At Earth Stewards, we help homeowners understand what is actually happening beneath their landscape so the right long-term solutions can be chosen.
               </p>
 
               <p className="text-earth-600">
@@ -82,10 +83,10 @@ export default function SoilDrainagePage() {
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">
                 <a
-                  href="/#schedule"
+                  href="/services/landscape-consultation-muskegon?type=consulting"
                   className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
                 >
-                  Schedule Assessment
+                  Schedule Strategic Consultation
                 </a>
                 <a
                   href="/#projects"
@@ -97,21 +98,21 @@ export default function SoilDrainagePage() {
 
               <div className="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Stop repeating failures</p>
+                  <p className="font-semibold text-earth-900">Diagnosing the real cause</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Diagnose the cause so you don't keep replacing plants.
+                    Drainage problems rarely come from one issue. Soil structure, compaction, grading, and water flow often work together.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Clear priorities</p>
+                  <p className="font-semibold text-earth-900">Why quick fixes fail</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Know what matters first—and what changes will actually help.
+                    French drains and surface fixes sometimes treat symptoms rather than the underlying cause.
                   </p>
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-earth-200 p-5 text-left">
-                  <p className="font-semibold text-earth-900">Practical solutions</p>
+                  <p className="font-semibold text-earth-900">Understanding your property</p>
                   <p className="text-earth-700 text-sm mt-1">
-                    Often simple fixes beat expensive overhauls.
+                    Water movement, soil health, and plant selection all influence long-term landscape success.
                   </p>
                 </div>
               </div>
@@ -124,7 +125,7 @@ export default function SoilDrainagePage() {
             <div className="prose prose-lg prose-earth max-w-none">
               <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mt-2 mb-4 border-l-4 border-moss-600 pl-3">When people call us</h2>
               <p>
-                When plants repeatedly fail, the cause is usually underground — water movement, compaction, or drainage patterns that the surface doesn’t reveal.
+                When plants repeatedly fail, the cause is often underground — water movement, soil compaction, or drainage patterns that the surface doesn't reveal.
               </p>
               <p>
                 We diagnose how the site actually behaves so solutions address the cause instead of repeating replacements.
@@ -152,13 +153,13 @@ export default function SoilDrainagePage() {
                   <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
                     <p className="font-semibold text-earth-900">Soil structure</p>
                     <p className="text-earth-700 text-sm mt-2">
-                      Soil type, compaction, and root-zone conditions.
+                      Compaction, drainage capacity, and how roots interact with soil.
                     </p>
                   </div>
                   <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
-                    <p className="font-semibold text-earth-900">Drainage behavior</p>
+                    <p className="font-semibold text-earth-900">Water movement</p>
                     <p className="text-earth-700 text-sm mt-2">
-                      How water moves after rain and where it collects.
+                      Where water flows, pools, and infiltrates during and after rain.
                     </p>
                   </div>
                   <div className="rounded-xl bg-earth-50 border border-earth-200 p-5">
@@ -185,40 +186,54 @@ export default function SoilDrainagePage() {
               </div>
 
               <div className="bg-moss-50 rounded-2xl border-2 border-moss-200 p-8">
-                <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What you leave with</h2>
+                <h2 className="text-2xl font-semibold text-earth-900 tracking-wide mb-4 border-l-4 border-moss-600 pl-3">What a Strategic Consultation Helps You Understand</h2>
                 <ul className="mt-6 space-y-3 text-earth-800">
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
-                    <span>Clear diagnosis of what is driving the problem</span>
+                    <span>What is actually driving the moisture or drainage problem</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
-                    <span>Prioritized recommendations—what matters most first</span>
+                    <span>Which issues matter most to address first</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
-                    <span>Plant selection guidance matched to moisture and sunlight</span>
+                    <span>How soil structure and water movement influence plant success</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-1 text-moss-700">✓</span>
-                    <span>Options you can DIY or hire us to implement</span>
+                    <span>Practical options for improving the landscape long-term</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
+          {/* How We Help Section */}
+          <section className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 shadow-sm">
+            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
+              How We Help
+            </h2>
+            <p className="text-earth-700 text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+              The best way to understand drainage or soil problems is through a Strategic Consultation, where we evaluate how the entire property functions — including sun exposure, soil structure, water movement, and plant performance.
+              <br /><br />
+              Rather than focusing on a single symptom, the consultation looks at the landscape as a system so solutions work long-term.
+            </p>
+            <div className="text-center">
+              <a
+                href="/services/landscape-consultation-muskegon?type=consulting"
+                className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all shadow-lg"
+              >
+                Schedule Strategic Consultation
+              </a>
+            </div>
+          </section>
+
           <section className="mt-14 space-y-4">
             <h2 className="font-display text-2xl font-bold text-earth-900">
               Related services
             </h2>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="/services/landscape-consultation-muskegon"
-                className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
-              >
-                Landscape Consultation →
-              </a>
               <a
                 href="/services/garden-restoration-muskegon"
                 className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-earth-200 text-moss-700 font-semibold hover:bg-moss-50 transition"
@@ -287,17 +302,16 @@ export default function SoilDrainagePage() {
           </section>
 
           <div className="mt-16 p-10 bg-white rounded-2xl border border-earth-200 text-center shadow-sm">
-            <h3 className="text-2xl font-bold text-earth-900 mb-4">Find out what is actually wrong</h3>
+            <h3 className="text-2xl font-bold text-earth-900 mb-4">Understand what's actually happening beneath your landscape</h3>
             <p className="text-earth-700 mb-8 max-w-3xl mx-auto">
-              We will assess your soil and drainage conditions and recommend practical solutions that work—so your yard
-              stops cycling through the same issues.
+              A Strategic Consultation helps you see how soil, water, and plant communities interact—so you can make informed decisions about long-term solutions.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="/#schedule"
+                href="/services/landscape-consultation-muskegon?type=consulting"
                 className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
               >
-                Schedule Assessment
+                Schedule Strategic Consultation
               </a>
               <a
                 href="/#projects"

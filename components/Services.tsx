@@ -31,7 +31,6 @@ export default function Services() {
       links: [
         { text: 'Overgrown Yard Cleanup', href: '/services/overgrown-yard-cleanup' },
         { text: 'Invasive Plant Removal', href: '/services/invasive-species-removal-muskegon' },
-        { text: 'Soil & Drainage Assessment', href: '/services/soil-drainage-assessment' },
         { text: 'Garden Restoration', href: '/services/garden-restoration-muskegon' },
         { text: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
         { text: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
@@ -48,8 +47,7 @@ export default function Services() {
         'Professional guidance when you want clarity before investing. We interpret what the site is doing and outline practical next steps — whether you plan to DIY or hire.',
       links: [
         { text: 'Landscape Consultation', href: '/services/landscape-consultation-muskegon' },
-        { text: 'Soil & Drainage Assessment', href: '/services/soil-drainage-assessment' },
-        ],
+      ],
     },
   ]
 

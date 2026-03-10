@@ -8,19 +8,9 @@ export default function WhyNative() {
           <path d="M12,20A6,6 0 0,1 6,14C6,10 12,3.25 12,3.25C12,3.25 18,10 18,14A6,6 0 0,1 12,20M12,8A3,3 0 0,0 9,11A3,3 0 0,0 12,14A3,3 0 0,0 15,11A3,3 0 0,0 12,8Z" />
         </svg>
       ),
-      title: 'Lower Water Needs',
+      title: 'Start With Observation',
       description:
-        'Uses rainfall more effectively and often requires minimal irrigation after establishment.',
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.5,17L9.5,12L14.5,7L16,8.5L12.5,12L16,15.5L14.5,17M8.5,17L3.5,12L8.5,7L10,8.5L6.5,12L10,15.5L8.5,17M21,10V9L15,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H11V19.13L11.13,19H5V5H15V10H21Z" />
-        </svg>
-      ),
-      title: 'Less Work Over Time',
-      description:
-        'Designed to stabilize and become easier to manage each season.',
+        'Before making changes, we take time to understand how a landscape functions. Soil conditions, drainage patterns, sunlight, and existing plant communities all tell a story about what the land needs.',
     },
     {
       icon: (
@@ -28,29 +18,19 @@ export default function WhyNative() {
           <path d="M6,3A1,1 0 0,1 7,4V4.88C8.06,4.44 9.5,4 11,4C14,4 14,6 16,6C19,6 20,4 20,4V12C20,12 19,14 16,14C13,14 13,12 11,12C8,12 7,14 7,14V21H5V4A1,1 0 0,1 6,3M7,7.25V11.5C7,11.5 9,10 11,10C13,10 13,12 16,12C18,12 18,11 18,11V6.87C17.5,7.21 16.6,7.5 16,7.5C14,7.5 14,6.25 11,6.25C9.4,6.25 8.07,6.75 7,7.25Z" />
         </svg>
       ),
-      title: 'Supports Pollinators & Wildlife',
+      title: 'Work With the Living System',
       description:
-        'Creates habitat for butterflies, birds, and beneficial insects.',
+        'Rather than forcing landscapes into rigid designs, we work with natural patterns already present on the site. Plant communities, soil health, and water movement guide our decisions.',
     },
     {
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+          <path d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L6.04,7.5L12,10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V9.21L13,12.58V19.29L19,15.91Z" />
         </svg>
       ),
-      title: 'Adds Lasting Property Appeal',
+      title: 'Stewardship Over Time',
       description:
-        'A landscape that looks intentional, healthy, and cared for year-round.',
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
-        </svg>
-      ),
-      title: 'Natural & Sincere',
-      description:
-        'We care deeply about the landscapes we work in and the people who live with them. Guided by respect for natural systems and craftsmanship, we aim to leave every space healthier than we found it.',
+        'Healthy landscapes grow and evolve. Our goal is to guide landscapes toward stability and resilience so they become easier to care for while supporting the broader ecosystem.',
     },
   ]
 
@@ -64,15 +44,18 @@ export default function WhyNative() {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-earth-900 mb-6">
-            Why Work With Us
+            Our Approach to Landscape Stewardship
           </h2>
+          <p className="text-xl text-earth-700 mb-6">
+            Every landscape provides something—shade, beauty, habitat, clean water, living soil. At Earth Stewards, our work begins with a sense of gratitude for what the land already offers.
+          </p>
           <p className="text-xl text-earth-700">
-            Landscapes designed to stay manageable and get better over time
+            Landscape stewardship, to us, means caring for the living systems that support the places we call home. By working with natural processes—healthy soil, water movement, and resilient plant communities—we help landscapes thrive while giving something back to the earth that sustains us.
           </p>
         </div>
 
         {/* Benefits grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
           {benefits.map((benefit, index) => (
             <div
               key={benefit.title}

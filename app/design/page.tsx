@@ -94,57 +94,53 @@ export default function DesignPage() {
 
         {/* Pricing */}
         <section className="py-16 bg-moss-50 border-y border-moss-200">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
-              Pricing
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6">
+              Landscape Design Investment
             </h2>
-            <p className="text-2xl font-semibold text-earth-900 mb-2 text-center">
+            <p className="text-2xl font-semibold text-earth-900 mb-2">
               Starting at $900
             </p>
-            <p className="text-earth-700 text-lg mb-8 text-center">
-              Final pricing based on size and scope.
+            <p className="text-earth-700 text-lg">
+              Final pricing depends on site size, complexity, and design scope.
             </p>
-
-            {/* What the Design Includes */}
-            <div className="bg-white rounded-2xl p-8 border border-earth-200 max-w-3xl mx-auto">
-              <h3 className="font-display text-2xl font-bold text-earth-900 mb-6 text-center">
-                What the Design Includes
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-earth-700">Site analysis informed by the Strategic Consultation</span>
-                </li>
-                <li className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-earth-700">Conceptual layout for planting areas and landscape structure</span>
-                </li>
-                <li className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-earth-700">Plant palette tailored to site conditions</span>
-                </li>
-                <li className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-earth-700">Ecological planting strategy</span>
-                </li>
-                <li className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-earth-700">Phased implementation recommendations</span>
-                </li>
-                <li className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-earth-700">Written design summary and guidance for installation</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
 
-        {/* What's Included */}
+        {/* What This Design Helps You Achieve */}
+        <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-earth-900 mb-8 text-center">
+            What This Design Helps You Achieve
+          </h2>
+          <ul className="space-y-4 max-w-3xl mx-auto">
+            <li className="flex gap-3 items-start">
+              <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+              <p className="text-earth-700 text-lg">A landscape that supports pollinators and local ecology</p>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+              <p className="text-earth-700 text-lg">Reduced long-term maintenance through plant community design</p>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+              <p className="text-earth-700 text-lg">Seasonal structure and year-round visual interest</p>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+              <p className="text-earth-700 text-lg">A clear installation roadmap you can follow at your own pace</p>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+              <p className="text-earth-700 text-lg">Confidence that plants are matched to your soil, light, and moisture conditions</p>
+            </li>
+          </ul>
+        </section>
+
+        {/* Your Design Package Includes */}
         <section className="py-16 bg-white border-y border-earth-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-display text-3xl font-bold text-earth-900 mb-8 text-center">
-              What's Included
+              Your Design Package Includes
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -155,48 +151,112 @@ export default function DesignPage() {
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Custom planting layout</p>
+                  <p className="text-earth-700 text-lg">Conceptual planting layout tailored to site conditions</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Native plant matrix with bloom timing and mature height</p>
+                  <p className="text-earth-700 text-lg">Native plant spreadsheet with bloom timing and mature height</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Species images for clarity</p>
+                  <p className="text-earth-700 text-lg">Installation quantity breakdown</p>
                 </div>
               </div>
 
               <div className="space-y-3">
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Installation quantity breakdown</p>
-                </div>
-                <div className="flex gap-3 items-start">
-                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
                   <p className="text-earth-700 text-lg">Preliminary installation cost estimate</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Phasing recommendations when appropriate</p>
+                  <p className="text-earth-700 text-lg">Phased implementation recommendations</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Alternative concepts when project complexity warrants comparison</p>
+                  <p className="text-earth-700 text-lg">Species images for clarity</p>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <p className="text-earth-700 text-lg">Written design summary with installation guidance</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Process */}
+        {/* The Design Process */}
         <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
-            Process
+          <h2 className="font-display text-3xl font-bold text-earth-900 mb-10 text-center">
+            The Design Process
           </h2>
-          <p className="text-earth-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-            All design projects begin with a Strategic Landscape Consulting Session to ensure clarity before documentation begins.
-          </p>
+
+          <div className="space-y-8">
+            {/* Step 1 */}
+            <div className="flex gap-6">
+              <div className="w-12 h-12 bg-moss-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                1
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-earth-900 mb-2">Strategic Consultation</h3>
+                <p className="text-earth-700">
+                  We begin with a focused consultation to understand your site conditions, goals, and ecological opportunities.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="flex gap-6">
+              <div className="w-12 h-12 bg-moss-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                2
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-earth-900 mb-2">Site Analysis</h3>
+                <p className="text-earth-700">
+                  Sun exposure, soil conditions, drainage patterns, and existing vegetation are evaluated to guide the design.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="flex gap-6">
+              <div className="w-12 h-12 bg-moss-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                3
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-earth-900 mb-2">Concept Development</h3>
+                <p className="text-earth-700">
+                  A conceptual planting layout and ecological strategy are developed based on the site's conditions.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="flex gap-6">
+              <div className="w-12 h-12 bg-moss-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                4
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-earth-900 mb-2">Design Documentation</h3>
+                <p className="text-earth-700">
+                  You receive a complete design package including the plant matrix, quantities, installation guidance, and phased implementation options.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div className="flex gap-6">
+              <div className="w-12 h-12 bg-moss-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+                5
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-earth-900 mb-2">Implementation Support (Optional)</h3>
+                <p className="text-earth-700">
+                  You may install the design yourself, work with a contractor, or have Earth Stewards assist with implementation.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* CTA */}

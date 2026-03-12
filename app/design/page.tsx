@@ -57,6 +57,35 @@ export default function DesignPage() {
             <p className="text-earth-700 text-lg leading-relaxed">
               We approach this work with gratitude for what the land already provides. Design is our way of giving back — restoring habitat, strengthening ecological function, and shaping outdoor spaces that support both people and place.
             </p>
+
+            <p className="text-earth-700 text-lg leading-relaxed">
+              Earth Stewards provides ecological landscape design for homeowners in Muskegon, Grand Haven, Spring Lake, and surrounding West Michigan communities. Our designs focus on native plants, soil health, and water-wise landscapes that thrive in the conditions of the Lake Michigan region.
+            </p>
+          </div>
+        </section>
+
+        {/* Outcomes */}
+        <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
+            Outcomes
+          </h2>
+          <p className="text-earth-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+            Designed to improve infiltration, support soil life, and build durable habitat — expressed through intentional beauty, seasonal structure, and cohesive plant communities.
+          </p>
+        </section>
+
+        {/* Pricing */}
+        <section className="py-16 bg-moss-50 border-y border-moss-200">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6">
+              Pricing
+            </h2>
+            <p className="text-2xl font-semibold text-earth-900 mb-2">
+              Starting at $900
+            </p>
+            <p className="text-earth-700 text-lg">
+              Final pricing based on size and scope.
+            </p>
           </div>
         </section>
 
@@ -79,7 +108,7 @@ export default function DesignPage() {
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
-                  <p className="text-earth-700 text-lg">Plant matrix with bloom timing and mature height</p>
+                  <p className="text-earth-700 text-lg">Native plant matrix with bloom timing and mature height</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
@@ -116,31 +145,6 @@ export default function DesignPage() {
           </h2>
           <p className="text-earth-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
             All design projects begin with a Strategic Landscape Consulting Session to ensure clarity before documentation begins.
-          </p>
-        </section>
-
-        {/* Pricing */}
-        <section className="py-16 bg-moss-50 border-y border-moss-200">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6">
-              Pricing
-            </h2>
-            <p className="text-2xl font-semibold text-earth-900 mb-2">
-              Starting at $900
-            </p>
-            <p className="text-earth-700 text-lg">
-              Final pricing based on size and scope.
-            </p>
-          </div>
-        </section>
-
-        {/* Outcomes */}
-        <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
-            Outcomes
-          </h2>
-          <p className="text-earth-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-            Designed to improve infiltration, support soil life, and build durable habitat — expressed through intentional beauty, seasonal structure, and cohesive plant communities.
           </p>
         </section>
 

@@ -25,6 +25,10 @@ export default function DesignPage() {
                   Ecological Landscape Design in Muskegon, MI
                 </h1>
 
+                <p className="text-xl text-earth-700 leading-relaxed max-w-2xl mx-auto">
+                  A thoughtful plan for landscapes that support life, beauty, and ecological balance.
+                </p>
+
                 <p className="text-base text-earth-600 font-medium">
                   Native plant-forward design • ecological function • seasonal beauty
                 </p>
@@ -80,16 +84,6 @@ export default function DesignPage() {
               If you proceed with a design within 30 days, the full consultation fee is applied toward the design cost.
             </p>
           </div>
-        </section>
-
-        {/* Outcomes */}
-        <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
-            Outcomes
-          </h2>
-          <p className="text-earth-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-            Designed to improve infiltration, support soil life, and build durable habitat — expressed through intentional beauty, seasonal structure, and cohesive plant communities.
-          </p>
         </section>
 
         {/* Pricing */}

@@ -64,6 +64,24 @@ export default function DesignPage() {
           </div>
         </section>
 
+        {/* Most Projects Begin with a Strategic Consultation */}
+        <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-moss-50 rounded-2xl p-8 border-2 border-moss-200">
+            <h2 className="font-display text-2xl font-bold text-earth-900 mb-4">
+              Most Projects Begin with a Strategic Consultation
+            </h2>
+            <p className="text-earth-700 text-lg mb-3">
+              Most ecological landscape design projects begin with a Strategic Consultation.
+            </p>
+            <p className="text-earth-700 text-lg mb-3">
+              This allows us to understand how your property functions ecologically before developing a detailed design.
+            </p>
+            <p className="text-earth-700 text-lg">
+              If you proceed with a design within 30 days, the full consultation fee is applied toward the design cost.
+            </p>
+          </div>
+        </section>
+
         {/* Outcomes */}
         <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
@@ -76,16 +94,49 @@ export default function DesignPage() {
 
         {/* Pricing */}
         <section className="py-16 bg-moss-50 border-y border-moss-200">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-display text-3xl font-bold text-earth-900 mb-6 text-center">
               Pricing
             </h2>
-            <p className="text-2xl font-semibold text-earth-900 mb-2">
+            <p className="text-2xl font-semibold text-earth-900 mb-2 text-center">
               Starting at $900
             </p>
-            <p className="text-earth-700 text-lg">
+            <p className="text-earth-700 text-lg mb-8 text-center">
               Final pricing based on size and scope.
             </p>
+
+            {/* What the Design Includes */}
+            <div className="bg-white rounded-2xl p-8 border border-earth-200 max-w-3xl mx-auto">
+              <h3 className="font-display text-2xl font-bold text-earth-900 mb-6 text-center">
+                What the Design Includes
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-earth-700">Site analysis informed by the Strategic Consultation</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-earth-700">Conceptual layout for planting areas and landscape structure</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-earth-700">Plant palette tailored to site conditions</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-earth-700">Ecological planting strategy</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-earth-700">Phased implementation recommendations</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-moss-700 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-earth-700">Written design summary and guidance for installation</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 

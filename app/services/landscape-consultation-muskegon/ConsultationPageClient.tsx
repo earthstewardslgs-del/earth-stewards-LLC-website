@@ -333,8 +333,38 @@ export default function ConsultationPageClient() {
                 </p>
 
                 <p className="text-earth-700 mb-4">
-                  A comprehensive on-site strategy session designed to help you understand how your property functions as a whole.
+                  A professional on-site assessment that interprets how your property functions ecologically and identifies the most effective path forward.
                 </p>
+
+                {/* When This Is the Right Starting Point */}
+                <div className="mb-6 bg-moss-50 rounded-xl p-6 border border-moss-200">
+                  <h4 className="text-lg font-bold text-earth-900 mb-3">
+                    When This Is the Right Starting Point
+                  </h4>
+                  <p className="text-earth-700 mb-3">This consultation is ideal if:</p>
+                  <ul className="space-y-2">
+                    <li className="flex gap-2">
+                      <span className="text-moss-700 mt-0.5">•</span>
+                      <span className="text-earth-700">You want to improve your property but aren't sure where to begin</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-moss-700 mt-0.5">•</span>
+                      <span className="text-earth-700">You're considering ecological landscaping but need guidance before investing in design</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-moss-700 mt-0.5">•</span>
+                      <span className="text-earth-700">Your property has drainage, soil, or plant performance challenges</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-moss-700 mt-0.5">•</span>
+                      <span className="text-earth-700">You want a clear long-term vision for your landscape</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-moss-700 mt-0.5">•</span>
+                      <span className="text-earth-700">You want expert input before making expensive changes</span>
+                    </li>
+                  </ul>
+                </div>
 
                 <ul className="space-y-3 mb-4">
                   <li className="flex gap-2">
@@ -371,13 +401,26 @@ export default function ConsultationPageClient() {
                   </li>
                   <li className="flex gap-2">
                     <span className="text-moss-700 mt-0.5">✓</span>
-                    <span className="text-earth-700">50% credit toward ecological design scheduled within 30 days</span>
+                    <span className="text-earth-700">100% credit toward ecological design scheduled within 30 days</span>
                   </li>
                 </ul>
 
                 <p className="text-sm text-earth-700 mb-6">
-                  You leave with a long-term ecological framework — not just a to-do list.
+                  You leave with a clear ecological direction for your property — not just a list of ideas.
                 </p>
+
+                {/* If Design Is the Next Step */}
+                <div className="mb-6 bg-earth-50 rounded-xl p-6 border border-earth-200">
+                  <h4 className="text-lg font-bold text-earth-900 mb-3">
+                    If Design Is the Next Step
+                  </h4>
+                  <p className="text-earth-700">
+                    Many clients begin with a Strategic Consultation before moving into ecological design.
+                  </p>
+                  <p className="text-earth-700 mt-2">
+                    If you choose to proceed with a design within 30 days, the full consultation fee is applied toward the design cost.
+                  </p>
+                </div>
 
                 <div className="border-t border-earth-200 pt-6 mb-6">
                   <p className="text-3xl font-bold text-earth-900 mb-2">$225</p>

@@ -29,38 +29,83 @@ export default function WestMichiganLandingPage() {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-earth-900 max-w-4xl mx-auto leading-tight">
-              Create a More Beautiful, Functional, and Ecological Landscape
+              Landscaping That Actually Works With Your Land
             </h1>
 
             <p className="text-xl sm:text-2xl text-earth-700 max-w-3xl mx-auto leading-relaxed">
-              Ecological design, native plant integration, and long-term stewardship for West Michigan properties seeking beauty, habitat, and resilience.
+              We assess your soil, sunlight, and drainage so you stop wasting money on plants that struggle or fail.
             </p>
 
-            <div className="pt-6">
+            <p className="text-base sm:text-lg text-earth-600 font-medium max-w-xl mx-auto">
+              🌱 Site Assessments start at $75 (credited toward future work)
+            </p>
+
+            <div className="pt-4">
               <a
                 href="#consultation"
                 className="inline-flex items-center px-10 py-5 bg-moss-600 text-white text-lg font-semibold rounded-full hover:bg-moss-700 transition-all shadow-xl hover:shadow-2xl"
               >
-                Request a Consultation
+                Book Your Site Assessment
               </a>
             </div>
 
-            <p className="text-earth-600 text-lg font-medium pt-4">
-              Serving Muskegon, Ottawa County, and surrounding West Michigan communities.
+            <p className="text-earth-500 text-sm font-medium">
+              Limited availability — booking site visits now
+            </p>
+
+            <p className="text-earth-600 text-base font-medium pt-2">
+              Serving Muskegon, Grand Haven, Spring Lake &amp; surrounding West Michigan communities
             </p>
           </div>
         </div>
       </section>
 
-      {/* Who This Is For Section */}
+      {/* Site Assessment Section — NEW */}
+      <section className="py-16 bg-moss-600">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+              Start With a Site Assessment
+            </h2>
+            <p className="text-lg text-moss-100 leading-relaxed">
+              Before designing or installing anything, we walk your property with you to understand how it actually behaves.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-10">
+            {[
+              'Identify sun and shade patterns',
+              'Evaluate drainage and water movement',
+              'Assess soil conditions',
+              'Recommend plants that will actually thrive',
+              'Outline a clear path forward',
+            ].map((point) => (
+              <div key={point} className="flex gap-3 items-start bg-moss-700 rounded-xl px-5 py-4">
+                <span className="text-moss-200 text-lg flex-shrink-0 mt-0.5">✓</span>
+                <p className="text-white text-base">{point}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <a
+              href="#consultation"
+              className="inline-flex items-center px-10 py-5 bg-white text-moss-700 text-lg font-semibold rounded-full hover:bg-moss-50 transition-all shadow-xl hover:shadow-2xl"
+            >
+              Book Your $75 Site Assessment
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-earth-900 mb-6">
-              Is This the Right Fit for Your Property?
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-earth-900 mb-4">
+              Who This Is For
             </h2>
             <p className="text-lg text-earth-700">
-              Earth Stewards works with West Michigan property owners who want landscapes that are both beautiful and ecologically grounded.
+              Most of our clients come to us after wasting time or money on landscaping that didn&apos;t last.
             </p>
           </div>
 
@@ -70,7 +115,7 @@ export default function WestMichiganLandingPage() {
                 <span className="text-xl">✓</span>
               </div>
               <p className="text-earth-700 text-lg">
-                Property owners who want to reduce lawn and increase habitat
+                Property owners who want to reduce lawn or transition to more ecological, lower-input landscapes
               </p>
             </div>
 
@@ -79,7 +124,7 @@ export default function WestMichiganLandingPage() {
                 <span className="text-xl">✓</span>
               </div>
               <p className="text-earth-700 text-lg">
-                People seeking landscapes that are beautiful but less reliant on conventional high-input landscaping
+                Property owners who want healthier, more resilient lawns using ecological methods (not conventional high-input care)
               </p>
             </div>
 
@@ -88,7 +133,7 @@ export default function WestMichiganLandingPage() {
                 <span className="text-xl">✓</span>
               </div>
               <p className="text-earth-700 text-lg">
-                West Michigan properties dealing with soil or drainage challenges
+                West Michigan properties dealing with soil, drainage, or difficult growing conditions
               </p>
             </div>
 
@@ -97,7 +142,7 @@ export default function WestMichiganLandingPage() {
                 <span className="text-xl">✓</span>
               </div>
               <p className="text-earth-700 text-lg">
-                Businesses interested in more resilient and lower-maintenance landscapes
+                People seeking landscapes that are both beautiful and less reliant on constant maintenance or chemicals
               </p>
             </div>
 
@@ -106,7 +151,16 @@ export default function WestMichiganLandingPage() {
                 <span className="text-xl">✓</span>
               </div>
               <p className="text-earth-700 text-lg">
-                Anyone wanting ecological design, installation, or long-term landscape stewardship
+                Businesses interested in resilient, lower-maintenance landscape solutions
+              </p>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <div className="w-8 h-8 bg-moss-600 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-xl">✓</span>
+              </div>
+              <p className="text-earth-700 text-lg">
+                Anyone wanting ecological design, installation, or long-term stewardship
               </p>
             </div>
           </div>
@@ -117,6 +171,9 @@ export default function WestMichiganLandingPage() {
       <section className="py-16 bg-earth-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
+            <p className="text-moss-700 font-semibold text-lg mb-2 uppercase tracking-wide">
+              After your site assessment, we can help with:
+            </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-earth-900 mb-4">
               Ways We Help
             </h2>
@@ -137,7 +194,7 @@ export default function WestMichiganLandingPage() {
                 Ecological Landscape Design
               </h3>
               <p className="text-earth-700">
-                Site-based design that creates beautiful, resilient landscapes adapted to your property's unique conditions and long-term vision.
+                Site-based design that creates beautiful, resilient landscapes adapted to your property&apos;s unique conditions and long-term vision.
               </p>
             </div>
 
@@ -197,7 +254,7 @@ export default function WestMichiganLandingPage() {
                 Soil and Drainage Guidance
               </h3>
               <p className="text-earth-700">
-                Site-informed analysis of soil conditions, water movement, and drainage patterns to help you understand what's happening beneath the surface.
+                Site-informed analysis of soil conditions, water movement, and drainage patterns to help you understand what&apos;s happening beneath the surface.
               </p>
             </div>
           </div>
@@ -223,10 +280,10 @@ export default function WestMichiganLandingPage() {
                 01
               </div>
               <h3 className="text-xl font-bold text-earth-900 mb-3">
-                Initial Consultation
+                Site Assessment ($75)
               </h3>
               <p className="text-earth-700">
-                We learn about your property, goals, and current landscape challenges.
+                We walk your property together and identify what&apos;s actually happening with sun, soil, and water.
               </p>
             </div>
 
@@ -274,7 +331,7 @@ export default function WestMichiganLandingPage() {
                 Local Knowledge of West Michigan Conditions
               </h3>
               <p className="text-earth-700">
-                We understand West Michigan's sandy soils, seasonal rainfall patterns, and microclimates—and design landscapes that work with these realities.
+                We understand West Michigan&apos;s sandy soils, seasonal rainfall patterns, and microclimates—and design landscapes that work with these realities.
               </p>
             </div>
 
@@ -308,28 +365,82 @@ export default function WestMichiganLandingPage() {
         </div>
       </section>
 
+      {/* Trust / Testimonials Section — NEW */}
+      <section className="py-16 bg-earth-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-earth-900 mb-4">
+              What Clients Experience
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-md border border-earth-200">
+              <p className="text-earth-700 text-lg italic mb-6">
+                &ldquo;Finally understood why nothing was growing in our backyard. The site assessment was worth every penny.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-moss-100 rounded-full flex items-center justify-center">
+                  <span className="text-moss-700 font-bold text-sm">M.T.</span>
+                </div>
+                <p className="font-semibold text-earth-900 text-sm">Muskegon, MI</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-md border border-earth-200">
+              <p className="text-earth-700 text-lg italic mb-6">
+                &ldquo;Saved us from wasting thousands on the wrong plants. We had no idea our drainage was the real issue.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-moss-100 rounded-full flex items-center justify-center">
+                  <span className="text-moss-700 font-bold text-sm">K.R.</span>
+                </div>
+                <p className="font-semibold text-earth-900 text-sm">Grand Haven, MI</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-md border border-earth-200">
+              <p className="text-earth-700 text-lg italic mb-6">
+                &ldquo;They walked the property with us and explained everything. We finally have a plan that makes sense for our yard.&rdquo;
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-moss-100 rounded-full flex items-center justify-center">
+                  <span className="text-moss-700 font-bold text-sm">J.H.</span>
+                </div>
+                <p className="font-semibold text-earth-900 text-sm">Spring Lake, MI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Consultation Form Section */}
       <section id="consultation" className="py-16 bg-white scroll-mt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-earth-900 mb-4">
-              Request a Property Consultation
+              Book Your Site Assessment
             </h2>
             <p className="text-lg text-earth-700">
-              Tell us a little about your property and we'll follow up about next steps.
+              We&apos;ll follow up within 24 hours to schedule your visit.
             </p>
           </div>
+
+          <p className="text-center text-earth-500 text-sm mb-8">
+            Takes less than 1 minute. No commitment required.
+          </p>
 
           <form
             action="https://formspree.io/f/mreabyzp"
             method="POST"
             className="bg-earth-50 rounded-3xl p-8 sm:p-10 border-2 border-earth-200 shadow-lg"
           >
-<input
-    type="hidden"
-    name="_redirect"
-    value="https://earthstewardsllc.org/west-michigan-ecological-landscaping/thank-you"
-  />
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://earthstewardsllc.org/west-michigan-ecological-landscaping/thank-you"
+            />
+
             {/* Name */}
             <div className="mb-6">
               <label htmlFor="name" className="block text-earth-900 font-semibold mb-2">
@@ -372,59 +483,6 @@ export default function WestMichiganLandingPage() {
               />
             </div>
 
-            {/* City / Township */}
-            <div className="mb-6">
-              <label htmlFor="location" className="block text-earth-900 font-semibold mb-2">
-                City / Township *
-              </label>
-              <input
-                type="text"
-                id="location"
-                name="location"
-                required
-                className="w-full px-4 py-3 rounded-lg border border-earth-300 focus:border-moss-600 focus:ring-2 focus:ring-moss-200 outline-none transition"
-              />
-            </div>
-
-            {/* What kind of help */}
-            <div className="mb-6">
-              <label htmlFor="help-type" className="block text-earth-900 font-semibold mb-2">
-                What kind of help are you looking for? *
-              </label>
-              <select
-                id="help-type"
-                name="help-type"
-                required
-                className="w-full px-4 py-3 rounded-lg border border-earth-300 focus:border-moss-600 focus:ring-2 focus:ring-moss-200 outline-none transition bg-white"
-              >
-                <option value="">Select one...</option>
-                <option value="Ecological landscape design">Ecological landscape design</option>
-                <option value="Native plant installation">Native plant installation</option>
-                <option value="Stewardship / garden care">Stewardship / garden care</option>
-                <option value="Lawn reduction or ecological lawn transition">Lawn reduction or ecological lawn transition</option>
-                <option value="Soil or drainage consultation">Soil or drainage consultation</option>
-                <option value="Not sure yet">Not sure yet</option>
-              </select>
-            </div>
-
-            {/* What stage */}
-            <div className="mb-6">
-              <label htmlFor="stage" className="block text-earth-900 font-semibold mb-2">
-                What stage are you in? *
-              </label>
-              <select
-                id="stage"
-                name="stage"
-                required
-                className="w-full px-4 py-3 rounded-lg border border-earth-300 focus:border-moss-600 focus:ring-2 focus:ring-moss-200 outline-none transition bg-white"
-              >
-                <option value="">Select one...</option>
-                <option value="Ready to start soon">Ready to start soon</option>
-                <option value="Planning in the next few months">Planning in the next few months</option>
-                <option value="Exploring ideas">Exploring ideas</option>
-              </select>
-            </div>
-
             {/* Message */}
             <div className="mb-8">
               <label htmlFor="message" className="block text-earth-900 font-semibold mb-2">
@@ -444,12 +502,15 @@ export default function WestMichiganLandingPage() {
                 type="submit"
                 className="inline-flex items-center px-10 py-4 bg-moss-600 text-white text-lg font-semibold rounded-full hover:bg-moss-700 transition-all shadow-lg hover:shadow-xl"
               >
-                Request My Consultation
+                Request My Site Assessment
               </button>
             </div>
 
-            <p className="text-center text-earth-600 text-sm mt-6">
-              We'll review your inquiry and follow up about next steps.
+            <p className="text-center text-earth-500 text-sm mt-5">
+              Local, owner-operated. Serving West Michigan properties.
+            </p>
+            <p className="text-center text-earth-600 text-sm mt-2">
+              We&apos;ll review your inquiry and follow up within 24 hours.
             </p>
           </form>
         </div>

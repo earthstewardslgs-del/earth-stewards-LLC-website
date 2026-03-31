@@ -365,55 +365,6 @@ export default function WestMichiganLandingPage() {
         </div>
       </section>
 
-      {/* Trust / Testimonials Section — NEW */}
-      <section className="py-16 bg-earth-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-earth-900 mb-4">
-              What Clients Experience
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-md border border-earth-200">
-              <p className="text-earth-700 text-lg italic mb-6">
-                &ldquo;Finally understood why nothing was growing in our backyard. The site assessment was worth every penny.&rdquo;
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-moss-100 rounded-full flex items-center justify-center">
-                  <span className="text-moss-700 font-bold text-sm">M.T.</span>
-                </div>
-                <p className="font-semibold text-earth-900 text-sm">Muskegon, MI</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-md border border-earth-200">
-              <p className="text-earth-700 text-lg italic mb-6">
-                &ldquo;Saved us from wasting thousands on the wrong plants. We had no idea our drainage was the real issue.&rdquo;
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-moss-100 rounded-full flex items-center justify-center">
-                  <span className="text-moss-700 font-bold text-sm">K.R.</span>
-                </div>
-                <p className="font-semibold text-earth-900 text-sm">Grand Haven, MI</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-md border border-earth-200">
-              <p className="text-earth-700 text-lg italic mb-6">
-                &ldquo;They walked the property with us and explained everything. We finally have a plan that makes sense for our yard.&rdquo;
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-moss-100 rounded-full flex items-center justify-center">
-                  <span className="text-moss-700 font-bold text-sm">J.H.</span>
-                </div>
-                <p className="font-semibold text-earth-900 text-sm">Spring Lake, MI</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Consultation Form Section */}
       <section id="consultation" className="py-16 bg-white scroll-mt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -422,7 +373,7 @@ export default function WestMichiganLandingPage() {
               Book Your Site Assessment
             </h2>
             <p className="text-lg text-earth-700">
-              We&apos;ll follow up within 24 hours to schedule your visit.
+              We&apos;ll follow up within 24–48 hours to schedule your visit.
             </p>
           </div>
 
@@ -483,6 +434,41 @@ export default function WestMichiganLandingPage() {
               />
             </div>
 
+            {/* City / Township */}
+            <div className="mb-6">
+              <label htmlFor="location" className="block text-earth-900 font-semibold mb-2">
+                City / Township *
+              </label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                required
+                className="w-full px-4 py-3 rounded-lg border border-earth-300 focus:border-moss-600 focus:ring-2 focus:ring-moss-200 outline-none transition"
+              />
+            </div>
+
+            {/* Service Interest */}
+            <div className="mb-6">
+              <label htmlFor="service_interest" className="block text-earth-900 font-semibold mb-2">
+                What are you mainly interested in? <span className="font-normal text-earth-500">(optional)</span>
+              </label>
+              <select
+                id="service_interest"
+                name="service_interest"
+                className="w-full px-4 py-3 rounded-lg border border-earth-300 focus:border-moss-600 focus:ring-2 focus:ring-moss-200 outline-none transition bg-white"
+              >
+                <option value="">Select one...</option>
+                <option value="Improving or restoring my lawn naturally">Improving or restoring my lawn naturally</option>
+                <option value="Transitioning away from traditional lawn">Transitioning away from traditional lawn</option>
+                <option value="Native plant landscaping or garden installation">Native plant landscaping or garden installation</option>
+                <option value="Landscape design tailored to my property">Landscape design tailored to my property</option>
+                <option value="Solving drainage or problem areas">Solving drainage or problem areas</option>
+                <option value="Ongoing care and long-term stewardship">Ongoing care and long-term stewardship</option>
+                <option value="Not sure yet — looking for guidance">Not sure yet — looking for guidance</option>
+              </select>
+            </div>
+
             {/* Message */}
             <div className="mb-8">
               <label htmlFor="message" className="block text-earth-900 font-semibold mb-2">
@@ -510,7 +496,7 @@ export default function WestMichiganLandingPage() {
               Local, owner-operated. Serving West Michigan properties.
             </p>
             <p className="text-center text-earth-600 text-sm mt-2">
-              We&apos;ll review your inquiry and follow up within 24 hours.
+              We&apos;ll review your inquiry and follow up within 24–48 hours.
             </p>
           </form>
         </div>

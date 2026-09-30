@@ -1,12 +1,13 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://earthstewardsllc.org'
+  const baseUrl = 'https://www.earthstewardsllc.com'
   const now = new Date()
 
   const serviceSlugs = [
     'ecological-garden-care',
     'ecological-landscaping',
+    'fall-cleanup',
     'garden-restoration-muskegon',
     'invasive-species-removal-muskegon',
     'landscape-consultation-muskegon',

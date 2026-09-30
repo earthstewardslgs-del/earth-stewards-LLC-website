@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.earthstewardsllc.com'
+  const baseUrl = 'https://earthstewardsllc.org'
   const now = new Date()
 
   const serviceSlugs = [

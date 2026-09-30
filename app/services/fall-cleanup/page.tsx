@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     'Fall yard cleanup in Muskegon and West Michigan: leaf cleanup, garden bed cleanup, selective perennial cutbacks, pruning, edging, and debris removal.',
   alternates: {
-    canonical: 'https://www.earthstewardsllc.com/services/fall-cleanup',
+    canonical: 'https://earthstewardsllc.org/services/fall-cleanup',
   },
   openGraph: {
     title: 'Fall Yard Cleanup in Muskegon & West Michigan | Earth Stewards LLC',
     description:
       'Get your property cleaned up and ready for winter with thoughtful fall cleanup that balances a neat appearance with ecological care.',
-    url: 'https://www.earthstewardsllc.com/services/fall-cleanup',
+    url: 'https://earthstewardsllc.org/services/fall-cleanup',
     siteName: 'Earth Stewards LLC',
     type: 'website',
   },
@@ -29,13 +29,13 @@ export default function FallCleanupPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://www.earthstewardsllc.com/',
+        item: 'https://earthstewardsllc.org/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Fall Yard Cleanup',
-        item: 'https://www.earthstewardsllc.com/services/fall-cleanup',
+        item: 'https://earthstewardsllc.org/services/fall-cleanup',
       },
     ],
   }

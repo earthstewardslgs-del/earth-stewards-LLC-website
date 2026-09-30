@@ -33,6 +33,7 @@ export default function Services() {
         { text: 'Invasive Plant Removal', href: '/services/invasive-species-removal-muskegon' },
         { text: 'Garden Restoration', href: '/services/garden-restoration-muskegon' },
         { text: 'Ecological Garden Care', href: '/services/ecological-garden-care' },
+        { text: 'Fall Cleanup', href: '/services/fall-cleanup' },
         { text: 'Landscape Maintenance', href: '/services/landscape-maintenance-muskegon' },
       ],
     },

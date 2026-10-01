@@ -53,8 +53,8 @@ export default function ThankYouPage() {
               </p>
 
               <p className="text-earth-600 mb-8">
-                We've received your consultation request and will get back to you within 1-2 business days. 
-                We're excited to help bring your landscape vision to life!
+                We&apos;ve received your request and will get back to you within 1-2 business days.
+                We&apos;ll review the details you provided and follow up with the next steps for your project.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -65,10 +65,10 @@ export default function ThankYouPage() {
                   Return to Home
                 </Link>
                 <Link
-                  href="/#projects"
+                  href="/#services"
                   className="inline-flex items-center px-8 py-4 bg-white text-moss-700 font-semibold rounded-full border-2 border-moss-600 hover:bg-moss-50 transition-all"
                 >
-                  View Our Work
+                  Explore Our Services
                 </Link>
               </div>
 

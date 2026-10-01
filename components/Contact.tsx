@@ -33,7 +33,7 @@ export default function Contact() {
     }
 
     if (detectedProjectType === 'fall-cleanup') {
-      setProjectType('fall-cleanup')
+      setProjectType('Fall Cleanup')
     }
 
     if (detectedSource) {
@@ -282,7 +282,7 @@ export default function Contact() {
                   <option value="">Select a project type</option>
                   <option value="design">Design & Installation</option>
                   <option value="maintenance">Maintenance Services</option>
-                  <option value="fall-cleanup">Fall Cleanup</option>
+                  <option value="Fall Cleanup">Fall Cleanup</option>
                   <option value="consultation">Consultation Only</option>
                   <option value="other">Other</option>
                 </select>

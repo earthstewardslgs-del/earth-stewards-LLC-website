@@ -20,7 +20,7 @@ export default function ThankYouPage() {
 
   return (
     <>
-      <Navigation />
+      <Navigation ctaLabel="Contact Us" ctaHref="/#contact" />
       <main className="min-h-screen bg-earth-50">
         <section className="relative pt-32 pb-20 bg-gradient-to-br from-sage-100 via-earth-50 to-moss-50">
           <div className="absolute inset-0 grain opacity-30"></div>

@@ -3,7 +3,15 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-export default function Navigation() {
+type NavigationProps = {
+  ctaLabel?: string
+  ctaHref?: string
+}
+
+export default function Navigation({
+  ctaLabel = 'Schedule Consultation',
+  ctaHref = '/#schedule',
+}: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -88,10 +96,10 @@ export default function Navigation() {
               </svg>
             </a>
             <a
-              href="/#schedule"
+              href={ctaHref}
               className="ml-4 px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all hover:shadow-lg"
             >
-              Schedule Consultation
+              {ctaLabel}
             </a>
           </div>
 
@@ -153,11 +161,11 @@ export default function Navigation() {
               )
             ))}
             <a
-              href="/#schedule"
+              href={ctaHref}
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-6 py-3 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all text-center"
             >
-              Schedule Consultation
+              {ctaLabel}
             </a>
           </div>
         </div>

@@ -87,7 +87,7 @@ export default function FallCleanupPage() {
 
               <div className="flex flex-wrap gap-4 justify-center pt-4">
                 <a
-                  href="/#schedule"
+                  href="/?project=fall-cleanup#schedule"
                   className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
                 >
                   Request a Fall Cleanup Estimate
@@ -242,7 +242,7 @@ export default function FallCleanupPage() {
 
             <div className="text-center mt-8">
               <a
-                href="/#schedule"
+                href="/?project=fall-cleanup#schedule"
                 className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
               >
                 Request a Fall Cleanup Estimate
@@ -443,7 +443,7 @@ export default function FallCleanupPage() {
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="/#schedule"
+                href="/?project=fall-cleanup#schedule"
                 className="inline-flex items-center px-8 py-4 bg-moss-600 text-white font-semibold rounded-full hover:bg-moss-700 transition-all"
               >
                 Request a Fall Cleanup Estimate

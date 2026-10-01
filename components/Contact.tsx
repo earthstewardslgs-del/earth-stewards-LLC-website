@@ -1,11 +1,50 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import { useEffect, useState, FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
 
 export default function Contact() {
   const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [projectType, setProjectType] = useState('')
+  const [leadSource, setLeadSource] = useState('website')
+  const [landingPage, setLandingPage] = useState('')
+  const [referrer, setReferrer] = useState('')
+
+  useEffect(() => {
+    const currentUrl = new URL(window.location.href)
+    const currentParams = currentUrl.searchParams
+    const documentReferrer = document.referrer || ''
+
+    let detectedProjectType = currentParams.get('project') || ''
+    let detectedSource = currentParams.get('source') || ''
+
+    if (!detectedProjectType && documentReferrer.includes('/services/fall-cleanup')) {
+      detectedProjectType = 'fall-cleanup'
+    }
+
+    if (!detectedSource && documentReferrer) {
+      try {
+        const referrerUrl = new URL(documentReferrer)
+        detectedSource = referrerUrl.searchParams.get('source') || ''
+      } catch {
+        // Ignore invalid referrer URLs.
+      }
+    }
+
+    if (detectedProjectType === 'fall-cleanup') {
+      setProjectType('fall-cleanup')
+    }
+
+    if (detectedSource) {
+      setLeadSource(detectedSource)
+    } else if (documentReferrer.includes('/services/fall-cleanup')) {
+      setLeadSource('fall-cleanup-page')
+    }
+
+    setLandingPage(window.location.href)
+    setReferrer(documentReferrer)
+  }, [])
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -167,6 +206,9 @@ export default function Contact() {
               className="space-y-6"
             >
               <input type="hidden" name="_subject" value="New Earth Stewards LLC Contact Form Submission" />
+              <input type="hidden" name="leadSource" value={leadSource} />
+              <input type="hidden" name="landingPage" value={landingPage} />
+              <input type="hidden" name="referrer" value={referrer} />
               
               <div>
                 <label
@@ -232,12 +274,15 @@ export default function Contact() {
                   id="projectType"
                   name="projectType"
                   required
+                  value={projectType}
+                  onChange={(e) => setProjectType(e.target.value)}
                   disabled={isSubmitting}
                   className="w-full px-4 py-3 border-2 border-earth-200 rounded-lg focus:border-moss-500 focus:outline-none transition-colors disabled:opacity-50"
                 >
                   <option value="">Select a project type</option>
                   <option value="design">Design & Installation</option>
                   <option value="maintenance">Maintenance Services</option>
+                  <option value="fall-cleanup">Fall Cleanup</option>
                   <option value="consultation">Consultation Only</option>
                   <option value="other">Other</option>
                 </select>
